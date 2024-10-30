@@ -1,27 +1,111 @@
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
+from typing import List, Dict
 import os
-from inf_utilities import scrape_articles, play_scrape_articles, play_save_to_csv, prepare_single_stock_data, extract_symbols_from_csv, returngroundtruthstock, encode_and_attach, validate_and_clean_tensors, process_GT_stock_torch_files, process_stock_torch_files, prepare_text_data, process_text_data
-from datetime import datetime, timedelta
 import math
+from datetime import datetime
+from inf_utilities import prepare_single_stock_data, prepare_text_data, encode_and_attach ,process_text_data
 
 class StableTransformerModel(nn.Module):
-    # The model class should mirror the one used in training for compatibility.
     def __init__(self, hidden_dim: int, num_layers: int, num_heads: int, dropout: float = 0.1):
         super(StableTransformerModel, self).__init__()
-        # Model definition based on the training file
         self.hidden_dim = hidden_dim
-        self.layers = nn.ModuleList([
-            nn.TransformerEncoderLayer(hidden_dim, num_heads, dim_feedforward=hidden_dim*2, dropout=dropout)
+        
+        self.stock_embedding = nn.Sequential(
+            nn.Linear(1, hidden_dim),
+            nn.LayerNorm(hidden_dim),
+            nn.Tanh()
+        )
+        
+        self.text_embedding = nn.Sequential(
+            nn.Linear(1, hidden_dim),
+            nn.LayerNorm(hidden_dim),
+            nn.Tanh()
+        )
+        
+        self.type_embeddings = nn.Parameter(torch.zeros(2, hidden_dim))
+        
+        self.transformer_layers = nn.ModuleList([
+            StableTransformerLayer(hidden_dim, num_heads, dropout)
             for _ in range(num_layers)
         ])
-        self.fc_out = nn.Linear(hidden_dim, 1)
         
-    def forward(self, x):
-        for layer in self.layers:
-            x = layer(x)
-        return self.fc_out(x[:, 0])
+        self.output_head = nn.Sequential(
+            nn.LayerNorm(hidden_dim),
+            nn.Linear(hidden_dim, hidden_dim // 2),
+            nn.Tanh(),
+            nn.Linear(hidden_dim // 2, 1),
+            nn.Tanh()
+        )
+        
+        self.dropout = nn.Dropout(dropout)
     
+    def create_attention_mask(self, seq_len: int, stock_len: int, text_len: int):
+        mask = torch.zeros(seq_len, seq_len, dtype=torch.bool)
+        stock_end = 1 + stock_len
+        text_start = stock_end
+        
+        # Text tokens can't attend to stock tokens
+        mask[text_start:, :stock_end] = True
+        return mask
+
+    def forward(self, x):
+        batch_size, seq_len = x.shape
+        
+        # Split input - maintaining same dimensions as training
+        stock_len = seq_len - 750 - 1  # 750 is text length from training
+        label = x[:, 0].unsqueeze(-1)
+        stock_data = x[:, 1:stock_len+1].unsqueeze(-1)
+        text_data = x[:, -750:].unsqueeze(-1)
+        
+        stock_embedded = self.stock_embedding(stock_data)
+        text_embedded = self.text_embedding(text_data)
+        label_embedded = self.stock_embedding(label).unsqueeze(1)
+        
+        stock_embedded = stock_embedded + self.type_embeddings[0]
+        text_embedded = text_embedded + self.type_embeddings[1]
+        
+        x = torch.cat([label_embedded, stock_embedded, text_embedded], dim=1)
+        x = self.dropout(x)
+        
+        attention_mask = self.create_attention_mask(x.shape[1], stock_len, 750).to(x.device)
+        
+        for layer in self.transformer_layers:
+            x = layer(x, attention_mask)
+        
+        return self.output_head(x[:, 0])
+
+class StableTransformerLayer(nn.Module):
+    def __init__(self, hidden_dim: int, num_heads: int, dropout: float = 0.1):
+        super().__init__()
+        self.norm1 = nn.LayerNorm(hidden_dim)
+        self.attention = nn.MultiheadAttention(hidden_dim, num_heads, dropout=dropout, batch_first=True)
+        self.norm2 = nn.LayerNorm(hidden_dim)
+        self.feedforward = nn.Sequential(
+            nn.Linear(hidden_dim, hidden_dim * 2),
+            nn.ReLU(),
+            nn.Dropout(dropout),
+            nn.Linear(hidden_dim * 2, hidden_dim)
+        )
+        self.dropout = nn.Dropout(dropout)
+    
+    def forward(self, x, attention_mask=None):
+        normed = self.norm1(x)
+        x = x + self.dropout(self.attention(normed, normed, normed, attn_mask=attention_mask)[0])
+        
+        normed = self.norm2(x)
+        x = x + self.dropout(self.feedforward(normed))
+        
+        return x
+
+def load_checkpoint(checkpoint_path: str, model: nn.Module) -> None:
+    """Load model checkpoint."""
+    checkpoint = torch.load(checkpoint_path, map_location='cpu')
+    model.load_state_dict(checkpoint['model_state_dict'])
+    model.eval()
+    print(f"Loaded checkpoint from {checkpoint_path}")
+
 def micro_pos_encode(tensor):
     # Ensure the tensor is 1D and has more than 1 element
     assert len(tensor.shape) == 1, "Expected a 1D tensor."
@@ -55,32 +139,16 @@ def micro_pos_encode(tensor):
     updated_tensor = torch.cat((label.unsqueeze(0), numerical_data_with_pos.squeeze(1)), dim=0)
     return updated_tensor
 
-def load_checkpoint(filepath: str, model: nn.Module):
-    """Loads the model checkpoint from the specified filepath."""
-    if os.path.isfile(filepath):
-        checkpoint = torch.load(filepath)
-        model.load_state_dict(checkpoint['model_state_dict'])
-        print(f"Loaded checkpoint from {filepath}")
-    else:
-        print(f"Checkpoint file not found at {filepath}")
 
-def inference(input_tensor: torch.Tensor, model: nn.Module, device: torch.device):
-    """Runs inference on the given input tensor."""
-    model.eval()  # Set model to evaluation mode
-    with torch.no_grad():
-        input_tensor = input_tensor.to(device)
-        output = model(input_tensor)
-    return output
 
 def generate_input_tensor(ticker,config):
     """Placeholder for generating an input tensor for inference."""
     now = datetime.now()
+    
     str_date = now.strftime('%Y-%m-%d')
+    str_time = now.strftime('%H:%M:%S')
 
-    total_seconds = int(now.time().total_seconds())
-    hours, remainder = divmod(total_seconds, 3600)
-    minutes, seconds = divmod(remainder, 60)
-    str_time = f"{hours:02}:{minutes:02}:{seconds:02}"
+
     stock_symbol = ticker.strip()
     stock_data = prepare_single_stock_data(ticker_symbol=stock_symbol, start_datetime=now, days=6, min_points=45)
     features = stock_data.view(-1)[1:]  # Slice the tensor to remove the first element (label)
@@ -101,8 +169,28 @@ def generate_input_tensor(ticker,config):
         print("FAIL : STOCK DATA NOT PREPARED")
     raw_news_data = prepare_text_data(enddate=str_date, endtime=str_time,save_directory=config['save_directory'], keywords=config['keywords'], days_back=7, max_articles_per_keyword=config['max_articles_per_keyword'])
     processed_news_data = process_text_data(raw_news_data)
-   
-    
+
+    output_tensor = torch.cat((stock_data, processed_news_data), dim=0)
+    return output_tensor
+
+
+
+def inference(input_tensor: torch.Tensor, model: nn.Module, device: torch.device) -> float:
+    """Run inference on the input tensor."""
+    model.eval()
+    with torch.no_grad():
+        # Ensure input tensor is properly shaped and on correct device
+        if len(input_tensor.shape) == 1:
+            input_tensor = input_tensor.unsqueeze(0)
+        input_tensor = input_tensor.to(device)
+        
+        # Run inference
+        output = model(input_tensor)
+        
+        # Convert output to float prediction
+        prediction = output.item()
+        
+    return prediction
 
 def main(checkpoint_path, ticker, config):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -113,7 +201,7 @@ def main(checkpoint_path, ticker, config):
     load_checkpoint(checkpoint_path, model)
     
     # Generate input tensor and run inference
-    input_tensor = generate_input_tensor(ticker=ticker,config=config)
+    input_tensor = generate_input_tensor(ticker=ticker, config=config)
     output = inference(input_tensor, model, device)
     
     print("Inference Output:", output)
@@ -123,8 +211,8 @@ if __name__ == "__main__":
         'keywords': ['financial', 'technology', 'stocks', 'funds','trading'],
         'save_directory': "/Users/daniellavin/Desktop/proj/Moneytrain/newscsv",
         'output_directory': "/Users/daniellavin/Desktop/proj/Moneytrain/stockdataset",
-         'max_articles_per_keyword':  15,
+        'max_articles_per_keyword': 15,
     }
-    checkpoint_path="path/to/your/checkpoint.pt"
-    ticker="AAPL"
-    main(checkpoint_path,ticker, config)
+    checkpoint_path = "/Users/daniellavin/Desktop/proj/MoneyTrainer/checkpoints/SEVEN_EPOCH_14.pt"
+    ticker = "AAPL"
+    main(checkpoint_path, ticker, config)
