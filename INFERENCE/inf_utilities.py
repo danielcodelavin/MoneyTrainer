@@ -1,3 +1,4 @@
+from pygooglenews import GoogleNews
 import logging
 from datetime import datetime, timedelta
 from typing import List, Dict
@@ -10,11 +11,8 @@ import asyncio
 import logging
 import json
 import torch
-from googlesearch import search
-from googlesearch import GoogleSearch
-from googlesearch import GoogleNews
-from googlesearch import SafeSearch
-from googlesearch import SearchError
+
+
 import yfinance as yf
 import pandas as pd
 import numpy as np
