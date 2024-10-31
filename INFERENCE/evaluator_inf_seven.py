@@ -4,8 +4,11 @@ import torch.nn.functional as F
 from typing import List, Dict
 import os
 import math
-from datetime import datetime
-from inf_utilities import prepare_single_stock_data, prepare_text_data, encode_and_attach ,process_text_data
+import numpy as np
+import csv
+import random
+from datetime import datetime, timedelta
+from inf_utilities import prepare_single_stock_data, prepare_text_data, encode_and_attach ,process_text_data, extract_symbols_from_csv, returngroundtruthstock
 
 class StableTransformerModel(nn.Module):
     def __init__(self, hidden_dim: int, num_layers: int, num_heads: int, dropout: float = 0.1):
@@ -143,21 +146,53 @@ def micro_pos_encode(tensor):
 
 def generate_input_tensor(ticker,config):
     """Placeholder for generating an input tensor for inference."""
-    now = datetime.now()
+    earliest_date = datetime(2022, 12, 1)
+    latest_date = datetime(2024, 10, 10)
+    while True:
+            random_date = earliest_date + timedelta(days=random.randint(0, (latest_date - earliest_date).days))
+            if random_date.weekday() < 5:  # 0 = Monday, 4 = Friday
+                break
+
+    # Generate a random time within a day
+    random_time = timedelta(
+                hours=random.randint(9, 20),  # 9 AM to 9 PM (20 = 8:59 PM, end of the day)
+                minutes=random.randint(0, 59),
+                seconds=random.randint(0, 59))
+    str_date = random_date.strftime('%Y-%m-%d')
+
+    # Convert random_time (timedelta) to a string in 'HH:MM:SS' format
+    total_seconds = int(random_time.total_seconds())
+    hours, remainder = divmod(total_seconds, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    str_time = f"{hours:02}:{minutes:02}:{seconds:02}"
     
-    str_date = now.strftime('%Y-%m-%d')
-    str_time = now.strftime('%H:%M:%S')
+    
+    # Combine random_date and random_time to get a full random datetime
+    random_datetime = datetime.combine(random_date, datetime.min.time()) + random_time
+
+    # Convert to string format (for example, '%Y-%m-%d %H:%M:%S')
+    datetime_str = random_datetime.strftime('%Y-%m-%d %H:%M:%S')
+
+    # Parse the datetime string back to a datetime object (if needed)
+    parsed_datetime = datetime.strptime(datetime_str, '%Y-%m-%d %H:%M:%S')
+    
+    #Point in time for ground truth is 1 day after the stock data
+    gt_datetime = parsed_datetime + timedelta(days=1)
 
 
     stock_symbol = ticker.strip()
-    stock_data = prepare_single_stock_data(ticker_symbol=stock_symbol, start_datetime=now, days=6, min_points=45)
+    stock_data = prepare_single_stock_data(ticker_symbol=stock_symbol, start_datetime=parsed_datetime, days=6, min_points=45)
+    
+    reference_value = stock_data[0].item()
     features = stock_data
 
     features_mean = features.mean()
     features_std = features.std()
     normalized_features = (features - features_mean) / features_std
 
-    
+    gt_tensor = returngroundtruthstock(stock_symbol, gt_datetime)
+    gt_value = gt_tensor.item()
+    gt = (gt_value - reference_value) / reference_value
     # add positional encoding
     stock_data = micro_pos_encode(normalized_features)
     #validate
@@ -169,7 +204,7 @@ def generate_input_tensor(ticker,config):
     processed_news_data = process_text_data(raw_news_data)
 
     output_tensor = torch.cat((stock_data, processed_news_data), dim=0)
-    return output_tensor
+    return output_tensor, gt
 
 
 
@@ -190,7 +225,98 @@ def inference(input_tensor: torch.Tensor, model: nn.Module, device: torch.device
         
     return prediction
 
-def main(checkpoint_path, ticker, config):
+
+
+def evaluate_inference(
+    tickers: List[str],
+    output_path: str = "evaluation_results.csv"
+) -> None:
+    """
+    Evaluates AI inference against ground truth for multiple tickers.
+    
+    Args:
+        tickers: List of ticker symbols to evaluate
+        output_path: Path to save the CSV results
+    """
+    
+    def calculate_metrics(predictions: List[float], ground_truth: List[float]) -> dict:
+        """Calculate various metrics for binary classification and L1 distance."""
+        # Convert to binary classifications (positive/negative)
+        pred_binary = [1 if x >= 0 else 0 for x in predictions]
+        gt_binary = [1 if x >= 0 else 0 for x in ground_truth]
+        
+        # Calculate L1 distances
+        l1_distances = [abs(p - gt) for p, gt in zip(predictions, ground_truth)]
+        
+        # Calculate binary classification metrics
+        tp = sum(1 for p, gt in zip(pred_binary, gt_binary) if p == 1 and gt == 1)
+        fp = sum(1 for p, gt in zip(pred_binary, gt_binary) if p == 1 and gt == 0)
+        tn = sum(1 for p, gt in zip(pred_binary, gt_binary) if p == 0 and gt == 0)
+        fn = sum(1 for p, gt in zip(pred_binary, gt_binary) if p == 0 and gt == 1)
+        
+        # Avoid division by zero
+        precision = tp / (tp + fp) if (tp + fp) > 0 else 0
+        recall = tp / (tp + fn) if (tp + fn) > 0 else 0
+        accuracy = (tp + tn) / len(predictions) if len(predictions) > 0 else 0
+        f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
+        
+        return {
+            'average_l1': np.mean(l1_distances),
+            'std_l1': np.std(l1_distances),
+            'precision': precision,
+            'recall': recall,
+            'accuracy': accuracy,
+            'f1_score': f1
+        }
+    
+    def evaluate_single_ticker(ticker: str) -> tuple[str, dict]:
+        """Evaluate a single ticker with multiple runs."""
+        predictions = []
+        ground_truth = []
+        
+        # Perform 50 evaluations
+        for _ in range(50):
+
+            pred, gt = returnpred(ticker)  # Replace with your tensor computation
+                  
+            predictions.append(pred)
+            ground_truth.append(gt)
+        
+        metrics = calculate_metrics(predictions, ground_truth)
+        return ticker, metrics
+    
+    # Prepare CSV headers
+    headers = ['Ticker', 'Average_L1', 'Std_L1', 'Precision', 'Recall', 'Accuracy', 'F1_Score']
+    
+    # Evaluate all tickers and write results
+    with open(output_path, 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(headers)
+        
+        for ticker in tickers:
+            ticker, metrics = evaluate_single_ticker(ticker)
+            row = [
+                ticker,
+                metrics['average_l1'],
+                metrics['std_l1'],
+                metrics['precision'],
+                metrics['recall'],
+                metrics['accuracy'],
+                metrics['f1_score']
+            ]
+            writer.writerow(row)
+
+
+
+def returnpred(ticker):
+    
+    config = {
+        'keywords': ['financial', 'technology', 'stocks', 'funds','trading'],
+        'save_directory': "/Users/daniellavin/Desktop/proj/Moneytrainer/newscsv",
+        'output_directory': "/Users/daniellavin/Desktop/proj/Moneytrainer/stockdataset",
+        'max_articles_per_keyword': 15,
+    }
+    checkpoint_path = "/Users/daniellavin/Desktop/proj/MoneyTrainer/checkpoints/SEVEN_EPOCH_14.pt"
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = StableTransformerModel(hidden_dim=768, num_layers=8, num_heads=12, dropout=0.1)
     model.to(device)
@@ -199,18 +325,15 @@ def main(checkpoint_path, ticker, config):
     load_checkpoint(checkpoint_path, model)
     
     # Generate input tensor and run inference
-    input_tensor = generate_input_tensor(ticker=ticker, config=config)
+    input_tensor ,gt = generate_input_tensor(ticker=ticker, config=config)
     output = inference(input_tensor, model, device)
     
-    print("Inference Output:", output)
+    return output, gt
+
+
+
 
 if __name__ == "__main__":
-    config = {
-        'keywords': ['financial', 'technology', 'stocks', 'funds','trading'],
-        'save_directory': "/Users/daniellavin/Desktop/proj/Moneytrain/newscsv",
-        'output_directory': "/Users/daniellavin/Desktop/proj/Moneytrain/stockdataset",
-        'max_articles_per_keyword': 15,
-    }
-    checkpoint_path = "pt"
-    ticker = "AAPL"
-    main(checkpoint_path, ticker, config)
+    
+    stock_symbols = extract_symbols_from_csv('/Users/daniellavin/Desktop/proj/Moneytrainer/cleaned_stockscreen.csv')
+    evaluate_inference(stock_symbols, '/Users/daniellavin/Desktop/proj/MoneyTrainer/EVALUATIONS/n50_seven_epoch_14.csv')

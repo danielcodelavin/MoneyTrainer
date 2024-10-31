@@ -174,7 +174,7 @@ def encode_and_attach(label: str, vector: torch.Tensor) -> torch.Tensor:
     return result
 
 
-def prepare_single_stock_data(ticker_symbol: str, start_datetime: str, days: int = 5, min_points: int = 80):
+def prepare_single_stock_data(ticker_symbol: str, start_datetime: str, days: int = 5, min_points: int = 40):
     """
     Fetches stock data in batches (24 hourly data points per day) for a specified number of valid days
     (i.e., days with non-zero data) from the given starting date and time, with a 60-minute interval.

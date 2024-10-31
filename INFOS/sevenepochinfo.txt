@@ -13,3 +13,9 @@ Epoch 12, Train Loss: 14.048044, Val Loss: 15.435672
 Epoch 13, Train Loss: 14.102953, Val Loss: 15.438077
 Epoch 14, Train Loss: 14.048255, Val Loss: 15.439535
 Epoch 15, Train Loss: 14.047950, Val Loss: 15.437479
+Epoch 16, Train Loss: 14.161063, Val Loss: 15.439340
+Epoch 17, Train Loss: 14.048536, Val Loss: 15.440605
+Epoch 18, Train Loss: 14.048874, Val Loss: 15.441336
+Epoch 19, Train Loss: 14.047470, Val Loss: 15.447296
+Epoch 20, Train Loss: 14.047620, Val Loss: 15.444069
+Epoch 21, Train Loss: 15.049487, Val Loss: 19.305716
