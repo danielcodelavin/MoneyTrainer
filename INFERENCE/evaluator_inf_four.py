@@ -32,7 +32,7 @@ class ImprovedTransformerModel(nn.Module):
                 nhead=num_heads,
                 dim_feedforward=hidden_dim*4,
                 dropout=dropout,
-                activation=nn.GELU(),
+                activation="gelu",  # Changed from nn.GELU() to "gelu"
                 norm_first=True  # Pre-norm architecture
             )
             for _ in range(num_layers)
@@ -71,6 +71,7 @@ class ImprovedTransformerModel(nn.Module):
             x = layer(x)
         
         return self.output_head(x[:, -1, :]).squeeze(-1)
+
 
 def load_checkpoint(checkpoint_path: str, model: nn.Module) -> None:
     """Load model checkpoint."""
@@ -359,7 +360,8 @@ def returnpred(ticker):
         }
         checkpoint_path = "/Users/daniellavin/Desktop/proj/MoneyTrainer/checkpoints/FOUR_EPOCH_14.pt"
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        model = ImprovedTransformerModel(hidden_dim=768, num_layers=8, num_heads=12, dropout=0.1)
+        # Changed hidden_dim to match training model
+        model = ImprovedTransformerModel(hidden_dim=640, num_layers=8, num_heads=8, dropout=0.1)
         model.to(device)
         
         load_checkpoint(checkpoint_path, model)
@@ -382,5 +384,5 @@ def returnpred(ticker):
 if __name__ == "__main__":
     
     stock_symbols = extract_symbols_from_csv('/Users/daniellavin/Desktop/proj/Moneytrainer/cleaned_stockscreen.csv')
-    stock_symbols = stock_symbols[: len(stock_symbols) // 4]
-    evaluate_inference(stock_symbols, '/Users/daniellavin/Desktop/proj/MoneyTrainer/EVALUATIONS/n50_four_eval.csv')
+    stock_symbols = stock_symbols[3 * len(stock_symbols) // 4 :]
+    evaluate_inference(stock_symbols, '/Users/daniellavin/Desktop/proj/MoneyTrainer/EVALUATIONS/fourth_n50_four_eval.csv')
