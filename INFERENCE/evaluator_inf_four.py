@@ -8,99 +8,69 @@ import numpy as np
 import csv
 import random
 from datetime import datetime, timedelta
-from inf_utilities import prepare_single_stock_data, prepare_text_data, encode_and_attach ,process_text_data, extract_symbols_from_csv, returngroundtruthstock
+from inf_utilities import prepare_single_stock_data, prepare_text_data, encode_and_attach, process_text_data, extract_symbols_from_csv, returngroundtruthstock
 
-class StableTransformerModel(nn.Module):
+class ImprovedTransformerModel(nn.Module):
     def __init__(self, hidden_dim: int, num_layers: int, num_heads: int, dropout: float = 0.1):
-        super(StableTransformerModel, self).__init__()
+        super(ImprovedTransformerModel, self).__init__()
         self.hidden_dim = hidden_dim
         
-        self.stock_embedding = nn.Sequential(
+        # Input normalization
+        self.input_norm = nn.LayerNorm(1)
+        
+        # Improved embedding
+        self.embedding = nn.Sequential(
             nn.Linear(1, hidden_dim),
             nn.LayerNorm(hidden_dim),
-            nn.Tanh()
+            nn.GELU()
         )
         
-        self.text_embedding = nn.Sequential(
-            nn.Linear(1, hidden_dim),
-            nn.LayerNorm(hidden_dim),
-            nn.Tanh()
-        )
-        
-        self.type_embeddings = nn.Parameter(torch.zeros(2, hidden_dim))
-        
+        # Pre-norm transformer layers
         self.transformer_layers = nn.ModuleList([
-            StableTransformerLayer(hidden_dim, num_heads, dropout)
+            nn.TransformerEncoderLayer(
+                d_model=hidden_dim,
+                nhead=num_heads,
+                dim_feedforward=hidden_dim*4,
+                dropout=dropout,
+                activation=nn.GELU(),
+                norm_first=True  # Pre-norm architecture
+            )
             for _ in range(num_layers)
         ])
         
+        # Sophisticated output head with multiple layers
         self.output_head = nn.Sequential(
             nn.LayerNorm(hidden_dim),
             nn.Linear(hidden_dim, hidden_dim // 2),
-            nn.Tanh(),
-            nn.Linear(hidden_dim // 2, 1),
-            nn.Tanh()
+            nn.GELU(),
+            nn.Dropout(dropout),
+            nn.Linear(hidden_dim // 2, hidden_dim // 4),
+            nn.GELU(),
+            nn.Dropout(dropout),
+            nn.Linear(hidden_dim // 4, 1),
+            nn.Tanh()  # Added to constrain output to [-1, 1] range
         )
         
         self.dropout = nn.Dropout(dropout)
+        self._init_weights()
     
-    def create_attention_mask(self, seq_len: int, stock_len: int, text_len: int):
-        mask = torch.zeros(seq_len, seq_len, dtype=torch.bool)
-        stock_end = 1 + stock_len
-        text_start = stock_end
-        
-        # Text tokens can't attend to stock tokens
-        mask[text_start:, :stock_end] = True
-        return mask
-
+    def _init_weights(self):
+        for module in self.modules():
+            if isinstance(module, nn.Linear):
+                nn.init.xavier_uniform_(module.weight)
+                if module.bias is not None:
+                    nn.init.zeros_(module.bias)
+    
     def forward(self, x):
-        batch_size, seq_len = x.shape
-        
-        # Split input - maintaining same dimensions as training
-        stock_len = seq_len - 750 - 1  # 750 is text length from training
-        label = x[:, 0].unsqueeze(-1)
-        stock_data = x[:, 1:stock_len+1].unsqueeze(-1)
-        text_data = x[:, -750:].unsqueeze(-1)
-        
-        stock_embedded = self.stock_embedding(stock_data)
-        text_embedded = self.text_embedding(text_data)
-        label_embedded = self.stock_embedding(label).unsqueeze(1)
-        
-        stock_embedded = stock_embedded + self.type_embeddings[0]
-        text_embedded = text_embedded + self.type_embeddings[1]
-        
-        x = torch.cat([label_embedded, stock_embedded, text_embedded], dim=1)
+        x = x.unsqueeze(-1)
+        x = self.input_norm(x)
+        x = self.embedding(x)
         x = self.dropout(x)
         
-        attention_mask = self.create_attention_mask(x.shape[1], stock_len, 750).to(x.device)
-        
         for layer in self.transformer_layers:
-            x = layer(x, attention_mask)
+            x = layer(x)
         
-        return self.output_head(x[:, 0])
-
-class StableTransformerLayer(nn.Module):
-    def __init__(self, hidden_dim: int, num_heads: int, dropout: float = 0.1):
-        super().__init__()
-        self.norm1 = nn.LayerNorm(hidden_dim)
-        self.attention = nn.MultiheadAttention(hidden_dim, num_heads, dropout=dropout, batch_first=True)
-        self.norm2 = nn.LayerNorm(hidden_dim)
-        self.feedforward = nn.Sequential(
-            nn.Linear(hidden_dim, hidden_dim * 2),
-            nn.ReLU(),
-            nn.Dropout(dropout),
-            nn.Linear(hidden_dim * 2, hidden_dim)
-        )
-        self.dropout = nn.Dropout(dropout)
-    
-    def forward(self, x, attention_mask=None):
-        normed = self.norm1(x)
-        x = x + self.dropout(self.attention(normed, normed, normed, attn_mask=attention_mask)[0])
-        
-        normed = self.norm2(x)
-        x = x + self.dropout(self.feedforward(normed))
-        
-        return x
+        return self.output_head(x[:, -1, :]).squeeze(-1)
 
 def load_checkpoint(checkpoint_path: str, model: nn.Module) -> None:
     """Load model checkpoint."""
@@ -141,7 +111,6 @@ def micro_pos_encode(tensor):
     # We squeeze the data back to 1D for consistency
     updated_tensor = torch.cat((label.unsqueeze(0), numerical_data_with_pos.squeeze(1)), dim=0)
     return updated_tensor
-
 
 def generate_input_tensor(ticker, config):
     """Generate input tensor with error handling and validation."""
@@ -239,9 +208,6 @@ def generate_input_tensor(ticker, config):
             
     return None, None
 
-
-
-
 def inference(input_tensor: torch.Tensor, model: nn.Module, device: torch.device) -> float:
     """Run inference on the input tensor."""
     model.eval()
@@ -258,8 +224,6 @@ def inference(input_tensor: torch.Tensor, model: nn.Module, device: torch.device
         prediction = output.item()
         
     return prediction
-
-
 
 def evaluate_inference(
     tickers: List[str],
@@ -393,9 +357,9 @@ def returnpred(ticker):
             'output_directory': "/Users/daniellavin/Desktop/proj/Moneytrainer/stockdataset",
             'max_articles_per_keyword': 15,
         }
-        checkpoint_path = "/Users/daniellavin/Desktop/proj/MoneyTrainer/checkpoints/SEVEN_EPOCH_14.pt"
+        checkpoint_path = "/Users/daniellavin/Desktop/proj/MoneyTrainer/checkpoints/FOUR_EPOCH_14.pt"
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        model = StableTransformerModel(hidden_dim=768, num_layers=8, num_heads=12, dropout=0.1)
+        model = ImprovedTransformerModel(hidden_dim=768, num_layers=8, num_heads=12, dropout=0.1)
         model.to(device)
         
         load_checkpoint(checkpoint_path, model)
@@ -419,4 +383,4 @@ if __name__ == "__main__":
     
     stock_symbols = extract_symbols_from_csv('/Users/daniellavin/Desktop/proj/Moneytrainer/cleaned_stockscreen.csv')
     stock_symbols = stock_symbols[: len(stock_symbols) // 4]
-    evaluate_inference(stock_symbols, '/Users/daniellavin/Desktop/proj/MoneyTrainer/EVALUATIONS/first_n50_seven_epoch_14.csv')
+    evaluate_inference(stock_symbols, '/Users/daniellavin/Desktop/proj/MoneyTrainer/EVALUATIONS/n50_four_eval.csv')

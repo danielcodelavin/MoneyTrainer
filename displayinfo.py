@@ -19,8 +19,8 @@ def correct_loss_values(file_path):
             val_loss = float(match.group(3))
             
             # Calculate corrected values
-            corrected_train = train_loss / (1660.0 * 16.0)
-            corrected_val = val_loss / (1660.0 * 16.0)
+            corrected_train = train_loss / (1660.0 * 8.0)
+            corrected_val = val_loss / (1660.0 * 8.0)
             
             # Print original and corrected values
             print(f"Epoch {epoch:3d}:")
@@ -29,7 +29,7 @@ def correct_loss_values(file_path):
             #print("-" * 50)
 
 if __name__ == "__main__":
-    file_path = "/usr/prakt/s0097/epochinformations/sixepochinfo.txt"  # Update this path to your txt file location
+    file_path = "//Users/daniellavin/Desktop/proj/MoneyTrainer/INFOS/fourepochinfo.txt"  # Update this path to your txt file location
     try:
         correct_loss_values(file_path)
     except FileNotFoundError:

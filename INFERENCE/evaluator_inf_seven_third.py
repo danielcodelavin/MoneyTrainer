@@ -418,5 +418,5 @@ def returnpred(ticker):
 if __name__ == "__main__":
     
     stock_symbols = extract_symbols_from_csv('/Users/daniellavin/Desktop/proj/Moneytrainer/cleaned_stockscreen.csv')
-    stock_symbols = stock_symbols[: len(stock_symbols) // 4]
-    evaluate_inference(stock_symbols, '/Users/daniellavin/Desktop/proj/MoneyTrainer/EVALUATIONS/first_n50_seven_epoch_14.csv')
+    stock_symbols = stock_symbols[len(stock_symbols) // 2 : 3 * len(stock_symbols) // 4]
+    evaluate_inference(stock_symbols, '/Users/daniellavin/Desktop/proj/MoneyTrainer/EVALUATIONS/third_n50_seven_epoch_14.csv')
