@@ -4,8 +4,32 @@ import torch.nn.functional as F
 from typing import List, Dict
 import os
 import math
+import csv
 from datetime import datetime
-from inf_utilities import prepare_single_stock_data, prepare_text_data, encode_and_attach ,process_text_data
+from inf_utilities import prepare_single_stock_data, prepare_text_data, encode_and_attach ,process_text_data, extract_symbols_from_csv
+
+def save_results_to_csv(results_data, stock_symbols, OUTPUT_DIR):
+    # Create timestamp for filename
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    filename = f"stock_results_{timestamp}.csv"
+    
+    # Create full filepath
+    if not os.path.exists(OUTPUT_DIR):
+        os.makedirs(OUTPUT_DIR)
+    filepath = os.path.join(OUTPUT_DIR, filename)
+    
+    # Combine tickers with their results
+    combined_data = list(zip(stock_symbols, results))
+    
+    # Write to CSV
+    with open(filepath, 'w', newline='') as f:
+        writer = csv.writer(f)
+        writer.writerow(['Ticker', 'Result'])  # Header row
+        writer.writerows(combined_data)
+    
+    print(f"Results saved to: {filepath}")
+    return filepath
+
 
 class ImprovedTransformerModel(nn.Module):
     def __init__(self, hidden_dim: int, num_layers: int, num_heads: int, dropout: float = 0.1):
@@ -134,7 +158,7 @@ def micro_pos_encode(tensor):
 
 
 
-def generate_input_tensor(ticker,config):
+def generate_input_tensor(ticker, processed_news_data):
     """Placeholder for generating an input tensor for inference."""
     now = datetime.now()
     
@@ -144,6 +168,8 @@ def generate_input_tensor(ticker,config):
 
     stock_symbol = ticker.strip()
     stock_data = prepare_single_stock_data(ticker_symbol=stock_symbol, start_datetime=now, days=6, min_points=45)
+    if stock_data.__len__() < 20:
+        return None
     features = stock_data
 
     features_mean = features.mean()
@@ -157,13 +183,14 @@ def generate_input_tensor(ticker,config):
     stock_data = micro_pos_encode(normalized_features)
     print ("[   ENCODED   ]")
     print(stock_data)
+    print ("[        NEWS         DATA        ]")
+    print(processed_news_data)
     #validate
     if stock_data is not None and isinstance(stock_data, torch.Tensor):
                     stock_data = encode_and_attach(stock_symbol, stock_data)
     else:
         print("FAIL : STOCK DATA NOT PREPARED")
-    raw_news_data = prepare_text_data(enddate=str_date, endtime=str_time,save_directory=config['save_directory'], keywords=config['keywords'], days_back=7, max_articles_per_keyword=config['max_articles_per_keyword'])
-    processed_news_data = process_text_data(raw_news_data)
+    
 
     output_tensor = torch.cat((stock_data, processed_news_data), dim=0)
     return output_tensor
@@ -187,19 +214,22 @@ def inference(input_tensor: torch.Tensor, model: nn.Module, device: torch.device
         
     return prediction
 
-def main(checkpoint_path, ticker, config):
+def main(checkpoint_path, ticker, news_data):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = ImprovedTransformerModel(hidden_dim=640, num_layers=8, num_heads=8, dropout=0.1)
     model.to(device)
     
     # Load checkpoint
     load_checkpoint(checkpoint_path, model)
-    
+    errorcode = 8888.8888
     # Generate input tensor and run inference
-    input_tensor = generate_input_tensor(ticker=ticker, config=config)
+    input_tensor = generate_input_tensor(ticker, news_data)
+    
+    if input_tensor == None:
+        return errorcode
     output = inference(input_tensor, model, device)
     
-    print("Inference Output:", output)
+    return output
 
 if __name__ == "__main__":
     config = {
@@ -208,6 +238,29 @@ if __name__ == "__main__":
        # 'output_directory': "/Users/daniellavin/Desktop/proj/Moneytrain/stockdataset",
         'max_articles_per_keyword': 15,
     }
+    stock_symbols = extract_symbols_from_csv('/Users/daniellavin/Desktop/proj/Moneytrainer/cleaned_stockscreen.csv')
     checkpoint_path = "/Users/daniellavin/Desktop/proj/MoneyTrainer/checkpoints/FOUR_EPOCH_14.pt"
-    ticker = "MAR"
-    main(checkpoint_path, ticker, config)
+    csv_path = "/Users/daniellavin/Desktop/proj/MoneyTrainer/INF_RESULTS"
+    
+    
+    
+    
+    
+    
+    # precalculated news tensor since at each distinct moment in time its the same
+    now = datetime.now()
+    
+    str_date = now.strftime('%Y-%m-%d')
+    str_time = now.strftime('%H:%M:%S')
+    raw_news_data = prepare_text_data(enddate=str_date, endtime=str_time,save_directory=config['save_directory'], keywords=config['keywords'], days_back=7, max_articles_per_keyword=config['max_articles_per_keyword'])
+    processed_news_data = process_text_data(raw_news_data)
+    
+    
+    
+    
+    results = []
+    for ticker in stock_symbols:
+        output = main(checkpoint_path, ticker, processed_news_data)
+        results.append(output)
+
+    save_results_to_csv(results, stock_symbols, csv_path)

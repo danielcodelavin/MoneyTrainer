@@ -207,8 +207,9 @@ def main(checkpoint_path, ticker, config):
 if __name__ == "__main__":
     config = {
         'keywords': ['financial', 'technology', 'stocks', 'funds','trading'],
+        'save_directory': "/Users/daniellavin/Desktop/proj/Moneytrain/newscsv_four",
         'max_articles_per_keyword': 15,
     }
-    checkpoint_path = "pt"
+    checkpoint_path = "/Users/daniellavin/Desktop/proj/MoneyTrainer/checkpoints/SEVEN_EPOCH_16.pt"
     ticker = "AAPL"
     main(checkpoint_path, ticker, config)
