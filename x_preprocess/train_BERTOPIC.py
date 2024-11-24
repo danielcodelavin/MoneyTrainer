@@ -25,93 +25,93 @@ class FinancialTopicModel:
         self.logger = logging.getLogger(__name__)
         
         # Refined financial vocabulary with explicit phrases
-        self.finance_vocab = [
-        # Price Movements - Positive
-        "stock up", "shares rise", "market surge", "price soar", "stock climb",
-        "upward trend", "price jump", "stocks advance", "market rebound", "bounce back", "uptrend",
-        
-        # Price Movements - Negative
-        "stock down", "shares fall", "market plunge", "price drop", "stock sink",
-        "downward trend", "price slump", "stocks retreat", "market tumble", "selloff", "downtrend",
-        
-        # Performance - Positive
-        "earnings beat", "revenue growth", "profit surge", "sales increase",
-        "strong performance", "record profit", "better than expected",
-        "exceeds forecast", "margin expansion", "positive guidance",
-        
-        # Performance - Negative
-        "earnings miss", "revenue decline", "profit drop", "sales decrease",
-        "weak performance", "record loss", "worse than expected",
-        "misses forecast", "margin compression", "negative guidance",
-        
-        # Market Sentiment - Positive
-        "investor confidence", "market optimism", "bullish outlook",
-        "strong momentum", "buying opportunity", "market recovery",
-        "positive sentiment", "investor enthusiasm", "market strength",
-        "confidence boost", "renewed optimism",
-        
-        # Market Sentiment - Negative
-        "investor concern", "market pessimism", "bearish outlook",
-        "losing momentum", "selling pressure", "market weakness",
-        "negative sentiment", "investor fear", "market stress",
-        "confidence crisis", "deepening uncertainty",
-        
-        # Corporate Events - Positive
-        "successful merger", "strategic acquisition", "expansion plan",
-        "partnership deal", "successful launch", "contract win",
-        "major breakthrough", "positive restructuring", "innovation success",
-        "new market entry", "game-changing development",
-        
-        # Corporate Events - Negative
-        "failed merger", "acquisition collapse", "bankruptcy risk",
-        "partnership termination", "failed launch", "contract loss",
-        "major setback", "forced restructuring", "innovation failure",
-        "executive shakeup", "regulatory crackdown",
-        
-        # Financial Health - Positive
-        "strong balance", "cash rich", "debt reduction",
-        "dividend increase", "capital strength", "healthy liquidity",
-        "credit upgrade", "cost efficiency", "profitable growth",
-        "balance sheet improvement",
-        
-        # Financial Health - Negative
-        "weak balance", "cash poor", "debt burden",
-        "dividend cut", "capital crisis", "liquidity crisis",
-        "credit downgrade", "cost pressure", "profit warning",
-        "cash flow issues",
-        
-        # Market Analysis - Positive
-        "buy signal", "breakout level", "support holding",
-        "upside potential", "growth opportunity", "market leader",
-        "outperform peer", "upgrade rating", "price target raised",
-        "sector leadership",
-        
-        # Market Analysis - Negative
-        "sell signal", "breakdown level", "support broken",
-        "downside risk", "growth concerns", "market laggard",
-        "underperform peer", "downgrade rating", "price target cut",
-        "sector underperformance",
-        
-        # Economic Context - Positive
-        "economic growth", "sector strength", "industry recovery",
-        "demand increase", "supply improvement", "market stability",
-        "positive outlook", "growth forecast", "recovery path",
-        "fiscal stimulus impact",
-        
-        # Economic Context - Negative
-        "economic slowdown", "sector weakness", "industry decline",
-        "demand decrease", "supply disruption", "market instability",
-        "negative outlook", "recession fear", "recovery doubt",
-        "stagflation risk",
-        
-        # Core Terms - Positive
-        "profitable", "outperform", "upgrade", "bullish", "growth",
-        "beat", "rally", "gain", "increase", "strong", "positive", "rise", "surge", "soar", "climb",
-        
-        # Core Terms - Negative
-        "unprofitable", "underperform", "downgrade", "bearish", "decline",
-        "miss", "crash", "loss", "decrease", "weak", "negative", "fall", "plunge", "sink", "losses"
-    ]
+       self.finance_vocab = [
+    # Price Movements - Positive
+    "stock up", "shares rise", "market surge", "price soar", "stock climb",
+    "upward trend", "price jump", "stocks advance", "market rebound", "bounce back", "uptrend",
+    
+    # Price Movements - Negative
+    "stock down", "shares fall", "market plunge", "price drop", "stock sink",
+    "downward trend", "price slump", "stocks retreat", "market tumble", "selloff", "downtrend",
+    
+    # Performance - Positive
+    "earnings beat", "revenue growth", "profit surge", "sales increase",
+    "strong performance", "record profit", "better than expected",
+    "exceeds forecast", "margin expansion", "positive guidance",
+    
+    # Performance - Negative
+    "earnings miss", "revenue decline", "profit drop", "sales decrease",
+    "weak performance", "record loss", "worse than expected",
+    "misses forecast", "margin compression", "negative guidance",
+    
+    # Market Sentiment - Positive
+    "investor confidence", "market optimism", "bullish outlook",
+    "strong momentum", "buying opportunity", "market recovery",
+    "positive sentiment", "investor enthusiasm", "market strength",
+    "confidence boost", "renewed optimism",
+    
+    # Market Sentiment - Negative
+    "investor concern", "market pessimism", "bearish outlook",
+    "losing momentum", "selling pressure", "market weakness",
+    "negative sentiment", "investor fear", "market stress",
+    "confidence crisis", "deepening uncertainty",
+    
+    # Corporate Events - Positive
+    "successful merger", "strategic acquisition", "expansion plan",
+    "partnership deal", "successful launch", "contract win",
+    "major breakthrough", "positive restructuring", "innovation success",
+    "new market entry", "game-changing development",
+    
+    # Corporate Events - Negative
+    "failed merger", "acquisition collapse", "bankruptcy risk",
+    "partnership termination", "failed launch", "contract loss",
+    "major setback", "forced restructuring", "innovation failure",
+    "executive shakeup", "regulatory crackdown",
+    
+    # Financial Health - Positive
+    "strong balance", "cash rich", "debt reduction",
+    "dividend increase", "capital strength", "healthy liquidity",
+    "credit upgrade", "cost efficiency", "profitable growth",
+    "balance sheet improvement",
+    
+    # Financial Health - Negative
+    "weak balance", "cash poor", "debt burden",
+    "dividend cut", "capital crisis", "liquidity crisis",
+    "credit downgrade", "cost pressure", "profit warning",
+    "cash flow issues",
+    
+    # Market Analysis - Positive
+    "buy signal", "breakout level", "support holding",
+    "upside potential", "growth opportunity", "market leader",
+    "outperform peer", "upgrade rating", "price target raised",
+    "sector leadership",
+    
+    # Market Analysis - Negative
+    "sell signal", "breakdown level", "support broken",
+    "downside risk", "growth concerns", "market laggard",
+    "underperform peer", "downgrade rating", "price target cut",
+    "sector underperformance",
+    
+    # Economic Context - Positive
+    "economic growth", "sector strength", "industry recovery",
+    "demand increase", "supply improvement", "market stability",
+    "positive outlook", "growth forecast", "recovery path",
+    "fiscal stimulus impact",
+    
+    # Economic Context - Negative
+    "economic slowdown", "sector weakness", "industry decline",
+    "demand decrease", "supply disruption", "market instability",
+    "negative outlook", "recession fear", "recovery doubt",
+    "stagflation risk",
+    
+    # Core Terms - Positive
+    "profitable", "outperform", "upgrade", "bullish", "growth",
+    "beat", "rally", "gain", "increase", "strong", "positive", "rise", "surge", "soar", "climb",
+    
+    # Core Terms - Negative
+    "unprofitable", "underperform", "downgrade", "bearish", "decline",
+    "miss", "crash", "loss", "decrease", "weak", "negative", "fall", "plunge", "sink", "losses"
+]
 
         
         self.vectorizer = CountVectorizer(
