@@ -6,7 +6,7 @@ from typing import List, Tuple, Dict, Optional
 import os
 import random
 from tqdm import tqdm
-from gnews import GoogleNews
+from pygooglenews import GoogleNews
 import time
 from sentence_transformers import SentenceTransformer
 from bertopic import BERTopic
@@ -132,58 +132,35 @@ def returngroundtruthstock(stock_symbol: str, start_datetime: str, max_days: int
         print(f"Error fetching data for {stock_symbol}: {str(e)}")
         return torch.tensor([])
 
-def scrape_articles(keywords: List[str], target_date: str, target_time: str, max_articles_per_keyword: int = 10) -> List[str]:
-    """Scrape news articles and return headlines."""
-    target_datetime = datetime.strptime(f"{target_date} {target_time}", '%Y-%m-%d %H:%M:%S')
-    day_before_datetime = target_datetime - timedelta(days=1)
+def play_scrape_articles(keywords: List[str], end_date: str, end_time: str, days_back: int = 3, max_articles_per_keyword: int = 10) -> List[Dict[str, str]]:
+    end_datetime = datetime.strptime(f"{end_date} {end_time}", '%Y-%m-%d %H:%M:%S')
+    start_datetime = end_datetime - timedelta(days=days_back)
     
     gn = GoogleNews(lang='en', country='US')
-    all_sentences = []
+    all_articles = []
     
-    for keyword in tqdm(keywords, desc="Processing keywords", leave=False):
-        search = gn.search(keyword, from_=target_date, to_=target_date)
-        article_count = 0
-        articles_from_target_date = []
+    for keyword in keywords:
+        search = gn.search(keyword, from_=start_datetime.strftime('%Y-%m-%d'), to_=end_datetime.strftime('%Y-%m-%d'))
         
+        article_count = 0
         for entry in search['entries']:
             pub_date = datetime.strptime(entry.published, '%a, %d %b %Y %H:%M:%S %Z')
-            if pub_date.date() == target_datetime.date():
-                sentences = [s.strip() for s in 
-                           entry.title.replace('! ', '!SPLIT')
-                           .replace('? ', '?SPLIT')
-                           .replace('. ', '.SPLIT')
-                           .split('SPLIT') 
-                           if s.strip()]
-                articles_from_target_date.extend(sentences)
+            if start_datetime <= pub_date <= end_datetime:
+                article = {
+                    'title': entry.title,
+                    #'date': pub_date.strftime('%Y-%m-%d %H:%M:%S'),
+                    #'source': entry.source.title,
+                    #'content': _clean_text(entry.summary),
+                    #'link': entry.link
+                }
+                all_articles.append(article)
                 article_count += 1
                 if article_count >= max_articles_per_keyword:
                     break
-            time.sleep(0.1)
-        
-        if article_count < max_articles_per_keyword:
-            search = gn.search(keyword,
-                             from_=day_before_datetime.strftime('%Y-%m-%d'),
-                             to_=day_before_datetime.strftime('%Y-%m-%d'))
-            
-            for entry in search['entries']:
-                if article_count >= max_articles_per_keyword:
-                    break
-                    
-                pub_date = datetime.strptime(entry.published, '%a, %d %b %Y %H:%M:%S %Z')
-                if pub_date.date() == day_before_datetime.date():
-                    sentences = [s.strip() for s in 
-                               entry.title.replace('! ', '!SPLIT')
-                               .replace('? ', '?SPLIT')
-                               .replace('. ', '.SPLIT')
-                               .split('SPLIT') 
-                               if s.strip()]
-                    articles_from_target_date.extend(sentences)
-                    article_count += 1
-                time.sleep(0.1)
-        
-        all_sentences.extend(articles_from_target_date)
+            time.sleep(1)  # Be polite, wait a second between requests
     
-    return all_sentences
+    return all_articles
+
 
 def process_headlines_with_bertopic(headlines: List[str], topic_model: BERTopic) -> torch.Tensor:
     """Process headlines using pre-trained BERTopic model and return normalized mean-pooled embeddings."""
