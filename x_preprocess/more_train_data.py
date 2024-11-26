@@ -5,7 +5,7 @@ import time
 from typing import List
 from duckduckgo_search import DDGS
 from tqdm import tqdm
-
+from finhub_scrape import get_stock_news
 class DataCollector:
     def __init__(self):
         # File paths
@@ -13,8 +13,8 @@ class DataCollector:
         self.output_filepath = '/Users/daniellavin/Desktop/proj/MoneyTrainer/x_preprocess/training_headlines.txt'
         
         # Date range
-        self.earliest_date = datetime(2022, 12, 1)
-        self.latest_date = datetime(2024, 11, 15)
+        self.earliest_date = datetime(2023, 12, 1)
+        self.latest_date = datetime(2024, 11, 17)
         
         # Load stock data
         self.Stock_Symbols = []
@@ -89,14 +89,11 @@ class DataCollector:
                         f"{self.Stock_Industries[i]} Industry",
                         f"{self.Stock_Sectors[i]} Stocks"
                     ]
-                    
+                    time.sleep(1.5)
                     # Get articles
-                    headlines = self.ddg_scrape(
-                        keywords=keywords,
-                        date_str=date_str,
-                        max_articles_per_keyword=articles_per_keyword
-                    )
-                    
+                  #  headlines = self.ddg_scrape( keywords=keywords, date_str=date_str, max_articles_per_keyword=articles_per_keyword)
+                    headlines = get_stock_news(symbol=self.Stock_Symbols[i], date=date_str)
+                    print(headlines)
                     # Append to file if we got any headlines
                     if headlines:
                         with open(self.output_filepath, 'a', encoding='utf-8') as f:

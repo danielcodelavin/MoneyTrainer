@@ -223,7 +223,7 @@ class FinancialTopicModel:
             topics, probs = self.topic_model.fit_transform(processed_headlines)
             
             # Save model first
-            self.save_model(os.path.join(output_dir, "BERTOPIC_MODEL_40.pt"))
+            self.save_model(os.path.join(output_dir, "BERTOPIC_MODEL_50.pt"))
             
             # Prepare report content
             report_lines = []
@@ -237,26 +237,44 @@ class FinancialTopicModel:
             report_lines.append("=== OVERALL STATISTICS ===")
             report_lines.append(f"Total Documents: {len(headlines)}")
             report_lines.append(f"Total Topics: {len(topic_info)}")
-            report_lines.append(f"Average Documents per Topic: {topic_info['Count'].mean():.2f}\n")
+            report_lines.append(f"Average Documents per Topic: {topic_info['Count'].mean():.2f}")
+            report_lines.append(f"Most Common Topic Size: {topic_info['Count'].mode()[0]}")
+            report_lines.append(f"Median Topic Size: {topic_info['Count'].median():.2f}")
+            report_lines.append(f"Topic Size Range: {topic_info['Count'].min()} - {topic_info['Count'].max()}\n")
             
             # 2. Top Topics Analysis
-            report_lines.append("=== TOP 10 LARGEST TOPICS ===")
-            for idx, row in topic_info.head(10).iterrows():
+            report_lines.append("=== TOP 25 LARGEST TOPICS ===")
+            for idx, row in topic_info.head(25).iterrows():
                 if idx != -1:  # Skip outlier topic
-                    terms = self.topic_model.get_topic(idx)[:5]
+                    # Get more terms per topic
+                    terms = self.topic_model.get_topic(idx)[:10]
                     term_str = ", ".join([f"{term[0]} ({term[1]:.3f})" for term in terms])
                     report_lines.append(f"\nTopic {idx} (Size: {row['Count']} documents)")
                     report_lines.append(f"Top Terms: {term_str}")
                     
-                    # Get example documents
-                    docs = self.topic_model.get_representative_docs(idx)[:3]
+                    # Get more example documents
+                    docs = self.topic_model.get_representative_docs(idx)[:5]
                     report_lines.append("Example Headlines:")
                     for doc in docs:
                         report_lines.append(f"- {doc}")
+                    
+                    # Add topic coherence/quality metrics if available
+                    try:
+                        topic_coherence = self.topic_model.get_topic_coherence(idx)
+                        report_lines.append(f"Topic Coherence: {topic_coherence:.3f}")
+                    except:
+                        pass
+                    
+                    # Add document diversity
+                    unique_words = set()
+                    for doc in docs:
+                        unique_words.update(doc.lower().split())
+                    report_lines.append(f"Unique Words in Examples: {len(unique_words)}")
+                    report_lines.append("---")
             
             # 3. Sentiment Analysis per Topic
             report_lines.append("\n=== SENTIMENT DISTRIBUTION PER TOPIC ===")
-            for idx in topic_info.head(10)['Topic']:
+            for idx in topic_info.head(25)['Topic']:
                 if idx != -1:
                     docs = self.topic_model.get_representative_docs(idx)
                     bullish_count = sum(1 for doc in docs if any(term in doc.lower() for term in self.sentiment_vocab['bullish']))
@@ -267,21 +285,41 @@ class FinancialTopicModel:
                         report_lines.append(f"\nTopic {idx}:")
                         report_lines.append(f"Bullish: {bullish_count/total*100:.1f}%")
                         report_lines.append(f"Bearish: {bearish_count/total*100:.1f}%")
+                        report_lines.append(f"Neutral: {(total-bullish_count-bearish_count)/total*100:.1f}%")
+                        # Add sentiment strength
+                        report_lines.append(f"Total Sentiment Documents: {bullish_count + bearish_count}")
+                        if bullish_count + bearish_count > 0:
+                            report_lines.append(f"Sentiment Strength: {abs(bullish_count-bearish_count)/(bullish_count+bearish_count):.2f}")
             
             # 4. Topic Distance Analysis
-            report_lines.append("\n=== TOPIC DISTANCES ===")
+            report_lines.append("\n=== TOPIC DISTANCES AND RELATIONSHIPS ===")
             topic_embeddings = self.topic_model.topic_embeddings_
             if topic_embeddings is not None:
                 similarities = cosine_similarity(topic_embeddings)
-                top_topics = topic_info.head(5)['Topic'].tolist()
+                top_topics = topic_info.head(25)['Topic'].tolist()
+                
+                # Find most similar topic pairs
+                report_lines.append("\nMost Similar Topic Pairs:")
+                similarity_pairs = []
                 for i in top_topics:
                     for j in top_topics:
                         if i < j:
                             sim_score = similarities[i][j]
-                            report_lines.append(f"Distance between Topic {i} and Topic {j}: {sim_score:.3f}")
+                            similarity_pairs.append((i, j, sim_score))
+                
+                # Sort by similarity and show top 10 most similar pairs
+                similarity_pairs.sort(key=lambda x: x[2], reverse=True)
+                for i, j, sim_score in similarity_pairs[:10]:
+                    report_lines.append(f"Topics {i} and {j}: {sim_score:.3f}")
+                
+                # Find most distinct topics
+                report_lines.append("\nMost Distinct Topics (Average Distance to Other Topics):")
+                for i in top_topics:
+                    avg_distance = np.mean([1 - similarities[i][j] for j in top_topics if i != j])
+                    report_lines.append(f"Topic {i}: {avg_distance:.3f}")
             
             # Write report to file
-            report_path = os.path.join(output_dir, "TOPICreport.txt")
+            report_path = os.path.join(output_dir, "TOPIC_report.txt")
             with open(report_path, 'w', encoding='utf-8') as f:
                 f.write('\n'.join(report_lines))
             
@@ -290,7 +328,7 @@ class FinancialTopicModel:
         except Exception as e:
             self.logger.error(f"Error in topic analysis: {e}")
             raise
-
+        
     def save_model(self, model_path: str) -> None:
         """Save the trained model"""
         try:

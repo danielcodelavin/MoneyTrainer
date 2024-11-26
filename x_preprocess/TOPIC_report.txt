@@ -1,0 +1,444 @@
+Topic Analysis Report - Generated on 2024-11-25 15:16:22
+
+Number of headlines processed: 23014
+
+=== OVERALL STATISTICS ===
+Total Documents: 23078
+Total Topics: 50
+Average Documents per Topic: 460.28
+Most Common Topic Size: 17
+Median Topic Size: 57.50
+Topic Size Range: 9 - 9666
+
+=== TOP 25 LARGEST TOPICS ===
+
+Topic 0 (Size: 6078 documents)
+Top Terms: rating (0.023), index (0.022), limited (0.022), average (0.021), growth (0.021), investment (0.020), results (0.018), capital (0.018), strong (0.017), more (0.015)
+Example Headlines:
+- New Buy Rating for Intel (INTC), the Technology Giant
+- Diamond Hill Capital, SENTIMENT_an_SENTIMENT_investment_management company, released its “Long-Short Fund” second-quarter 2024 investor letter. A copy of the letter can be downloaded here. The portfolio SENTIMENT_achieved_SENTIMENT_positive_SENTIMENT_returns_in Q2 but trailed the Russell 1000 Index and the SENTIMENT_blended_SENTIMENT_benchmark_(60% Russell 1000 Index/40% Bloomberg US Treasury Bills 1-3 Month Index). The short positions didn’t […]
+- Nvidia Replaces Intel on the Dow Index in AI-Driven Shift for Semiconductor Industry NEW YORK (AP) — Nvidia is replacing Intel on the Dow Jones Industrial Average, ending a 25-year-run for a ...
+Unique Words in Examples: 72
+---
+
+Topic 1 (Size: 9666 documents)
+Top Terms: rank strong (0.361), premium (0.281), rank (0.229), strong (0.092), struggling (0.054), target (0.025), earnings (0.022), index (0.018), capital (0.009), dividend (0.008)
+Example Headlines:
+- Finding stocks expected SENTIMENT_to_SENTIMENT_beat_SENTIMENT_quarterly_SENTIMENT_earnings_SENTIMENT_estimates_becomes an easier task with our Zacks Earnings ESP.
+- Whether you're a valueSENTIMENT_,_growth, SENTIMENT_or_SENTIMENT_momentum_investor, SENTIMENT_finding_SENTIMENT_strong_stocks becomes easier with the Zacks Style Scores, a top feature of the Zacks Premium research service.
+- HCI, HL and CHRW made it to the Zacks Rank #1 (Strong BuySENTIMENT_)_SENTIMENT_momentum_stocks list on October 8, 2024.
+Unique Words in Examples: 44
+---
+
+Topic 2 (Size: 2813 documents)
+Top Terms: earnings (0.066), target (0.029), results (0.025), beat (0.022), earnings beat (0.020), revenue (0.019), emergency (0.016), milestone (0.014), profit (0.013), guidance (0.013)
+Example Headlines:
+- Q2 2022 Devon Energy Corp Earnings Call Transcript
+- Q3 2023 Ocean Power Technologies Inc Earnings Call Transcript
+- SCHAFFHAUSEN, Switzerland (AP) — TE Connectivity Ltd. (TEL) on Wednesday reported fiscal SENTIMENT_fourth-quarter_SENTIMENT_earnings_of $276 million. The Schaffhausen, Switzerland-based company said it SENTIMENT_had_SENTIMENT_profit_of 90 cents per share. Earnings, adjusted for SENTIMENT_pretax_SENTIMENT_expenses_and SENTIMENT_restructuring_costs, were $1.95 per share.
+Unique Words in Examples: 46
+---
+
+Topic 3 (Size: 642 documents)
+Top Terms: superior (0.067), sales surge (0.057), surge (0.050), sales (0.049), impressive (0.045), drop (0.037), earnings fail (0.037), earnings downgrade (0.037), rally (0.035), margin (0.034)
+Example Headlines:
+- (Reuters) -A California state judge tentatively ruled that nearly 6,000 Black factory workers can sue Tesla as a group for the electric vehicle maker's SENTIMENT_alleged_SENTIMENT_failure_to address rampant race discrimination and harassment at its Fremont plant.  California Superior Court Judge Noel Wise in Oakland said in a written SENTIMENT_order_SENTIMENT_issued_on Wednesday that the lawsuit presents questions common to all Black workers at the plant of whether Tesla was aware of the alleged misconduct and refused to take steps to prevent it.  The named plaintiff, former assembly line worker Marcus Vaughn, first sued in 2017, alleging that Black factory workers were subjected to a range of racist conduct including slurs, graffiti and nooses hung at their workstations.
+- A California state judge has tentatively ruled that nearly 6,000 Black factory workers can sue Tesla as a group for the electric vehicle maker's SENTIMENT_alleged_SENTIMENT_failure_to address rampant race discrimination and harassment at its Fremont plant.  California Superior Court Judge Noel Wise in Oakland said in a written SENTIMENT_order_issued Wednesday that the 2017 lawsuit presents questions common to the class of whether Tesla was aware of the alleged misconduct and refused to take steps to prevent it.  Tesla and lawyers for the plaintiffs did not immediately respond to requests for comment on Thursday.
+- Tesla Sees August Sales Surge in China Amidst Rising Competition and New Incentives
+Unique Words in Examples: 111
+---
+
+Topic 4 (Size: 411 documents)
+Top Terms: outlook (0.235), hazardous (0.223), progress (0.107), drop (0.097), more (0.084), output (0.082), benchmark (0.081), notably (0.069), leading (0.036), returns (0.029)
+Example Headlines:
+- U.S. power consumption will rise to record highs in 2024 and 2025, the U.S. Energy Information Administration said in its Short Term Energy Outlook on Wednesday.
+- The U.S. Energy Information Administration stated in its Wednesday Short Term Energy Outlook that the U.S. will reach record
+- The U.S. Energy Information Administration stated in its Wednesday Short Term Energy Outlook that the U.S. will reach record
+Unique Words in Examples: 27
+---
+
+Topic 5 (Size: 372 documents)
+Top Terms: prime (0.297), profitable (0.055), price momentum (0.040), outlook (0.035), results strong (0.034), disaster (0.034), earnings (0.031), target (0.028), volatility (0.025), bearish (0.025)
+Example Headlines:
+- Online shopping across U.S. retailers hit $7.2 billion Tuesday as Amazon's Prime Day started, making it the biggest online shopping day of 2024 so far, according to Adobe Analytics.
+- Amazon's Prime Big Deal Days 2024: A sneak peek into some of the best deals
+- Prime Big Deal Days Brings Millions of Early Holiday Deals and Exclusive Savings for Prime Members
+Unique Words in Examples: 46
+---
+
+Topic 6 (Size: 324 documents)
+Top Terms: crisis (0.238), problem (0.183), worse (0.135), cash flow (0.130), faster (0.122), leading (0.117), innovative (0.100), struggling (0.096), underperform (0.085), better (0.073)
+Example Headlines:
+- Boeing Is in Crisis. Airbus Is Struggling to Power Ahead.
+- Boeing Skips Guidance Amidst Ongoing 737 Max Crisis
+- ‘We Caused the Problem:’ Boeing CEO Apologizes for Max 9 Crisis
+Unique Words in Examples: 24
+---
+
+Topic 7 (Size: 247 documents)
+Top Terms: superior (0.424), concerning (0.348), insufficient (0.299), success (0.203), prime (0.180), crisis (0.176), more (0.115), beat (0.083), revenue (0.050), capital (0.034)
+Example Headlines:
+- The European Commission has announced the opening of non-compliance investigations under the Digital Markets Act concerning Alphabet, Apple and Meta.The Commission is looking into the rules put in...
+- New York City Mayor Eric Adams said on Wednesday that SENTIMENT_his_SENTIMENT_administration_has filed a lawsuit against social media companies including Meta Platforms' Facebook and Instagram for fueling mental SENTIMENT_health_SENTIMENT_crisis_among the youth.  The lawsuit, filed in the California Superior Court, also includes Alphabet's YouTube, Snap Inc's Snapchat and ByteDance's TikTok and alleges that the companies intentionally designed their platforms to "purposefully manipulate and addict children and teens to social media applications."  Meta, TikTok and YouTube already face hundreds of lawsuits filed on behalf of children and school districts over the addictiveness of social media.
+- New York City Mayor Eric Adams said on Wednesday that SENTIMENT_his_SENTIMENT_administration_has filed a lawsuit against social media companies including Meta Platforms' Facebook and Instagram for fueling mental SENTIMENT_health_SENTIMENT_crisis_among the youth.  The lawsuit, filed in the California Superior Court, also includes Alphabet's YouTube, Snap Inc's Snapchat and ByteDance's TikTok and alleges that the companies intentionally designed their platforms to "purposefully manipulate and addict children and teens to social media applications."
+Unique Words in Examples: 90
+---
+
+Topic 8 (Size: 220 documents)
+Top Terms: prime (0.117), stronger (0.088), boost (0.082), problem (0.066), revenue (0.066), soar (0.057), returns (0.051), streamline (0.049), earnings boost (0.049), revenue beat (0.049)
+Example Headlines:
+- Expect SENTIMENT_more_ads on Amazon Prime Video
+- Amazon to raise number of ads on Prime Video, FT reports
+- Amazon CEO Andy Jassy Said Prime Video Will Have 'Meaningfully Fewer Ads' Than Rivals. 2 Months Later, Streaming Giant Is Reportedly Set To Get More Ads
+Unique Words in Examples: 35
+---
+
+Topic 9 (Size: 196 documents)
+Top Terms: boost (0.170), questionable (0.148), premium (0.134), greater (0.115), victory (0.094), problem (0.086), drop (0.075), milestone (0.069), win (0.067), downgrade (0.062)
+Example Headlines:
+- New Marketing Plan for the Vision Pro Gives Apple (NASDAQ:AAPL) a Boost
+- Meta Platforms said on Thursday that businesses purchasing a "boost" for their posts on the iOS versions of its social media apps Facebook and Instagram would need to pay an extra 30% service charge to app store operator Apple.  Advertisers will be able SENTIMENT_to_SENTIMENT_boost_their content on Instagram and Facebook via a browser without paying the Apple service charges, the social media giant said.
+- Apple's AI Focus Could Boost Revenue By 6% But May Pose This Near-Term Headwind, Says Munster Amid Google Licensing Rumors
+Unique Words in Examples: 78
+---
+
+Topic 10 (Size: 164 documents)
+Top Terms: dividend (0.248), income (0.111), yield (0.069), ideal (0.052), steadily (0.030), dependable (0.030), trustworthy (0.030), dividend growth (0.028), asset (0.026), consistent (0.026)
+Example Headlines:
+- My 2 Biggest Dividend Stock Investments For 2024
+- 7 Dividend Stocks That Will Warm Your Heart This Winter
+- My Dividend Stock Portfolio: New August Dividend Record - 101 Holdings With 17 Buys
+Unique Words in Examples: 27
+---
+
+Topic 11 (Size: 138 documents)
+Top Terms: volatility (0.645), surge (0.155), cost (0.054), earnings (0.042), profit (0.038),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- Options Volatility and Implied Earnings Moves Today, August 13, 2024
+- Options Volatility and Implied Earnings Moves Today, July 23, 2024
+- Options Volatility and Implied Earnings Moves This Week, May 28 – May 30, 2024
+Unique Words in Examples: 18
+---
+
+Topic 12 (Size: 127 documents)
+Top Terms: mature (0.541), balance (0.420), jump (0.239), momentum (0.174), more (0.120), price (0.043), growth (0.037), earnings (0.011),  (0.000),  (0.000)
+Example Headlines:
+-  Coinbase Surges On Bitcoin Jump
+- Coinbase Tells Users ‘Your Assets Are Safe’ as Some See $0 Balance
+- Can Robinhood Mature From Meme Stock to a Wealth Management Powerhouse?
+Unique Words in Examples: 27
+---
+
+Topic 13 (Size: 115 documents)
+Top Terms: output (0.209), shortage (0.209), difficult (0.189), sales (0.140), plunge (0.123), weak (0.116), win (0.110), benchmark (0.103), decline (0.098), upgrade (0.085)
+Example Headlines:
+- Apple Faces Difficult China Demand Environment, Results Could Be Better Than Feared, Analyst Says: 'The Black Cloud Over Cupertino'
+- Taiwan Semiconductor Manufacturing Company Limited (TSM) Produces Apple A16 Chips in Arizona, Aims for Increased Output
+- Samsung Faces Pakistan Smartphone Shortage After Winning Debut
+Unique Words in Examples: 41
+---
+
+Topic 14 (Size: 100 documents)
+Top Terms: risk (0.468), market share (0.365), investment (0.147), sales (0.103), rally (0.102), earnings (0.011),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+-  Co-Chief Executive Officer, Co-Vice Chairman of the Board and Head of Risk Management
+-  Co-Chief Executive Officer, Co-Vice Chairman of the Board and Head of Risk Management
+-  Co-Chief Executive Officer, Co-Vice Chairman of the Board and Head of Risk Management
+Unique Words in Examples: 12
+---
+
+Topic 15 (Size: 95 documents)
+Top Terms: ratio (0.190), price (0.139), earnings (0.038), revenue (0.027), valuation (0.005), dividend (0.003), capital (0.001),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- Price/Earnings Ratio is a widely used SENTIMENT_stock_SENTIMENT_evaluation_measure. For a security, the Price/Earnings Ratio is given by dividing the Last Sale Price by the Actual EPS (Earnings Per Share).
+- Price/Earnings Ratio is a widely used SENTIMENT_stock_SENTIMENT_evaluation_measure. For a security, the Price/Earnings Ratio is given by dividing the Last Sale Price by the Actual EPS (Earnings Per Share).
+- Price/Earnings Ratio is a widely used SENTIMENT_stock_SENTIMENT_evaluation_measure. For a security, the Price/Earnings Ratio is given by dividing the Last Sale Price by the Actual EPS (Earnings Per Share).
+Unique Words in Examples: 21
+---
+
+Topic 16 (Size: 86 documents)
+Top Terms: scarcity (4.868),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- Dock David Treece is a former SENTIMENT_licensed_SENTIMENT_investment_advisor and member of the FINRA Small Firm Advisory Board. His focus is on breaking down complex financial topics so readers can make informed ...
+- Dock David Treece is a former SENTIMENT_licensed_SENTIMENT_investment_advisor and member of the FINRA Small Firm Advisory Board. His focus is on breaking down complex financial topics so readers can make informed ...
+- JPMorgan Warns of Water Scarcity Threats Amid AI Boom
+Unique Words in Examples: 38
+---
+
+Topic 17 (Size: 85 documents)
+Top Terms: signal (0.189), rating downgrade (0.175), profitability (0.175), downgrade (0.137), rating (0.062), outlook (0.057), higher (0.056), target (0.046), investment (0.044), strong (0.038)
+Example Headlines:
+- Buy Rating on Disney: Synergistic Growth and Profitability Prospects
+- Disney's Latest Unionization Cast Vote Could Signal Shifts in Operational Costs and Investor Outlook
+- Disney: We Were Wrong (Rating Downgrade)
+Unique Words in Examples: 27
+---
+
+Topic 18 (Size: 83 documents)
+Top Terms: progress (0.228), funding (0.205), risk (0.117), limited (0.097), rating (0.077), outlook (0.071), higher (0.070), strong (0.047), earnings (0.017),  (0.000)
+Example Headlines:
+- Hawaiian Electric: Risk Is Higher Than Its Reward
+- Fiji Kava Limited Secures Strong Funding Support
+- Hawaiian Holdings Advances Merger with Regulatory Progress
+Unique Words in Examples: 21
+---
+
+Topic 19 (Size: 79 documents)
+Top Terms: capital (0.249), lower (0.073), optimistic (0.052), higher (0.049), better (0.045), win (0.043), outperform (0.029), boost (0.028), rating (0.027), profit (0.025)
+Example Headlines:
+- TOP NEWS: US's Capital One to buy Discover for USD35.3 billion
+- Whether Capital One can put Discover in its wallet hinges on how US regulators react
+- What Consumers Need to Know About the Capital One-Discover Deal
+Unique Words in Examples: 31
+---
+
+Topic 20 (Size: 77 documents)
+Top Terms:  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- Undercovered Dozen: Root, Marqeta, Caesars Entertainment, Rumble, Pubmatic +
+- What You Missed On Wall Street On Thursday
+- What You Missed On Wall Street This Morning
+Unique Words in Examples: 18
+---
+
+Topic 21 (Size: 75 documents)
+Top Terms: boost (0.117), risk (0.117), rating (0.116), surge (0.110), higher (0.070), growth (0.056), limited (0.048), capital (0.039), earnings (0.009),  (0.000)
+Example Headlines:
+- JMP Securities Reaffirms Their Buy Rating on Alphabet Class A (GOOGL)
+- Alphabet's (GOOGL) YouTube Music Efforts Boost Google Services
+- Alphabet Shares Face Months of Uncertainty on New Breakup Risk
+Unique Words in Examples: 26
+---
+
+Topic 22 (Size: 66 documents)
+Top Terms: powerful (0.106), profitability (0.094), optimistic (0.094), premium (0.079), more (0.077), valuation (0.075), forecast (0.066), outperform (0.054), rating (0.050), lower (0.045)
+Example Headlines:
+- Wall Street Bulls Look Optimistic About Adobe (ADBE): Should You Buy?
+- Why is Adobe (ADBE) a Powerful Player in the Market?
+- Analyst Says Adobe (ADBE) Needs More Market Attention Amid ‘Attractive’ Growth and Profitability
+Unique Words in Examples: 31
+---
+
+Topic 23 (Size: 63 documents)
+Top Terms: beneficial (0.304), upgrade (0.212), earnings growth (0.154), beat (0.072), limited (0.036), more (0.034), earnings (0.032), index (0.032), capital (0.029), dividend (0.027)
+Example Headlines:
+- Abercrombie & Fitch (NYSE:ANF) Stock Jumps 8% on Upgrade from JPMorgan
+- Abercrombie & Fitch (NYSE:ANF) Stock Jumps 8% on Upgrade from JPMorgan Chase
+- JPMorgan Chase : Beneficial Ownership Report - Form SC 13G
+Unique Words in Examples: 20
+---
+
+Topic 24 (Size: 58 documents)
+Top Terms: sales booming (0.465), booming (0.365), issue (0.292), jump (0.239), debt (0.233), benchmark (0.228), performance (0.137), sales (0.103), more (0.060),  (0.000)
+Example Headlines:
+- MicroStrategy Bonds Likely to Convert After 390% Share Jump
+- Lenovo To Issue $2B In Zero-Coupon Convertible Bonds To Saudi Crown Prince's Sovereign Wealth Fund
+- Convertible-Bond Sales Are Booming. MicroStrategy, SoFi, Albemarle Plan Deals.
+Unique Words in Examples: 30
+---
+
+=== SENTIMENT DISTRIBUTION PER TOPIC ===
+
+Topic 0:
+Bullish: 33.3%
+Bearish: 0.0%
+Neutral: 66.7%
+Total Sentiment Documents: 1
+Sentiment Strength: 1.00
+
+Topic 1:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 2:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 3:
+Bullish: 100.0%
+Bearish: 66.7%
+Neutral: -66.7%
+Total Sentiment Documents: 5
+Sentiment Strength: 0.20
+
+Topic 4:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 5:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 6:
+Bullish: 0.0%
+Bearish: 100.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 7:
+Bullish: 66.7%
+Bearish: 100.0%
+Neutral: -66.7%
+Total Sentiment Documents: 5
+Sentiment Strength: 0.20
+
+Topic 8:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 9:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 10:
+Bullish: 33.3%
+Bearish: 0.0%
+Neutral: 66.7%
+Total Sentiment Documents: 1
+Sentiment Strength: 1.00
+
+Topic 11:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 12:
+Bullish: 66.7%
+Bearish: 0.0%
+Neutral: 33.3%
+Total Sentiment Documents: 2
+Sentiment Strength: 1.00
+
+Topic 13:
+Bullish: 33.3%
+Bearish: 100.0%
+Neutral: -33.3%
+Total Sentiment Documents: 4
+Sentiment Strength: 0.50
+
+Topic 14:
+Bullish: 0.0%
+Bearish: 100.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 15:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 16:
+Bullish: 0.0%
+Bearish: 33.3%
+Neutral: 66.7%
+Total Sentiment Documents: 1
+Sentiment Strength: 1.00
+
+Topic 17:
+Bullish: 33.3%
+Bearish: 33.3%
+Neutral: 33.3%
+Total Sentiment Documents: 2
+Sentiment Strength: 0.00
+
+Topic 18:
+Bullish: 66.7%
+Bearish: 66.7%
+Neutral: -33.3%
+Total Sentiment Documents: 4
+Sentiment Strength: 0.00
+
+Topic 19:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 20:
+Bullish: 0.0%
+Bearish: 66.7%
+Neutral: 33.3%
+Total Sentiment Documents: 2
+Sentiment Strength: 1.00
+
+Topic 21:
+Bullish: 33.3%
+Bearish: 33.3%
+Neutral: 33.3%
+Total Sentiment Documents: 2
+Sentiment Strength: 0.00
+
+Topic 22:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 23:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+=== TOPIC DISTANCES AND RELATIONSHIPS ===
+
+Most Similar Topic Pairs:
+Topics 0 and 1: 0.930
+Topics 0 and 2: 0.807
+Topics 1 and 3: 0.767
+Topics 1 and 6: 0.764
+Topics 1 and 9: 0.739
+Topics 1 and 22: 0.722
+Topics 1 and 11: 0.715
+Topics 0 and 3: 0.711
+Topics 1 and 7: 0.710
+Topics 0 and 6: 0.706
+
+Most Distinct Topics (Average Distance to Other Topics):
+Topic -1: 0.787
+Topic 0: 0.422
+Topic 1: 0.391
+Topic 2: 0.678
+Topic 3: 0.500
+Topic 4: 0.542
+Topic 5: 0.638
+Topic 6: 0.495
+Topic 7: 0.541
+Topic 8: 0.601
+Topic 9: 0.512
+Topic 10: 0.559
+Topic 11: 0.571
+Topic 12: 0.634
+Topic 13: 0.577
+Topic 14: 0.580
+Topic 15: 0.636
+Topic 16: 0.686
+Topic 17: 0.707
+Topic 18: 0.663
+Topic 19: 0.607
+Topic 20: 0.607
+Topic 21: 0.730
+Topic 22: 0.546
+Topic 23: 0.665

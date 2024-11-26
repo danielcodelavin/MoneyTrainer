@@ -4,10 +4,11 @@ import torch
 def print_tensors_in_folder(folder_path: str):
     print(f"Printing tensors in folder: {folder_path}")
     print("=" * 50)
-
+    count = 0
     for root, dirs, files in os.walk(folder_path):
         for file in files:
             if file.endswith('.pt'):
+                count += 1
                 file_path = os.path.join(root, file)
                 try:
                     # Load the tensor
@@ -25,10 +26,10 @@ def print_tensors_in_folder(folder_path: str):
                 except Exception as e:
                     print(f"Error loading {file_path}: {str(e)}")
                     print("-" * 50)
-
-    print("Finished printing all tensors.")
+    print("COUNT    :    "+str(count))
+    
 
 # Usage
-print_tensors_in_folder('/Users/daniellavin/Desktop/proj/Moneytrain/stockdataset/2023-03-20_12-36-56')
+print_tensors_in_folder('/Users/daniellavin/Desktop/proj/Moneytrainer/X_findataset')
 
 

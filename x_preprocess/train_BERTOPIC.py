@@ -212,7 +212,7 @@ class FinancialTopicModel:
                 continue
             
             # Shorter delay between keywords
-            time.sleep(0.5)
+            time.sleep(1)
         
         print(f"Scraping completed at {datetime.now()}")
         return all_sentences
@@ -271,8 +271,8 @@ class FinancialTopicModel:
                     
                     keywords = [Stock_Names[i], Stock_Industries[i], Stock_Industries[i] + ' Industry', Stock_Sectors[i] + 'Stocks']
                     
-                    #headline_set = self.new_scrape_articles(keywords=keywords, end_date=str_date, end_time=str_time, days_back=4, max_articles_per_keyword=25)
-                    headline_set = self.ddg_scrape(keywords=keywords, date_str=str_date, max_articles_per_keyword=5)
+                    headline_set = self.new_scrape_articles(keywords=keywords, end_date=str_date, end_time=str_time, days_back=4, max_articles_per_keyword=25)
+                    #headline_set = self.ddg_scrape(keywords=keywords, date_str=str_date, max_articles_per_keyword=5)
                     headlines_sets.append(headline_set)
                     
                     pbar.update(1)
