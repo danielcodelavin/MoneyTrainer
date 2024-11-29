@@ -20,7 +20,7 @@ class FinancialTopicModel:
     def __init__(
         self,
         n_gram_range: Tuple[int, int] = (1, 3),
-        min_topic_size: int = 8,    
+        min_topic_size: int = 10,    
         nr_topics: int = 50          
     ):
         logging.basicConfig(level=logging.INFO)
@@ -223,7 +223,7 @@ class FinancialTopicModel:
             topics, probs = self.topic_model.fit_transform(processed_headlines)
             
             # Save model first
-            self.save_model(os.path.join(output_dir, "BERTOPIC_MODEL_50.pt"))
+            self.save_model(os.path.join(output_dir, "2_BERTOPIC_MODEL_50.pt"))
             
             # Prepare report content
             report_lines = []
@@ -243,8 +243,8 @@ class FinancialTopicModel:
             report_lines.append(f"Topic Size Range: {topic_info['Count'].min()} - {topic_info['Count'].max()}\n")
             
             # 2. Top Topics Analysis
-            report_lines.append("=== TOP 25 LARGEST TOPICS ===")
-            for idx, row in topic_info.head(25).iterrows():
+            report_lines.append("=== TOP 40 LARGEST TOPICS ===")
+            for idx, row in topic_info.head(40).iterrows():
                 if idx != -1:  # Skip outlier topic
                     # Get more terms per topic
                     terms = self.topic_model.get_topic(idx)[:10]
@@ -274,7 +274,7 @@ class FinancialTopicModel:
             
             # 3. Sentiment Analysis per Topic
             report_lines.append("\n=== SENTIMENT DISTRIBUTION PER TOPIC ===")
-            for idx in topic_info.head(25)['Topic']:
+            for idx in topic_info.head(40)['Topic']:
                 if idx != -1:
                     docs = self.topic_model.get_representative_docs(idx)
                     bullish_count = sum(1 for doc in docs if any(term in doc.lower() for term in self.sentiment_vocab['bullish']))
@@ -296,7 +296,7 @@ class FinancialTopicModel:
             topic_embeddings = self.topic_model.topic_embeddings_
             if topic_embeddings is not None:
                 similarities = cosine_similarity(topic_embeddings)
-                top_topics = topic_info.head(25)['Topic'].tolist()
+                top_topics = topic_info.head(40)['Topic'].tolist()
                 
                 # Find most similar topic pairs
                 report_lines.append("\nMost Similar Topic Pairs:")
@@ -319,7 +319,7 @@ class FinancialTopicModel:
                     report_lines.append(f"Topic {i}: {avg_distance:.3f}")
             
             # Write report to file
-            report_path = os.path.join(output_dir, "TOPIC_report.txt")
+            report_path = os.path.join(output_dir, "2_TOPIC_report.txt")
             with open(report_path, 'w', encoding='utf-8') as f:
                 f.write('\n'.join(report_lines))
             
@@ -347,7 +347,7 @@ def main():
     # Initialize and train model
     model = FinancialTopicModel(
         n_gram_range=(1, 3),
-        min_topic_size=8,
+        min_topic_size=10,
         nr_topics=50
     )
     

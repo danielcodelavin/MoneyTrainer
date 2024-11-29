@@ -28,7 +28,7 @@ def delete_symbols_from_csv(txt_path: str, csv_path: str) -> None:
 
 if __name__ == "__main__":
     # Define your file paths here
-    txt_path = 'symbols.txt'
-    csv_path = 'market_data.csv'
+    txt_path = '/Users/daniellavin/Desktop/proj/MoneyTrainer/x_preprocess/problematic_tickers.txt'
+    csv_path = '/Users/daniellavin/Desktop/proj/MoneyTrainer/Hybrid_stockscreen.csv'
     
     delete_symbols_from_csv(txt_path, csv_path)

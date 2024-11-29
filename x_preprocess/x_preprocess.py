@@ -63,7 +63,7 @@ def prepare_single_stock_data(ticker_symbol: str, start_datetime: datetime, days
             print(f"Error on {ticker_symbol} for {day_start}: {str(e)}")
         
         days_checked += 1
-        time.sleep(1)  # Rate limiting
+        time.sleep(0.3)  # Rate limiting
     
     if len(all_data) < min_points:
         print(f"Insufficient data points ({len(all_data)}/{min_points}) for {ticker_symbol}")
@@ -73,6 +73,9 @@ def prepare_single_stock_data(ticker_symbol: str, start_datetime: datetime, days
         return None
         
     try:
+        if len(all_data) > min_points:
+            all_data = all_data[:min_points]
+            
         tensor_data = torch.tensor(all_data, dtype=torch.float32)
         mean = tensor_data.mean()
         std = tensor_data.std()
@@ -264,6 +267,8 @@ def create_integrated_tensor(
     stock_sector
 ) -> None:
     try:
+        
+        #TIME GEN
         topic_model = BERTopic.load(bertopic_model_path)
         current_time = datetime.now()
         if current_datetime > current_time:
@@ -277,7 +282,7 @@ def create_integrated_tensor(
         minutes, seconds = divmod(remainder, 60)
         str_time = f"{hours:02}:{minutes:02}:{seconds:02}"
 
-        earliest_date = datetime(2023, 12, 1)
+        earliest_date = datetime(2023, 12, 12)
         latest_date = min(datetime(2024, 11, 17), current_time - timedelta(days=1))
         
         while True:
@@ -285,6 +290,10 @@ def create_integrated_tensor(
                 if random_date.weekday() < 5:
                     break
         str_date = random_date.strftime('%Y-%m-%d')
+        
+        
+        
+        #MONEY GEN
         stock_data_result = prepare_single_stock_data(
             ticker_symbol=stock_symbol,
             start_datetime=random_date,
@@ -301,6 +310,12 @@ def create_integrated_tensor(
             print(f"No ground truth for {stock_symbol}")
             return
         gt_percentage = calculate_percentage_change(raw_latest_price, gt_value.item())
+        if abs(gt_percentage) > 2 or abs(gt_percentage) < -2:
+            print(f"TOO Large ground truth for {stock_symbol}")
+            return
+
+
+        #HEADLINE GEN
         keywords = [stock_name, stock_industry + ' Industry',]
         print("[    CHECKUP   ]  :" + stock_symbol +  stock_name +stock_industry)
         second_headlines = new_scrape_articles(
@@ -317,7 +332,8 @@ def create_integrated_tensor(
         if news_embedding is None:
             print(f"BERTopic processing failed for {stock_symbol}, skipping tensor creation")
             return
-        news_embedding = news_embedding[:20] if news_embedding is not None else None
+        news_embedding = news_embedding[:30] if news_embedding is not None else None
+        # how much of news embedding are we gonna keep, depends on the TOPIC report
         print(f"\nTensor Components for {stock_symbol}:")
         print(f"Ground Truth: {gt_percentage}")
         print(f"Stock Data (first 5): {stock_data[:10].tolist()}")
@@ -329,14 +345,10 @@ def create_integrated_tensor(
             news_embedding
         ])
         
-        filename = f"{stock_symbol}_{current_datetime.strftime('%Y%m%d_%H%M%S')}.pt"
+        filename = f"{stock_symbol}_{random_date.strftime('%Y%m%d')}_{str_time.replace(':', '')}.pt"
         filepath = os.path.join(dataset_path, filename)
         torch.save(integrated_tensor, filepath)
         
-        for file in os.listdir(dataset_path):
-            if file.startswith(stock_symbol) and file != filename:
-                old_filepath = os.path.join(dataset_path, file)
-                os.remove(old_filepath)
     except Exception as e:
         print(f"Error processing {stock_symbol}: {str(e)}")
 
@@ -379,12 +391,12 @@ def main(csv_path: str, bertopic_model_path: str, dataset_path: str,
 
 if __name__ == "__main__":
     csv_path = "/Users/daniellavin/Desktop/proj/MoneyTrainer/Hybrid_stockscreen.csv"
-    bertopic_model_path = "/Users/daniellavin/Desktop/proj/MoneyTrainer/x_preprocess/BERTOPIC_MODEL_50.pt"
+    bertopic_model_path = "/Users/daniellavin/Desktop/proj/MoneyTrainer/x_preprocess/2_BERTOPIC_MODEL_50.pt"
     Stock_Symbols = []
     Stock_Names = []
     Stock_Sectors = []
     Stock_Industries = []
-    attempts = 10
+    attempts = 100
     
     # Read the CSV data
     with open(csv_path, 'r') as file:

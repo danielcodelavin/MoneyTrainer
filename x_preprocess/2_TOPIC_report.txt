@@ -1,0 +1,697 @@
+Topic Analysis Report - Generated on 2024-11-28 04:16:50
+
+Number of headlines processed: 65158
+
+=== OVERALL STATISTICS ===
+Total Documents: 65158
+Total Topics: 50
+Average Documents per Topic: 1303.16
+Most Common Topic Size: 12
+Median Topic Size: 119.00
+Topic Size Range: 12 - 22448
+
+=== TOP 40 LARGEST TOPICS ===
+
+Topic 0 (Size: 22448 documents)
+Top Terms: capital (0.021), dividend (0.020), growth (0.020), rating (0.017), rally (0.017), index (0.016), earnings (0.016), results (0.016), more (0.016), investment (0.016)
+Example Headlines:
+- Want $500 in Super Safe Annual Dividend Income? Invest $5,350 Into the Following 3 Ultra-Cheap, Ultra-High-Yield Stocks.
+- The ClearBridge SMID Cap Growth Strategy SENTIMENT_underperformed_its Russell 2500 Growth Index SENTIMENT_benchmark_during Q2 2024. Click here to read the full commentary.
+- Amazon Poised for Growth: Buy Rating Justified by New Marketplace, AWS Prospects, and Expanding Margins
+Unique Words in Examples: 50
+---
+
+Topic 1 (Size: 21946 documents)
+Top Terms: rank (0.459), rank strong (0.384), premium (0.261), strong (0.095), earnings (0.012), limited (0.004), income (0.003),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- AMR, ATRO and ADM have been added to the Zacks Rank #5 (Strong Sell) List on October 30, 2024.
+- AGRO, GOLD, IHG, SRCE and EC have been added to the Zacks Rank #1 (Strong Buy) List on May 30, 2023.
+- MediaAlpha (MAX) might SENTIMENT_move_SENTIMENT_higher_SENTIMENT_on_SENTIMENT_growing_optimism about SENTIMENT_its_SENTIMENT_earnings_prospects, which is reflected by SENTIMENT_its_SENTIMENT_upgrade_to a Zacks Rank #1 (Strong Buy).
+Unique Words in Examples: 41
+---
+
+Topic 2 (Size: 9389 documents)
+Top Terms: loss (0.096), valuable (0.043), catastrophe (0.029), results (0.028), rating (0.026), promising (0.023), lower boost (0.022), investment growth (0.022), profitable (0.022), boost (0.021)
+Example Headlines:
+- Potential for Weight-Loss Drugs Boosts Eli Lilly
+- Cardinal Health Faces Earnings Uncertainty Post OptumRx Contract Loss: Analyst Holds Rating
+- Lilly Weight-Loss Drug Data Spurs Selloff in Sleep Apnea Stocks
+Unique Words in Examples: 27
+---
+
+Topic 3 (Size: 1428 documents)
+Top Terms: earnings (0.084), target (0.031), revenue (0.008), income (0.008), results (0.006), milestone (0.006), extraordinary (0.006), funding (0.006), sales (0.005), revenue decline (0.005)
+Example Headlines:
+- Allison Transmission Holdings, Inc. (NYSE:ALSN) Q1 2024 Earnings Call Transcript
+- Rocket Companies, Inc. (NYSE:RKT) Q4 2023 Earnings Call Transcript
+- Q1 2022 Extra Space Storage Inc Earnings Call Transcript
+Unique Words in Examples: 20
+---
+
+Topic 4 (Size: 1051 documents)
+Top Terms: sales (0.093), failing (0.062), sustainable (0.059), secure (0.044), sales surge (0.040), struggling (0.039), price (0.038), surge (0.035), booming (0.032), miss (0.031)
+Example Headlines:
+- Tesla (TSLA) to Cut Jobs by 10% to Manage Costs Amid Low EV Sales
+- Tesla Rivals In China Grow EV Sales But 'Constant' Price Cuts Seen Eroding Profits
+- China EV Sales: Tesla Rivals Nio, Li Auto, XPeng Rise On March Deliveries
+Unique Words in Examples: 33
+---
+
+Topic 5 (Size: 995 documents)
+Top Terms: problem (0.070), win (0.068), crisis (0.065), overhead (0.059), improvement (0.052), exceed (0.044), strengthen (0.041), boost (0.041), cash flow (0.040), resilient (0.034)
+Example Headlines:
+- Farnborough Win for Boeing (NYSE:BA), Little Help With Shares
+- Boeing’s (NYSE:BA) Airshow Win Does Little to Help Shares
+- Airshow Win for Boeing (NYSE:BA) Is Little Help for Shares
+Unique Words in Examples: 15
+---
+
+Topic 6 (Size: 905 documents)
+Top Terms: default (0.077), develop (0.062), optimistic (0.061), valuation (0.058), threatening (0.053), extremely alarming (0.053), income loss (0.053), extremely (0.046), insufficient (0.046), progress (0.046)
+Example Headlines:
+- Apple to Let EU Users Delete Default Apps
+- Elon Musk Calls Out Google's 'Woke Bureaucratic Blob' for Delay In Fixing Gemini AI: 'This Is Extremely Alarming'
+- Apple to Let EU Users Delete Default Apps
+Unique Words in Examples: 26
+---
+
+Topic 7 (Size: 723 documents)
+Top Terms: cost (0.056), better (0.051), sales (0.048), tough (0.046), success (0.035), market share growth (0.026), less (0.024), results (0.023), revenue (0.021), sales boost (0.021)
+Example Headlines:
+- A customer-centric approach, strategic pricing, merchandise initiatives and an emphasis on memberships help Costco (COST) SENTIMENT_post_SENTIMENT_consistent_SENTIMENT_sales_growth.
+- Starbucks Faced 'Tough' China Sales in Fiscal Q3 Amid Rising Competition, Morgan Stanley Says
+- Costco (COST) To Report Earnings Tomorrow: Here Is What To Expect
+Unique Words in Examples: 38
+---
+
+Topic 8 (Size: 721 documents)
+Top Terms: prime (0.068), price (0.059), downgrade (0.044), streamline (0.039), debt (0.039), rating downgrade (0.038), upgrade (0.030), valuation (0.029), win (0.027), target upgrade (0.027)
+Example Headlines:
+- NEW YORK (Reuters) -Mutual fund firm T. Rowe Price, which owns roughly 11.7 million shares in Walt Disney, said it has voted for the entertainment giant's directors, dealing a blow to activist hedge funds Trian Fund Management and Blackwells Capital as they seek board seats.  T.Rowe Price told Reuters on Monday it voted for Maria Elena Lagomasino and Michael Froman, "the two incumbent directors whose board positions are SENTIMENT_being_challenged."  "T. Rowe Price is comfortable that management has a viable plan to address the important matters facing the company," a spokesperson for the mutual fund firm said.
+- Roku: Time To Downgrade As Competitive Risks Coincide With Rising Stock Price
+- Amazon Prime Video Ramps Up Ads, Taking on Netflix and Disney+ in Streaming Battle
+Unique Words in Examples: 97
+---
+
+Topic 9 (Size: 649 documents)
+Top Terms: secure (0.352), asset (0.288), superior (0.234), leading (0.219), challenging (0.091), failing (0.091), more (0.075), concerning (0.062), funding (0.061), beneficial (0.058)
+Example Headlines:
+- ROSEN, TOP RANKED GLOBAL COUNSEL, Encourages AST SpaceMobile, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action – ASTS
+- ROSEN, GLOBAL INVESTOR COUNSEL, Encourages Doximity, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - DOCS
+- ROSEN, A LEADING LAW FIRM, Encourages BioNTech SE Investors to Secure Counsel Before Important Deadline in Securities Class Action - BNTX
+Unique Words in Examples: 33
+---
+
+Topic 10 (Size: 595 documents)
+Top Terms: upgrade (0.089), emergency (0.081), boost (0.078), leading (0.044), funding (0.037), excellent (0.035), groundbreaking (0.034), debt (0.034), sales (0.033), difficult (0.032)
+Example Headlines:
+- T-Mobile Conducts the First Ever Wireless Emergency Alert Via Satellite
+- Unlocking Apple's AI Potential: 'Multi-Year Upgrade Cycle' Potential, Bullish Analyst Says
+- Apple's Eye-Controlled iPhones, Siri's Upgrade And More: A Recap Of Week's Top Stories In Appleverse
+Unique Words in Examples: 34
+---
+
+Topic 11 (Size: 529 documents)
+Top Terms: poor (0.170), problem (0.155), improvement (0.155), downgrade (0.098), target (0.088), price (0.073), yield (0.058), earnings (0.049), results (0.021),  (0.000)
+Example Headlines:
+- Wall Street Analysts Downgrade Estee Lauder
+- Apple: Wall Street's Problem Child Looks To Return To Favor (Technical Analysis)
+- One of my favorite quotes comes from “Rich Dad Poor Dad” author Robert Kiyosaki. “In 1971, the U.S. and [President] Nixon convinced the entire world to replace gold and silver with paper money…this stuff: cash is trash.” Well, I’d sure love to be Mr. Kiyosaki’s sanitation manager because I’d be picking up his trash all day. And that brings us to waste management stocks. Of course, we all understand that cash is not trash. And apparently, due to a logical fallacy known as affirming the consequent
+Unique Words in Examples: 86
+---
+
+Topic 12 (Size: 394 documents)
+Top Terms: sales drop (0.240), emergency (0.183), drop (0.168), sales (0.157), downgrade (0.103), disaster (0.099), tough (0.094), failing (0.094), fail (0.090), innovative (0.079)
+Example Headlines:
+- A train struck and killed a person in El Monte, California, shutting down the railroad line, the train's operator, Union Pacific, said on Wednesday.  The Governor's Office Emergency Services said the incident occurred at around 9 a.m. near Arden drive and Railroad drive, and the city's fire and police departments were responding.
+-  Stellantis Q3 US Sales Drop
+-  Stellantis Q3 US Sales Drop
+Unique Words in Examples: 47
+---
+
+Topic 13 (Size: 259 documents)
+Top Terms: beat (0.060), profitability positive (0.053), bearish (0.047), mature (0.047), outlook (0.047), jump (0.045), performance promising (0.041), target (0.039), revenue beat (0.037), momentum (0.035)
+Example Headlines:
+- Lululemon Athletica: Strong Q1 Performance and Promising Prospects Justify Positive Outlook
+- Lululemon: Poised for Turnaround with Strong Profitability and Positive Earnings Revisions
+- Lululemon Lifts Full-Year Earnings Outlook After Fiscal First-Quarter Beat
+Unique Words in Examples: 25
+---
+
+Topic 14 (Size: 250 documents)
+Top Terms: price (0.728),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- Video: Dow Analyst Moves: UNH
+- 12 Health Care Stocks Moving In Monday's Pre-Market Session
+- Healthcare Stocks Rise despite Medicare Price Cuts for Their Drugs
+Unique Words in Examples: 23
+---
+
+Topic 15 (Size: 237 documents)
+Top Terms: prime (0.105), momentum (0.082), strong (0.080), cash flow (0.074), develop (0.073), investment (0.062), margin (0.048), lower (0.046), earnings miss (0.045), growth (0.042)
+Example Headlines:
+- What Makes Hyatt Hotels Corporation (H) a Strong Investment?
+- Prime Hospitality Group, a vertical of Prime Group, today announces that its recently acquired property Faro Blanco Resort & Yacht Club has joined the Curio Collection by Hilton portfolio. The newly rebranded Faro Blanco Resort & Yacht Club Marathon, Curio Collection by Hilton debuts a transformative $14 million renovation of its accommodations, amenities, and restaurant offerings. Located in the Florida Keys city of Marathon, the Faro Blanco Resort & Yacht Club joins its sister hotel, Courtyard
+- KB Home Announces the Grand Opening of Its Newest Community in Prime Northwest Tucson, Arizona
+Unique Words in Examples: 66
+---
+
+Topic 16 (Size: 210 documents)
+Top Terms: cost (1.616),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- 10 Information Technology Stocks With Whale Alerts In Today's Session
+- 10 Consumer Discretionary Stocks Whale Activity In Today's Session
+- Market Whales and Their Recent Bets on COST Options
+Unique Words in Examples: 22
+---
+
+Topic 17 (Size: 209 documents)
+Top Terms: output (0.330), funding (0.102), notably (0.083), breakthrough (0.074), hard (0.070), climb (0.060), expand (0.059), breakout (0.058), jump (0.053), crisis (0.049)
+Example Headlines:
+- Vale Achieves Six-Year High in Iron Ore Output, Copper and Nickel Production Also Climb
+- Vale Reports Y/Y Increases in Iron Ore, Copper & Nickel Output in Q3
+- Vale SA Achieves Record Iron Ore Output in Q3
+Unique Words in Examples: 23
+---
+
+Topic 18 (Size: 190 documents)
+Top Terms: valuation (0.148), underperform (0.128), metric (0.104), failure (0.095), win (0.092), victory (0.088), risky (0.083), tough (0.081), expand (0.063), rally (0.061)
+Example Headlines:
+- Palantir Technologies: Growth and Market Expansion Offset by Valuation Concerns in Hold Rating
+- AI Doesn't Justify Palantir's Ambitious Valuation
+- Palantir's Valuation Is A Lord Of The Rings Fantasy
+Unique Words in Examples: 25
+---
+
+Topic 19 (Size: 188 documents)
+Top Terms: outstanding (0.105), earnings (0.094), limited (0.030),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- UK earnings, trading statements calendar - next 21 days
+- UK earnings, trading statements calendar - next 7 days
+- ASE Holdings Hosts Annual Supplier Day to Recognize Outstanding Suppliers of 2023
+Unique Words in Examples: 22
+---
+
+Topic 20 (Size: 177 documents)
+Top Terms: setback (0.189), risk (0.134), results (0.113), win (0.092), profit (0.083), returns (0.070), performance (0.048), better (0.045), more (0.026), strong (0.022)
+Example Headlines:
+- Intel Remains One Of Our Top Investments, Despite The China Risk
+- (Bloomberg) -- NetEase Inc. reached a new agreement to distribute games in China for Microsoft Corp.’s Blizzard Entertainment, salvaging a 15-year relationship and reviving titles like World of Warcraft for the world’s biggest gaming market.Most Read from BloombergUS Slams Strikes on Russia Oil Refineries as Risk to Oil MarketsIran’s Better, Stealthier Drones Are Remaking Global WarfareTrumpism Is Emptying ChurchesBond Trader Places Record Futures Bet on Eve of Inflation DataUkraine Says It’s Be
+- AMD, Intel Face Setback As China Moves To Ditch Their Chips, Microsoft Windows In State Computers
+Unique Words in Examples: 83
+---
+
+Topic 21 (Size: 151 documents)
+Top Terms: risk (0.312), failure (0.252), crisis (0.208), lacking (0.180), cost (0.147), setback (0.126), downturn (0.122), risky (0.111), failing (0.108), target (0.107)
+Example Headlines:
+- US Steel Warns Thousands Jobs at Risk Without Nippon Steel
+-  Nippon Steel Deal Failure Puts Thousands of US Jobs at Risk, US Steel Says
+-  Nippon Steel Deal Failure Puts Thousands of US Jobs at Risk, US Steel Says
+Unique Words in Examples: 15
+---
+
+Topic 22 (Size: 149 documents)
+Top Terms: valuable (0.392), powerful (0.385), declining (0.280), sustainable (0.178), revenue (0.132), debt (0.127), crisis (0.090), outlook (0.068), cost (0.063), slowdown (0.063)
+Example Headlines:
+- In this article, we will take a look at the 25 SENTIMENT_most_SENTIMENT_valuable_oil companies in the world. If you want to skip our detailed analysis of the global oil industry, you can go directly to 5 Most Valuable Oil Companies in the World. The Oil Sector: Latest Market Trends The sudden rise in geopolitical […]
+- 25 Most Valuable Oil Companies in the World
+- In this article, we will look into the 20 SENTIMENT_most_valuable Latin American companies. If you want to skip our detailed analysis, you can go directly to the 5 Most Valuable Latin American Companies. Economic Outlook of Latin America In 2023, Latin America witnessed SENTIMENT_sluggish_SENTIMENT_growth_due to high inflationSENTIMENT_,_SENTIMENT_restricted_monetary policies, and an […]
+Unique Words in Examples: 59
+---
+
+Topic 23 (Size: 146 documents)
+Top Terms: performance favorable (0.156), crisis (0.120), performance positive (0.096), sink (0.090), favorable (0.084), guidance (0.073), secure (0.066), revenue growth (0.064), performance (0.056), robust (0.052)
+Example Headlines:
+- Rush Street Interactive: A Strong Buy on Robust Performance and Positive Growth Outlook
+- CrowdStrike Stock: Is 'Kitchen Sink' Guidance Cut Coming Amid Crisis?
+- Rush Street Interactive Garners Buy Rating from Bernie McTernan Amid Strong Performance and Favorable Growth Prospects
+Unique Words in Examples: 31
+---
+
+Topic 24 (Size: 133 documents)
+Top Terms: prime (0.400), indicator (0.179), tough (0.170), premium (0.169), negative (0.138), success (0.127), trend (0.090), boost (0.068), lower (0.052), capital (0.044)
+Example Headlines:
+- The e-commerce retailer also said Buy with Prime merchants will soon be able to display real-time SENTIMENT_delivery_SENTIMENT_estimates_in their TikTok ads.
+- TikTok SENTIMENT_to_challenge Amazon Prime Day with its SENTIMENT_own_SENTIMENT_sales_event in July
+- TikTok is gearing up SENTIMENT_to_challenge Amazon's Prime Day event in July. The social network announced on Thursday that TikTok Shop is holding a "Deals For You Days" SENTIMENT_sales_event in the U.S. starting on July 9. The announcement comes a few days after Amazon revealed that its annual Prime Day SENTIMENT_sales_will take place on July 16 and 17. The SENTIMENT_success_of Prime Day has led to other retailers, both large and small, co-opting the day to run SENTIMENT_competing_sales. Now you can count TikTok among those doing the same. Tik
+Unique Words in Examples: 82
+---
+
+Topic 25 (Size: 105 documents)
+Top Terms: average (0.612), target (0.270), price (0.120), success (0.044), optimize (0.040), pattern (0.038), indicator (0.031), positive (0.013), growth (0.002),  (0.000)
+Example Headlines:
+- ASC Crosses Above Average Analyst Target
+- GFI Crosses Above Average Analyst Target
+- LNC Crosses Above Average Analyst Target
+Unique Words in Examples: 8
+---
+
+Topic 26 (Size: 102 documents)
+Top Terms: outstanding (0.693), capacity (0.277), milestone (0.191), secure (0.178), innovative (0.107), sustainable (0.081), downgrade (0.070), leading (0.068), boost (0.051), performance (0.038)
+Example Headlines:
+- Tower Semiconductor : Coherent Awards Tower Semiconductor as an Outstanding Innovation and Technology Supplier for Silicon Photonics based Products - Form 6-K
+- Tower Semiconductor : Coherent Awards Tower Semiconductor as an Outstanding Innovation and Technology Supplier for Silicon Photonics based Products
+- Coherent Awards Tower Semiconductor as an Outstanding Innovation and Technology Supplier for Silicon Photonics based Products Tower's...
+Unique Words in Examples: 21
+---
+
+Topic 27 (Size: 83 documents)
+Top Terms: score (0.732), cost (0.323), more (0.233), outlook (0.174),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- Pearson Expands College and Early Career Programming to More Than Half of Connections Academy Schools in the Country
+- In this article, we will look at the 15 college degrees with the best starting salaries. We have also discussed SENTIMENT_the_SENTIMENT_declining_popularity of college education in the US. If you want to skip our detailed analysis, head straight to the 5 College Degrees With the Best Starting Salaries. Cost of Attending College in the […]
+- Insights > By: Mississippi Editorial Team 08/06/2024 As kids go back to school and get back to a routine, you may be thinking of how you can get your home ready for the next season. Score instant and...
+Unique Words in Examples: 78
+---
+
+Topic 28 (Size: 73 documents)
+Top Terms: reliable (0.416), progress (0.258), valuation (0.163), investment (0.149), results (0.124), better (0.098), growth (0.029),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- American Water Works: A Company With Growth Potential And A Reasonable Valuation
+- Western Union 2023 ESG Report Highlights Company Progress to Serve Aspiring Populations Around the World
+- California Water Service Group Bolsters Environmental, Social, and Governance Program, Reaffirms Commitment to Safe and Reliable Water Supply for Communities
+Unique Words in Examples: 40
+---
+
+Topic 29 (Size: 70 documents)
+Top Terms: influential (0.652), concern (0.573), emergency (0.498), negative (0.415), crisis (0.326), profit (0.260), cash flow (0.254),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- UnitedHealth Cyberattack Fallout: American Medical Association Urges Biden Administration for Emergency Funds To Address Physicians' Cash Flow Woes
+- Influential U.S. doctors' group the American Medical Association (AMA) on Monday asked the Biden Administration to SENTIMENT_make_SENTIMENT_emergency_funds available to physicians hurt by SENTIMENT_ongoing_SENTIMENT_problems_created by the hack of UnitedHealth's Change Healthcare unit.  The AMA said the cyberattack on Change, which provides healthcare billing and data systems, has led to disruptions of numerous administrative and billing processes at physician practices.  "We urge HHS to utilize any available SENTIMENT_emergency_funds and authorities to provide critical financial resources to physicians, ensuring they can continue to deliver essential healthcare services during SENTIMENT_these_SENTIMENT_challenging_times," AMA Chief Executive James Madara wrote in a letter to U.S. Health and Human Services Secretary Xavier Becerra.
+- LifeWallet Acquires Assignment of Additional MSP Claims with an Overall Paid Amount Exceeding $10.6 billion Comprised of Over 450,000 Medicare Members and Announces it Secured a Waiver of Acceleration on a Second Loan Agreement in the Event of a Negative Going Concern
+Unique Words in Examples: 122
+---
+
+Topic 30 (Size: 62 documents)
+Top Terms: signal robust (0.485), breakthrough (0.348), efficiency (0.304), signal (0.247), plunge (0.233), weak (0.199), robust (0.198), leading (0.190), price (0.073), dividend (0.037)
+Example Headlines:
+- Heard on the Street: Humana Could Plunge Into Cigna’s Arms
+- (Bloomberg) -- Cigna Group said it won’t pursue a combination with rival insurer Humana Inc. after reports the two companies had renewed discussions of a deal. Most Read from BloombergThe Leaf Blowers Will Not Go QuietlyArizona Elections Signal Robust Immigration Enforcement Under TrumpScoring an Architectural Breakthrough in Denver’s RiNo DistrictKey Ballot Initiatives and Local Races Highlight Views on Abortion, ImmigrationThe company “remains committed to its established M&A criteria and woul
+- Humana (HUM) Collaborates With Veda to Enhance Efficiency
+Unique Words in Examples: 80
+---
+
+Topic 31 (Size: 61 documents)
+Top Terms: efficiency (0.179), volume (0.166), impressive (0.150), leading (0.112), upgrade (0.097), valuation (0.096), cost (0.095), more (0.068), performance (0.062), capital (0.055)
+Example Headlines:
+- Has Hudbay Minerals Inc.'s (TSE:HBM) Impressive Stock Performance Got Anything to Do With Its Fundamentals?
+- Amazon Surpasses UPS in Parcel Volume For First Time, Index Says
+- Upstart Can Move Higher On Short Interest, Efficiency Gains
+Unique Words in Examples: 35
+---
+
+Topic 32 (Size: 56 documents)
+Top Terms: rating (0.277), troubled (0.223), win (0.112), premium (0.099), sales (0.047), price (0.040), growth (0.016),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- Piper Sandler Keeps Their Buy Rating on Five9 (FIVN)
+- Piper Sandler Gives a Hold Rating to Kenvue, Inc. (KVUE)
+- Piper Sandler Sticks to Its Buy Rating for Ardelyx (ARDX)
+Unique Words in Examples: 21
+---
+
+Topic 33 (Size: 53 documents)
+Top Terms: limited (0.375), capital (0.311),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- The SENTIMENT_following_slide deck was published by Capital One Financial Corporation in conjunction with their 2024 Q1 SENTIMENT_earnings_call.
+- The SENTIMENT_following_slide deck was published by Trinity Capital Inc.
+- The SENTIMENT_following_slide deck was published by Paysafe Limited in conjunction with their 2023 Q4 SENTIMENT_earnings_call.
+Unique Words in Examples: 23
+---
+
+Topic 34 (Size: 47 documents)
+Top Terms: accelerate (2.322), results (0.083),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- August 27, 2024 TIAA Announces Strategic Partnership with Accenture to Accelerate Transformation of its Retirement Recordkeeping Strategic partnership...
+- Accenture : TIAA Announces Strategic Partnership with Accenture to Accelerate Transformation of its Retirement Recordkeeping
+- Accenture : TIAA Announces Strategic Partnership with Accenture to Accelerate Transformation of its Retirement Recordkeeping
+Unique Words in Examples: 18
+---
+
+Topic 35 (Size: 43 documents)
+Top Terms: outperform (2.050),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- Sprouts Farmers Market and Tenaris have been highlighted as Zacks Bull and Bear of the Day
+- Phreesia and LCI have been highlighted as Zacks Bull and Bear of the Day
+- Wedbush added Roblox (RBLX) to the firm’s “Best Ideas List” while keeping an Outperform SENTIMENT_rating_on the shares with a $SENTIMENT_49_SENTIMENT_price_target The firm expects the company’SENTIMENT_s_SENTIMENT_revenue_SENTIMENT_growth_to outpace the industry for the next three years on continued SENTIMENT_traffic_growthSENTIMENT_,_SENTIMENT_growth_in advertising, the potential for adding SENTIMENT_recurring_SENTIMENT_revenues_from season passes and a change to SENTIMENT_the_SENTIMENT_developer_pay structure announced in September. Roblox has begun its transformation from a collection of games to a true platform, the an
+Unique Words in Examples: 68
+---
+
+Topic 36 (Size: 42 documents)
+Top Terms: fantastic (0.458), more (0.291), drop (0.266), earnings (0.025),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- MAGS: The Magnificent 7 Are More Overvalued Than You Think
+- MAGS: The Magnificent 7 Are More Overvalued Than You Think
+- The Fantastic Four Beats The Magnificent Seven
+Unique Words in Examples: 14
+---
+
+Topic 37 (Size: 35 documents)
+Top Terms: target (0.562), superior (0.553), prime (0.305),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- Google and Meta Reportedly Had 'Secret Deal' To Target Ads To Teens
+-  Google and Meta Made Deal to Target Teenagers With Ads
+- Market Chatter: Google, Meta Made Secret Deal to Target Teenagers With Ads
+Unique Words in Examples: 19
+---
+
+Topic 38 (Size: 34 documents)
+Top Terms:  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- QQQ ETF Update, 3/20/2024
+- QQQ ETF Update, 5/22/2024
+- SPY ETF Update, 12/4/2023
+Unique Words in Examples: 7
+---
+
+Topic 39 (Size: 34 documents)
+Top Terms: slowdown (0.356), drop (0.355), positive (0.180), forecast (0.124), outlook (0.097), higher (0.083), risk (0.082), lower (0.061), sales (0.047), price (0.040)
+Example Headlines:
+- January Non-OPEC And World Oil Production, Big Drop
+- IEA Forecasts Slowdown In Oil Demand, Contrasts Positive Outlook By OPEC+
+- IEA Forecasts Slowdown In Oil Demand, Contrasts Positive Outlook By OPEC+
+Unique Words in Examples: 18
+---
+
+=== SENTIMENT DISTRIBUTION PER TOPIC ===
+
+Topic 0:
+Bullish: 100.0%
+Bearish: 33.3%
+Neutral: -33.3%
+Total Sentiment Documents: 4
+Sentiment Strength: 0.50
+
+Topic 1:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 2:
+Bullish: 33.3%
+Bearish: 100.0%
+Neutral: -33.3%
+Total Sentiment Documents: 4
+Sentiment Strength: 0.50
+
+Topic 3:
+Bullish: 0.0%
+Bearish: 33.3%
+Neutral: 66.7%
+Total Sentiment Documents: 1
+Sentiment Strength: 1.00
+
+Topic 4:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 5:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 6:
+Bullish: 0.0%
+Bearish: 100.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 7:
+Bullish: 33.3%
+Bearish: 33.3%
+Neutral: 33.3%
+Total Sentiment Documents: 2
+Sentiment Strength: 0.00
+
+Topic 8:
+Bullish: 33.3%
+Bearish: 66.7%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
+
+Topic 9:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 10:
+Bullish: 66.7%
+Bearish: 33.3%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
+
+Topic 11:
+Bullish: 0.0%
+Bearish: 100.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 12:
+Bullish: 0.0%
+Bearish: 100.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 13:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 14:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 15:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 16:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 17:
+Bullish: 33.3%
+Bearish: 0.0%
+Neutral: 66.7%
+Total Sentiment Documents: 1
+Sentiment Strength: 1.00
+
+Topic 18:
+Bullish: 33.3%
+Bearish: 33.3%
+Neutral: 33.3%
+Total Sentiment Documents: 2
+Sentiment Strength: 0.00
+
+Topic 19:
+Bullish: 33.3%
+Bearish: 0.0%
+Neutral: 66.7%
+Total Sentiment Documents: 1
+Sentiment Strength: 1.00
+
+Topic 20:
+Bullish: 33.3%
+Bearish: 100.0%
+Neutral: -33.3%
+Total Sentiment Documents: 4
+Sentiment Strength: 0.50
+
+Topic 21:
+Bullish: 0.0%
+Bearish: 100.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 22:
+Bullish: 100.0%
+Bearish: 33.3%
+Neutral: -33.3%
+Total Sentiment Documents: 4
+Sentiment Strength: 0.50
+
+Topic 23:
+Bullish: 66.7%
+Bearish: 33.3%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
+
+Topic 24:
+Bullish: 100.0%
+Bearish: 66.7%
+Neutral: -66.7%
+Total Sentiment Documents: 5
+Sentiment Strength: 0.20
+
+Topic 25:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 26:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 27:
+Bullish: 33.3%
+Bearish: 66.7%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
+
+Topic 28:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 29:
+Bullish: 66.7%
+Bearish: 100.0%
+Neutral: -66.7%
+Total Sentiment Documents: 5
+Sentiment Strength: 0.20
+
+Topic 30:
+Bullish: 33.3%
+Bearish: 33.3%
+Neutral: 33.3%
+Total Sentiment Documents: 2
+Sentiment Strength: 0.00
+
+Topic 31:
+Bullish: 33.3%
+Bearish: 0.0%
+Neutral: 66.7%
+Total Sentiment Documents: 1
+Sentiment Strength: 1.00
+
+Topic 32:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 33:
+Bullish: 100.0%
+Bearish: 33.3%
+Neutral: -33.3%
+Total Sentiment Documents: 4
+Sentiment Strength: 0.50
+
+Topic 34:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 35:
+Bullish: 33.3%
+Bearish: 0.0%
+Neutral: 66.7%
+Total Sentiment Documents: 1
+Sentiment Strength: 1.00
+
+Topic 36:
+Bullish: 33.3%
+Bearish: 0.0%
+Neutral: 66.7%
+Total Sentiment Documents: 1
+Sentiment Strength: 1.00
+
+Topic 37:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 38:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+=== TOPIC DISTANCES AND RELATIONSHIPS ===
+
+Most Similar Topic Pairs:
+Topics 0 and 1: 0.877
+Topics 0 and 2: 0.866
+Topics 1 and 8: 0.790
+Topics 1 and 9: 0.758
+Topics 1 and 6: 0.758
+Topics 1 and 3: 0.744
+Topics 1 and 5: 0.739
+Topics 7 and 11: 0.736
+Topics 1 and 11: 0.733
+Topics 1 and 19: 0.703
+
+Most Distinct Topics (Average Distance to Other Topics):
+Topic -1: 0.811
+Topic 0: 0.500
+Topic 1: 0.429
+Topic 2: 0.724
+Topic 3: 0.533
+Topic 4: 0.622
+Topic 5: 0.547
+Topic 6: 0.525
+Topic 7: 0.554
+Topic 8: 0.519
+Topic 9: 0.525
+Topic 10: 0.542
+Topic 11: 0.525
+Topic 12: 0.667
+Topic 13: 0.587
+Topic 14: 0.590
+Topic 15: 0.641
+Topic 16: 0.603
+Topic 17: 0.698
+Topic 18: 0.606
+Topic 19: 0.581
+Topic 20: 0.705
+Topic 21: 0.656
+Topic 22: 0.648
+Topic 23: 0.754
+Topic 24: 0.571
+Topic 25: 0.649
+Topic 26: 0.664
+Topic 27: 0.612
+Topic 28: 0.822
+Topic 29: 0.713
+Topic 30: 0.721
+Topic 31: 0.669
+Topic 32: 0.651
+Topic 33: 0.658
+Topic 34: 0.708
+Topic 35: 0.732
+Topic 36: 0.673
+Topic 37: 0.721
+Topic 38: 0.747

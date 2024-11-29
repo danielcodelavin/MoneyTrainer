@@ -56,7 +56,7 @@ def prepare_single_stock_data(ticker_symbol: str, start_datetime: datetime, days
             print(f"Error on {ticker_symbol} for {day_start}: {str(e)}")
         
         days_checked += 1
-        time.sleep(0.6)  # Rate limiting
+        time.sleep(0.1)  # Rate limiting
     
     if len(all_data) < min_points:
         print(f"Insufficient data points ({len(all_data)}/{min_points}) for {ticker_symbol}")
@@ -165,7 +165,7 @@ def cleaner(old_csv_path: str, new_csv_path: str) -> None:
                         ticker_symbol=symbol, 
                         start_datetime=parsed_datetime, 
                         days=5, 
-                        min_points=30
+                        min_points=33
                     )
                     
                     if news_data is not None and len(news_data) > 0 and stock_data is not None and len(stock_data) > 0:
