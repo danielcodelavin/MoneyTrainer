@@ -36,10 +36,10 @@ class ResidualBlock(nn.Module):
     def __init__(self, in_features):
         super(ResidualBlock, self).__init__()
         self.block = nn.Sequential(
-            nn.Linear(in_features, in_features * 2),
+            nn.Linear(in_features, in_features * 3),  # Wider intermediate layer
             nn.LeakyReLU(),
             nn.Dropout(0.2),
-            nn.Linear(in_features * 2, in_features)
+            nn.Linear(in_features * 3, in_features)
         )
         self.leaky_relu = nn.LeakyReLU()
         self.norm = nn.LayerNorm(in_features)
@@ -55,12 +55,9 @@ class MultiModalMLP(nn.Module):
     def __init__(self, device='cuda'):
         super(MultiModalMLP, self).__init__()
         
+        # Stock data path with increased width
         self.stock_path = nn.Sequential(
-            nn.Linear(80, 256),
-            nn.LeakyReLU(),
-            nn.Dropout(0.2),
-            ResidualBlock(256),
-            nn.Linear(256, 384),
+            nn.Linear(80, 384),  # Increased initial width
             nn.LeakyReLU(),
             nn.Dropout(0.2),
             ResidualBlock(384),
@@ -68,55 +65,62 @@ class MultiModalMLP(nn.Module):
             nn.LeakyReLU(),
             nn.Dropout(0.2),
             ResidualBlock(512),
-            nn.Linear(512, 384),
+            nn.Linear(512, 768),  # Added larger intermediate representation
             nn.LeakyReLU(),
             nn.Dropout(0.2),
-            ResidualBlock(384),
-            nn.Linear(384, 256),
+            ResidualBlock(768),
+            ResidualBlock(768),  # Added extra residual block at max width
+            nn.Linear(768, 512),
+            nn.LeakyReLU(),
+            nn.Dropout(0.2),
+            ResidualBlock(512),
+            nn.Linear(512, 384),
             nn.LeakyReLU(),
             nn.Dropout(0.2)
         )
         
+        # Topic vector path with increased capacity
         self.topic_path = nn.Sequential(
-            nn.Linear(30, 128),
+            nn.Linear(30, 192),  # Wider initial layer
             nn.LeakyReLU(),
             nn.Dropout(0.2),
-            nn.Linear(128, 256),
+            nn.Linear(192, 384),
+            nn.LeakyReLU(),
+            nn.Dropout(0.2),
+            ResidualBlock(384),
+            ResidualBlock(384),  # Added extra residual block
+            nn.Linear(384, 256),
             nn.LeakyReLU(),
             nn.Dropout(0.2),
             ResidualBlock(256),
             nn.Linear(256, 192),
             nn.LeakyReLU(),
-            nn.Dropout(0.2),
-            ResidualBlock(192),
-            nn.Linear(192, 128),
-            nn.LeakyReLU(),
             nn.Dropout(0.2)
         )
         
+        # Combined path with increased width
         self.combined_path = nn.Sequential(
-            nn.Linear(384, 512),
+            nn.Linear(576, 768),  # Increased width
+            nn.BatchNorm1d(768),
+            nn.LeakyReLU(),
+            nn.Dropout(0.2),
+            ResidualBlock(768),
+            nn.Linear(768, 512),
             nn.BatchNorm1d(512),
             nn.LeakyReLU(),
             nn.Dropout(0.2),
             ResidualBlock(512),
+            ResidualBlock(512),  # Added extra residual block
             nn.Linear(512, 384),
             nn.BatchNorm1d(384),
             nn.LeakyReLU(),
             nn.Dropout(0.2),
             ResidualBlock(384),
-            nn.Linear(384, 256),
-            nn.BatchNorm1d(256),
+            nn.Linear(384, 192),
+            nn.BatchNorm1d(192),
             nn.LeakyReLU(),
             nn.Dropout(0.2),
-            ResidualBlock(256),
-            nn.Linear(256, 128),
-            nn.BatchNorm1d(128),
-            nn.LeakyReLU(),
-            nn.Dropout(0.2),
-            nn.Linear(128, 1),
-            # Add tanh to constrain output to reasonable range
-            nn.Tanh()
+            nn.Linear(192, 1)
         )
         
         self.to(device)
@@ -127,39 +131,23 @@ class MultiModalMLP(nn.Module):
         combined = torch.cat((stock_features, topic_features), dim=1)
         return self.combined_path(combined)
 
-class EnhancedLoss(nn.Module):
-    def __init__(self, direction_weight=0.3, magnitude_weight=1.0, huber_beta=0.1):
-        super(EnhancedLoss, self).__init__()
+class CustomLoss(nn.Module):
+    def __init__(self, direction_weight=0.3):
+        super(CustomLoss, self).__init__()
+        self.mse = nn.MSELoss()
         self.direction_weight = direction_weight
-        self.magnitude_weight = magnitude_weight
-        self.huber_beta = huber_beta
         
     def forward(self, predictions, targets):
-        # Directional loss component
+        # Standard MSE loss
+        mse_loss = self.mse(predictions, targets)
+        
+        # Directional loss (penalize wrong sign predictions)
         pred_signs = torch.sign(predictions)
         target_signs = torch.sign(targets)
         direction_loss = torch.mean((pred_signs - target_signs).pow(2))
         
-        # Magnitude loss using Huber loss for robustness
-        diff = torch.abs(predictions - targets)
-        magnitude_loss = torch.where(
-            diff < self.huber_beta,
-            0.5 * diff.pow(2) / self.huber_beta,
-            diff - 0.5 * self.huber_beta
-        ).mean()
-        
-        # Percentage error loss to handle different scales
-        eps = 1e-7  # prevent division by zero
-        percentage_error = torch.abs((predictions - targets) / (torch.abs(targets) + eps))
-        percentage_loss = torch.mean(percentage_error)
-        
-        # Combine all loss components
-        total_loss = (
-            self.direction_weight * direction_loss + 
-            self.magnitude_weight * magnitude_loss +
-            self.magnitude_weight * percentage_loss
-        )
-        
+        # Combine losses
+        total_loss = mse_loss + self.direction_weight * direction_loss
         return total_loss
 
 def calculate_metrics(predictions, ground_truth):
@@ -184,16 +172,11 @@ def calculate_metrics(predictions, ground_truth):
     # L1 Distance (MAE)
     l1_distance = torch.mean(torch.abs(predictions - ground_truth)).item()
     
-    # Percentage Error
-    eps = 1e-7
-    percentage_error = torch.mean(torch.abs((predictions - ground_truth) / (torch.abs(ground_truth) + eps))).item()
-    
     return {
         'precision': precision,
         'recall': recall,
         'accuracy': accuracy,
-        'l1_distance': l1_distance,
-        'percentage_error': percentage_error
+        'l1_distance': l1_distance
     }
 
 def train_model(
@@ -218,11 +201,10 @@ def train_model(
     else:
         start_epoch = 0
     
-    optimizer = optim.AdamW(
+    optimizer = optim.Adam(
         model.parameters(), 
         lr=params['learning_rate'], 
-        weight_decay=params['weight_decay'],
-        betas=(0.9, 0.999)
+        weight_decay=params['weight_decay']
     )
     
     if params['scheduler_enabled']:
@@ -234,20 +216,13 @@ def train_model(
             verbose=True
         )
     
-    criterion = EnhancedLoss(
-        direction_weight=params['direction_weight'],
-        magnitude_weight=params['magnitude_weight'],
-        huber_beta=params['huber_beta']
-    )
+    criterion = CustomLoss(direction_weight=params['direction_weight'])
     
     os.makedirs(checkpoint_dir, exist_ok=True)
     
     with open(report_path, 'a') as report_file:
         report_file.write(f"Training started at {datetime.now()}\n")
-        report_file.write("Epoch,Train_Loss,Val_Loss,Precision,Recall,Accuracy,L1_Distance,Percentage_Error\n")
-    
-    best_val_loss = float('inf')
-    patience_counter = 0
+        report_file.write("Epoch,Train_Loss,Val_Loss,Precision,Recall,Accuracy,L1_Distance\n")
     
     for epoch in range(start_epoch, params['num_epochs']):
         model.train()
@@ -303,27 +278,8 @@ def train_model(
             report_file.write(
                 f"{epoch},{train_loss:.6f},{val_loss:.6f},"
                 f"{metrics['precision']:.6f},{metrics['recall']:.6f},"
-                f"{metrics['accuracy']:.6f},{metrics['l1_distance']:.6f},"
-                f"{metrics['percentage_error']:.6f}\n"
+                f"{metrics['accuracy']:.6f},{metrics['l1_distance']:.6f}\n"
             )
-        
-        # Early stopping check
-        if val_loss < best_val_loss:
-            best_val_loss = val_loss
-            patience_counter = 0
-            # Save best model
-            torch.save({
-                'epoch': epoch + 1,
-                'model_state_dict': model.state_dict(),
-                'optimizer_state_dict': optimizer.state_dict(),
-                'val_loss': val_loss,
-                'metrics': metrics
-            }, os.path.join(checkpoint_dir, "best_model.pt"))
-        else:
-            patience_counter += 1
-            if patience_counter >= params['early_stopping_patience']:
-                print(f"Early stopping triggered after {epoch + 1} epochs")
-                break
         
         if (epoch + 1) % params['checkpoint_frequency'] == 0:
             checkpoint_path = os.path.join(checkpoint_dir, f"checkpoint_epoch_{epoch+1}.pt")
@@ -343,21 +299,17 @@ def train_model(
         print(f"Recall: {metrics['recall']:.6f}")
         print(f"Accuracy: {metrics['accuracy']:.6f}")
         print(f"L1 Distance: {metrics['l1_distance']:.6f}")
-        print(f"Percentage Error: {metrics['percentage_error']:.6f}")
         print("----------------------------------------")
 
 if __name__ == "__main__":
     params = {
         'num_epochs': 500,
         'batch_size': 32,
-        'learning_rate': 1e-4,
+        'learning_rate': 1e-5,  # Reduced for larger model
         'weight_decay': 1e-5,
         'direction_weight': 0.3,
-        'magnitude_weight': 1.0,
-        'huber_beta': 0.1,
         'grad_clip': 1.0,
         'checkpoint_frequency': 10,
-        'early_stopping_patience': 20,
         'device': 'cuda' if torch.cuda.is_available() else 'cpu',
         'resume_checkpoint': None,
         'scheduler_enabled': True
@@ -366,7 +318,7 @@ if __name__ == "__main__":
     train_model(
         train_data_path="/Users/daniellavin/Desktop/proj/MoneyTrainer/X_findataset",
         val_data_path="/Users/daniellavin/Desktop/proj/MoneyTrainer/minivals",
-        checkpoint_dir="/Users/daniellavin/Desktop/proj/MoneyTrainer/checkpx1",
-        report_path="/Users/daniellavin/Desktop/proj/MoneyTrainer/2X_report.txt",
+        checkpoint_dir="/Users/daniellavin/Desktop/proj/MoneyTrainer/checkpoints/checkpx2",
+        report_path="/Users/daniellavin/Desktop/proj/MoneyTrainer/reports/2X_report.txt",
         params=params
     )

@@ -382,7 +382,7 @@ def main(csv_path: str, bertopic_model_path: str, dataset_path: str,
                 failed_stocks.append(stock_symbol)
             finally:
                 pbar.update(1)
-                #time.sleep(1)
+                time.sleep(2)
     print(f"\nProcessing complete!")
     print(f"Successful stocks: {len(successful_stocks)}")
     print(f"Failed stocks: {len(failed_stocks)}")

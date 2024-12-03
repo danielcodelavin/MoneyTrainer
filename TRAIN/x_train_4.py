@@ -300,7 +300,7 @@ if __name__ == "__main__":
         'batch_size': 32,
         'learning_rate': 4e-5,
         'weight_decay': 1e-5,
-        'direction_weight': 0.3,
+        'direction_weight': 0.6,
         'grad_clip': 1.0,
         'checkpoint_frequency': 10,
         'device': 'cuda' if torch.cuda.is_available() else 'cpu',
@@ -311,8 +311,8 @@ if __name__ == "__main__":
     train_model(
         train_data_path="/Users/daniellavin/Desktop/proj/MoneyTrainer/X_findataset",
         val_data_path="/Users/daniellavin/Desktop/proj/MoneyTrainer/minivals",
-        checkpoint_dir="/Users/daniellavin/Desktop/proj/MoneyTrainer/checkpoints/checkpx1",
-        report_path="/Users/daniellavin/Desktop/proj/MoneyTrainer/reports/1X_report.txt",
+        checkpoint_dir="/Users/daniellavin/Desktop/proj/MoneyTrainer/checkpoints/checkpx4",
+        report_path="/Users/daniellavin/Desktop/proj/MoneyTrainer/reports/4X_report.txt",
         params=params
     )
 
