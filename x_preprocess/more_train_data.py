@@ -9,8 +9,8 @@ from finhub_scrape import get_stock_news
 class DataCollector:
     def __init__(self):
         # File paths
-        self.csv_stockscreen_filepath = '/Users/daniellavin/Desktop/proj/MoneyTrainer/Hybrid_stockscreen.csv'
-        self.output_filepath = '/Users/daniellavin/Desktop/proj/MoneyTrainer/x_preprocess/training_headlines.txt'
+        self.csv_stockscreen_filepath = '/Users/daniellavin/Desktop/proj/MoneyTrainer/ENERGY_stockscreen.csv'
+        self.output_filepath = '/Users/daniellavin/Desktop/proj/MoneyTrainer/x_preprocess/energy_headlines.txt'
         
         # Date range
         self.earliest_date = datetime(2023, 12, 1)
@@ -132,8 +132,8 @@ def main():
     # - articles_per_keyword: how many articles to fetch per keyword
     
     collector.collect_data(
-        iterations_per_stock=2,  # Process each stock 3 times
-        articles_per_keyword=20  # Get up to 10 articles per keyword
+        iterations_per_stock=100,  # Process each stock 3 times
+        articles_per_keyword=50  # Get up to 10 articles per keyword
     )
 
 if __name__ == "__main__":

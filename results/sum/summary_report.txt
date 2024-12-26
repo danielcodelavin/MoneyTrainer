@@ -1,0 +1,173 @@
+Summary Report (Averaged across 6 reports)
+====================================================
+
+
+Market Cap Analysis
+-------------------
+
+
+Q3 (Large Cap:
+  Average Number of stocks: 142.5
+  Average L1 Distance: 0.0481
+  Average RMSE: 0.0616
+  Average Prediction Error Std: 0.0384
+  Average Precision: 0.6323
+
+Q4 (Mega Cap:
+  Average Number of stocks: 143.2
+  Average L1 Distance: 0.0496
+  Average RMSE: 0.0719
+  Average Prediction Error Std: 0.0507
+  Average Precision: 0.6189
+
+Q2 (Mid Cap:
+  Average Number of stocks: 142.7
+  Average L1 Distance: 0.0499
+  Average RMSE: 0.0638
+  Average Prediction Error Std: 0.0397
+  Average Precision: 0.5944
+
+Q1 (Small Cap:
+  Average Number of stocks: 143.5
+  Average L1 Distance: 0.0808
+  Average RMSE: 0.3507
+  Average Prediction Error Std: 0.3285
+  Average Precision: 0.5803
+
+Key Insights:
+- Best performing category: Q3 (Large Cap
+- Worst performing category: Q1 (Small Cap
+- Performance difference: 3.27%
+
+
+Volume Analysis
+---------------
+
+
+Q1 (Low Volume:
+  Average Number of stocks: 143.5
+  Average L1 Distance: 0.0435
+  Average RMSE: 0.0567
+  Average Prediction Error Std: 0.0363
+  Average Precision: 0.5859
+
+Q3 (Medium-High:
+  Average Number of stocks: 142.8
+  Average L1 Distance: 0.0548
+  Average RMSE: 0.0740
+  Average Prediction Error Std: 0.0493
+  Average Precision: 0.5941
+
+Q4 (High Volume:
+  Average Number of stocks: 143.3
+  Average L1 Distance: 0.0597
+  Average RMSE: 0.0760
+  Average Prediction Error Std: 0.0470
+  Average Precision: 0.6355
+
+Q2 (Medium-Low:
+  Average Number of stocks: 142.8
+  Average L1 Distance: 0.0703
+  Average RMSE: 0.3423
+  Average Prediction Error Std: 0.3251
+  Average Precision: 0.6055
+
+Key Insights:
+- Best performing category: Q1 (Low Volume
+- Worst performing category: Q2 (Medium-Low
+- Performance difference: 2.68%
+
+
+Sector Analysis
+---------------
+
+
+Industrials:
+  Average Number of stocks: 59.3
+  Average L1 Distance: 0.0444
+  Average RMSE: 0.0582
+  Average Prediction Error Std: 0.0376
+  Average Precision: 0.5554
+
+Consumer Staples:
+  Average Number of stocks: 23.7
+  Average L1 Distance: 0.0452
+  Average RMSE: 0.0565
+  Average Prediction Error Std: 0.0342
+  Average Precision: 0.5290
+
+Real Estate:
+  Average Number of stocks: 21.5
+  Average L1 Distance: 0.0468
+  Average RMSE: 0.0561
+  Average Prediction Error Std: 0.0313
+  Average Precision: 0.6472
+
+Health Care:
+  Average Number of stocks: 55.2
+  Average L1 Distance: 0.0472
+  Average RMSE: 0.0597
+  Average Prediction Error Std: 0.0367
+  Average Precision: 0.4900
+
+Consumer Discretionary:
+  Average Number of stocks: 155.7
+  Average L1 Distance: 0.0477
+  Average RMSE: 0.0617
+  Average Prediction Error Std: 0.0392
+  Average Precision: 0.6003
+
+Miscellaneous:
+  Average Number of stocks: 2.3
+  Average L1 Distance: 0.0505
+  Average RMSE: 0.0605
+  Average Prediction Error Std: 0.0463
+  Average Precision: 0.2222
+
+Basic Materials:
+  Average Number of stocks: 15.7
+  Average L1 Distance: 0.0570
+  Average RMSE: 0.0656
+  Average Prediction Error Std: 0.0333
+  Average Precision: 0.7667
+
+Utilities:
+  Average Number of stocks: 27.7
+  Average L1 Distance: 0.0577
+  Average RMSE: 0.0898
+  Average Prediction Error Std: 0.0683
+  Average Precision: 0.5819
+
+Technology:
+  Average Number of stocks: 106.7
+  Average L1 Distance: 0.0589
+  Average RMSE: 0.0764
+  Average Prediction Error Std: 0.0488
+  Average Precision: 0.6787
+
+Energy:
+  Average Number of stocks: 30.2
+  Average L1 Distance: 0.0589
+  Average RMSE: 0.0722
+  Average Prediction Error Std: 0.0415
+  Average Precision: 0.6932
+
+Telecommunications:
+  Average Number of stocks: 10.2
+  Average L1 Distance: 0.0694
+  Average RMSE: 0.1238
+  Average Prediction Error Std: 0.1051
+  Average Precision: 0.6609
+
+Finance:
+  Average Number of stocks: 64.2
+  Average L1 Distance: 0.0998
+  Average RMSE: 0.4632
+  Average Prediction Error Std: 0.4391
+  Average Precision: 0.6380
+
+Key Insights:
+- Best performing category: Industrials
+- Worst performing category: Finance
+- Performance difference: 5.54%
+

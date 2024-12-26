@@ -297,12 +297,12 @@ if __name__ == "__main__":
     # All hyperparameters and configuration in one place
     params = {
         'num_epochs': 500,
-        'batch_size': 32,
-        'learning_rate': 4e-5,
+        'batch_size': 64,
+        'learning_rate': 3e-5,
         'weight_decay': 1e-5,
         'direction_weight': 0.3,
         'grad_clip': 1.0,
-        'checkpoint_frequency': 10,
+        'checkpoint_frequency': 1,
         'device': 'cuda' if torch.cuda.is_available() else 'cpu',
         'resume_checkpoint': None,
         'scheduler_enabled': True

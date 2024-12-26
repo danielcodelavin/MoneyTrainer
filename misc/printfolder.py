@@ -17,7 +17,7 @@ def print_tensors_in_folder(folder_path: str):
                    count += 1
                    
                    # Check for invalid conditions
-                   if (abs(float(tensor[0])) > 1.7 or 
+                   if (abs(float(tensor[0])) > 0.15 or 
                        torch.isnan(tensor).any() or 
                        torch.isinf(tensor).any()):
                        os.remove(file_path)

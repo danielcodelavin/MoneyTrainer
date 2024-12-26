@@ -223,7 +223,7 @@ class FinancialTopicModel:
             topics, probs = self.topic_model.fit_transform(processed_headlines)
             
             # Save model first
-            self.save_model(os.path.join(output_dir, "2_BERTOPIC_MODEL_50.pt"))
+            self.save_model(os.path.join(output_dir, "EX1_BERTOPIC_MODEL_50.pt"))
             
             # Prepare report content
             report_lines = []
@@ -341,7 +341,7 @@ class FinancialTopicModel:
 
 def main():
     # Define file paths
-    headlines_file = '/Users/daniellavin/Desktop/proj/MoneyTrainer/x_preprocess/training_headlines.txt'
+    headlines_file = '/Users/daniellavin/Desktop/proj/MoneyTrainer/x_preprocess/energy_headlines.txt'
     output_dir = '/Users/daniellavin/Desktop/proj/MoneyTrainer/x_preprocess'
     
     # Initialize and train model

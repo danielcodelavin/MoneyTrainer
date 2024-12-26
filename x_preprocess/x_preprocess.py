@@ -283,7 +283,7 @@ def create_integrated_tensor(
         str_time = f"{hours:02}:{minutes:02}:{seconds:02}"
 
         earliest_date = datetime(2023, 12, 12)
-        latest_date = min(datetime(2024, 11, 17), current_time - timedelta(days=1))
+        latest_date = datetime(2024, 11, 2)
         
         while True:
                 random_date = earliest_date + timedelta(days=random.randint(0, (latest_date - earliest_date).days))
@@ -310,10 +310,12 @@ def create_integrated_tensor(
             print(f"No ground truth for {stock_symbol}")
             return
         gt_percentage = calculate_percentage_change(raw_latest_price, gt_value.item())
-        if abs(gt_percentage) > 2 or abs(gt_percentage) < -2:
-            print(f"TOO Large ground truth for {stock_symbol}")
-            return
-
+        if gt_percentage > 0.15:
+            print(f"TOO Large ground truth for {stock_symbol} , pruning GT")
+            gt_percentage = 0.16
+        elif gt_percentage < -0.15:
+            print(f"TOO Small ground truth for {stock_symbol} , pruning GT")
+            gt_percentage = -0.16
 
         #HEADLINE GEN
         keywords = [stock_name, stock_industry + ' Industry',]

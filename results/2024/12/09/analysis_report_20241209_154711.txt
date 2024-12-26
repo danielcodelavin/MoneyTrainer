@@ -1,0 +1,138 @@
+Stock Prediction Analysis Report
+===============================
+
+Overall Statistics:
+-----------------
+Total stocks analyzed: 395
+Average expected L1 distance: 0.0546
+Average expected RMSE: 0.1049
+Average expected precision: 0.6069
+
+Analysis by Sector:
+-----------------
+
+Basic Materials:
+  Number of stocks: 15.0
+  Expected L1 distance: 0.0559
+  Expected RMSE: 0.0684
+  Expected precision: 0.6130
+
+Consumer Discretionary:
+  Number of stocks: 113.0
+  Expected L1 distance: 0.0513
+  Expected RMSE: 0.0906
+  Expected precision: 0.6008
+
+Consumer Staples:
+  Number of stocks: 18.0
+  Expected L1 distance: 0.0494
+  Expected RMSE: 0.0789
+  Expected precision: 0.5941
+
+Energy:
+  Number of stocks: 23.0
+  Expected L1 distance: 0.0578
+  Expected RMSE: 0.0843
+  Expected precision: 0.6167
+
+Finance:
+  Number of stocks: 55.0
+  Expected L1 distance: 0.0647
+  Expected RMSE: 0.2302
+  Expected precision: 0.6183
+
+Health Care:
+  Number of stocks: 35.0
+  Expected L1 distance: 0.0502
+  Expected RMSE: 0.0760
+  Expected precision: 0.5969
+
+Industrials:
+  Number of stocks: 47.0
+  Expected L1 distance: 0.0491
+  Expected RMSE: 0.0770
+  Expected precision: 0.5964
+
+Miscellaneous:
+  Number of stocks: 1.0
+  Expected L1 distance: 0.0548
+  Expected RMSE: 0.0740
+  Expected precision: 0.5803
+
+Real Estate:
+  Number of stocks: 16.0
+  Expected L1 distance: 0.0506
+  Expected RMSE: 0.0808
+  Expected precision: 0.6121
+
+Technology:
+  Number of stocks: 51.0
+  Expected L1 distance: 0.0579
+  Expected RMSE: 0.0907
+  Expected precision: 0.6185
+
+Telecommunications:
+  Number of stocks: 9.0
+  Expected L1 distance: 0.0635
+  Expected RMSE: 0.0970
+  Expected precision: 0.6236
+
+Utilities:
+  Number of stocks: 12.0
+  Expected L1 distance: 0.0572
+  Expected RMSE: 0.0849
+  Expected precision: 0.6070
+
+Analysis by Market Cap:
+----------------------
+
+Q1:
+  Number of stocks: 65.0
+  Expected L1 distance: 0.0613
+  Expected RMSE: 0.1794
+  Expected precision: 0.5938
+
+Q2:
+  Number of stocks: 83.0
+  Expected L1 distance: 0.0510
+  Expected RMSE: 0.0688
+  Expected precision: 0.5977
+
+Q3:
+  Number of stocks: 91.0
+  Expected L1 distance: 0.0532
+  Expected RMSE: 0.0969
+  Expected precision: 0.6154
+
+Q4:
+  Number of stocks: 156.0
+  Expected L1 distance: 0.0545
+  Expected RMSE: 0.0978
+  Expected precision: 0.6122
+
+Analysis by Volume:
+------------------
+
+Q1:
+  Number of stocks: 59.0
+  Expected L1 distance: 0.0493
+  Expected RMSE: 0.0759
+  Expected precision: 0.5918
+
+Q2:
+  Number of stocks: 188.0
+  Expected L1 distance: 0.0563
+  Expected RMSE: 0.1342
+  Expected precision: 0.6091
+
+Q3:
+  Number of stocks: 109.0
+  Expected L1 distance: 0.0535
+  Expected RMSE: 0.0766
+  Expected precision: 0.6042
+
+Q4:
+  Number of stocks: 39.0
+  Expected L1 distance: 0.0570
+  Expected RMSE: 0.0869
+  Expected precision: 0.6264
