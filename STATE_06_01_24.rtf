@@ -1,0 +1,30 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 at this point certain hyperparameters are important and need to be clarified for proper review\
+\
+The X series of stock prediction models utilises stocks across all sectors, approximately 700 of them and therefore allows us to use a much higher dataset - about 160k in train and about 6k in val\
+\
+The X series further experimented with truncation of the GT to a great degree, as low as 0.16, which saw diminishing results and was subsequently scrapped.\
+\
+In the X series, particularly large or high volume stocks such as AAPL etc. consistently scored outlandishly high results and overall real world inference tests showed very poor results compared to the stellar values collected during validation.\
+\
+The EX series was designed to focus more on a particularly well performing sector, the Energy sector and only consists of 34 stockls. this leads to only about 14k train samples and about 1k val samples.\
+\
+The EX series uses a new BERTOPIC model for preprocessing which is specifically only trained on energy news, to better focus on these stocks.\
+\
+the EX series also sports 100 topics which are not truncated, different to the X vectors, since our model is so small, this extra data does not considerably slow down training.\
+\
+\
+Both X and EX have timely completely disjunct train and val sets to prevent overlap and simulate real world setting\
+\
+Both X and EX feature direction weighing and GT truncation, to prevent outlandish results from stock splits etc, though EX\'92s truncation is more forgiving.\
+\
+X performed considerably worse than train and val in real world inference tests, with only specific sectors such like energy sitting noticeably higher than 0.5\
+\
+\
+Inference tests were not even performed on EX model, as the validation performance was already so poor compared to X, this seemed pointless}

@@ -1,0 +1,85 @@
+Stock Prediction Analysis Report
+===============================
+
+
+Market Cap Analysis
+-------------------
+
+
+Q1 (Small Cap: <$31.0B):
+  Number of stocks: 1.0
+  Average L1 Distance: 0.0505
+  Average RMSE: 0.0505
+  Precision: 0.0000
+
+Key Insights:
+- Best performing category: Q1 (Small Cap: <$31.0B)
+- Worst performing category: Q1 (Small Cap: <$31.0B)
+- Performance difference: 0.00%
+
+
+Volume Analysis
+---------------
+
+
+Q1 (Low Volume: <1,847,020):
+  Number of stocks: 1.0
+  Average L1 Distance: 0.0505
+  Average RMSE: 0.0505
+  Precision: 0.0000
+
+Key Insights:
+- Best performing category: Q1 (Low Volume: <1,847,020)
+- Worst performing category: Q1 (Low Volume: <1,847,020)
+- Performance difference: 0.00%
+
+
+Sector Analysis
+---------------
+
+
+Consumer Staples:
+  Number of stocks: 1.0
+  Average L1 Distance: 0.0505
+  Average RMSE: 0.0505
+  Precision: 0.0000
+
+Key Insights:
+- Best performing category: Consumer Staples
+- Worst performing category: Consumer Staples
+- Performance difference: 0.00%
+
+
+Detailed Stock Listings by Category
+================================
+
+
+Market Cap Categories:
+----------------
+
+Q1 (Small Cap: <$31.0B) (1 stocks):
+  ADM: Archer-Daniels-Midland Company Common Stock
+    Market Cap: $30,976,527,481.00
+    Volume: 1,847,020
+    Sector: Consumer Staples
+
+
+Volume Categories:
+----------------
+
+Q1 (Low Volume: <1,847,020) (1 stocks):
+  ADM: Archer-Daniels-Midland Company Common Stock
+    Market Cap: $30,976,527,481.00
+    Volume: 1,847,020
+    Sector: Consumer Staples
+
+
+Sector Categories:
+----------------
+
+Consumer Staples (1 stocks):
+  ADM: Archer-Daniels-Midland Company Common Stock
+    Market Cap: $30,976,527,481.00
+    Volume: 1,847,020
+    Sector: Consumer Staples
+

@@ -282,8 +282,8 @@ def create_integrated_tensor(
         minutes, seconds = divmod(remainder, 60)
         str_time = f"{hours:02}:{minutes:02}:{seconds:02}"
 
-        earliest_date = datetime(2023, 12, 12)
-        latest_date = datetime(2024, 11, 30)
+        earliest_date = datetime(2024, 12, 1)
+        latest_date = datetime(2024, 12, 23)
         
         while True:
                 random_date = earliest_date + timedelta(days=random.randint(0, (latest_date - earliest_date).days))
@@ -430,7 +430,7 @@ if __name__ == "__main__":
         
         main(csv_path=csv_path, 
              bertopic_model_path=bertopic_model_path, 
-             dataset_path="/Users/daniellavin/Desktop/proj/MoneyTrainer/x_preprocess/EX/energydataset100",
+             dataset_path="/Users/daniellavin/Desktop/proj/MoneyTrainer/val_energydataset100",
              stock_names=shuffled_names,
              stock_industries=shuffled_industries,
              stock_sectors=shuffled_sectors,
@@ -441,8 +441,9 @@ if __name__ == "__main__":
              #########################
              # STOP CLAMP GT TO 0.16 , this dimishes quality, clamp to 1.5
              # GIVE 100 TOPIC PROBS
-             #
+             #TRAIN:
              #earliest_date = datetime(2023, 12, 12)
              #latest_date = datetime(2024, 11, 30)
-        
-             
+             #VAL:
+             #earliest_date = datetime(2024, 12, 1)
+             # latest_date = datetime(2024, 12, 26)

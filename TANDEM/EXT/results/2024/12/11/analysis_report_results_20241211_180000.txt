@@ -1,0 +1,532 @@
+Stock Prediction Analysis Report
+===============================
+
+
+Market Cap Analysis
+-------------------
+
+
+Q4 (Mega Cap: >$77.8B):
+  Number of stocks: 8.0
+  Average L1 Distance: 0.0805
+  Average RMSE: 0.0852
+  Prediction Error Std: 0.0298
+  Precision: 1.0000
+
+Q1 (Small Cap: <$3.7B):
+  Number of stocks: 9.0
+  Average L1 Distance: 0.0981
+  Average RMSE: 0.1146
+  Prediction Error Std: 0.0630
+  Precision: 1.0000
+
+Q2 (Mid Cap: $3.7-45.3B):
+  Number of stocks: 8.0
+  Average L1 Distance: 0.1083
+  Average RMSE: 0.1091
+  Prediction Error Std: 0.0139
+  Precision: 0.0000
+
+Q3 (Large Cap: $45.3-77.8B):
+  Number of stocks: 8.0
+  Average L1 Distance: 0.1094
+  Average RMSE: 0.1100
+  Prediction Error Std: 0.0118
+  Precision: 0.0000
+
+Key Insights:
+- Best performing category: Q4 (Mega Cap: >$77.8B)
+- Worst performing category: Q3 (Large Cap: $45.3-77.8B)
+- Performance difference: 2.90%
+
+
+Volume Analysis
+---------------
+
+
+Q4 (High Volume: >6,238,661):
+  Number of stocks: 8.0
+  Average L1 Distance: 0.0766
+  Average RMSE: 0.0848
+  Prediction Error Std: 0.0388
+  Precision: 1.0000
+
+Q3 (Medium-High: 2,961,031-6,238,661):
+  Number of stocks: 8.0
+  Average L1 Distance: 0.1028
+  Average RMSE: 0.1040
+  Prediction Error Std: 0.0169
+  Precision: 1.0000
+
+Q2 (Medium-Low: 1,686,636-2,961,031):
+  Number of stocks: 8.0
+  Average L1 Distance: 0.1049
+  Average RMSE: 0.1073
+  Prediction Error Std: 0.0245
+  Precision: 1.0000
+
+Q1 (Low Volume: <1,686,636):
+  Number of stocks: 9.0
+  Average L1 Distance: 0.1105
+  Average RMSE: 0.1212
+  Prediction Error Std: 0.0528
+  Precision: 1.0000
+
+Key Insights:
+- Best performing category: Q4 (High Volume: >6,238,661)
+- Worst performing category: Q1 (Low Volume: <1,686,636)
+- Performance difference: 3.39%
+
+
+Sector Analysis
+---------------
+
+
+Energy:
+  Number of stocks: 33.0
+  Average L1 Distance: 0.0990
+  Average RMSE: 0.1056
+  Prediction Error Std: 0.0373
+  Precision: 1.0000
+
+Key Insights:
+- Best performing category: Energy
+- Worst performing category: Energy
+- Performance difference: 0.00%
+
+
+Detailed Stock Listings by Category
+================================
+
+
+Market Cap Categories:
+----------------
+
+Q1 (Small Cap: <$3.7B) (9 stocks):
+  CRK: Comstock Resources Inc. Common Stock
+    Market Cap: $2,942,476,899.00
+    Volume: 2,961,031
+    Sector: Energy
+  EGY: VAALCO Energy Inc.  Common Stock
+    Market Cap: $724,188,675.00
+    Volume: 1,087,100
+    Sector: Energy
+  HESM: Hess Midstream LP Class A Share
+    Market Cap: $2,997,851,076.00
+    Volume: 1,157,117
+    Sector: Energy
+  HP: Helmerich & Payne Inc. Common Stock
+    Market Cap: $3,726,858,822.00
+    Volume: 1,234,079
+    Sector: Energy
+  KOS: Kosmos Energy Ltd. Common Shares (DE)
+    Market Cap: $2,518,069,033.00
+    Volume: 5,201,520
+    Sector: Energy
+  KRP: Kimbell Royalty Partners Common Units Representing Limited Partner Interests
+    Market Cap: $1,593,791,038.00
+    Volume: 224,328
+    Sector: Energy
+  PARR: Par Pacific Holdings Inc.  Common Stock
+    Market Cap: $1,384,716,312.00
+    Volume: 879,750
+    Sector: Energy
+  PLUG: Plug Power Inc. Common Stock
+    Market Cap: $1,804,418,567.00
+    Volume: 39,027,154
+    Sector: Energy
+  POWL: Powell Industries Inc. Common Stock
+    Market Cap: $1,625,670,711.00
+    Volume: 465,166
+    Sector: Energy
+
+
+Q2 (Mid Cap: $3.7-45.3B) (8 stocks):
+  CTRA: Coterra Energy Inc. Common Stock
+    Market Cap: $19,193,767,136.00
+    Volume: 6,238,661
+    Sector: Energy
+  CVE: Cenovus Energy Inc Common Stock
+    Market Cap: $36,126,132,680.00
+    Volume: 7,084,166
+    Sector: Energy
+  DVN: Devon Energy Corporation Common Stock
+    Market Cap: $28,806,560,000.00
+    Volume: 5,271,933
+    Sector: Energy
+  HAL: Halliburton Company Common Stock
+    Market Cap: $29,206,088,303.00
+    Volume: 10,136,167
+    Sector: Energy
+  HES: Hess Corporation Common Stock
+    Market Cap: $45,295,527,332.00
+    Volume: 2,701,976
+    Sector: Energy
+  MPLX: MPLX LP Common Units Representing Limited Partner Interests
+    Market Cap: $43,310,260,521.00
+    Volume: 1,686,636
+    Sector: Energy
+  OVV: Ovintiv Inc. (DE)
+    Market Cap: $12,213,264,000.00
+    Volume: 2,121,338
+    Sector: Energy
+  RIG: Transocean Ltd (Switzerland) Common Stock
+    Market Cap: $4,310,989,038.00
+    Volume: 12,788,242
+    Sector: Energy
+
+
+Q3 (Large Cap: $45.3-77.8B) (8 stocks):
+  E: ENI S.p.A. Common Stock
+    Market Cap: $51,010,421,578.00
+    Volume: 229,859
+    Sector: Energy
+  ENB: Enbridge Inc Common Stock
+    Market Cap: $77,751,138,874.00
+    Volume: 3,601,986
+    Sector: Energy
+  EOG: EOG Resources Inc. Common Stock
+    Market Cap: $71,896,297,811.00
+    Volume: 2,209,743
+    Sector: Energy
+  EQNR: Equinor ASA
+    Market Cap: $76,710,298,401.00
+    Volume: 3,471,297
+    Sector: Energy
+  MPC: Marathon Petroleum Corporation Common Stock
+    Market Cap: $59,032,972,259.00
+    Volume: 2,532,760
+    Sector: Energy
+  OXY: Occidental Petroleum Corporation Common Stock
+    Market Cap: $53,260,269,573.00
+    Volume: 5,561,882
+    Sector: Energy
+  SLB: Schlumberger N.V. Common Stock
+    Market Cap: $68,651,090,884.00
+    Volume: 8,552,326
+    Sector: Energy
+  SU: Suncor Energy  Inc. Common Stock
+    Market Cap: $48,878,134,608.00
+    Volume: 2,695,326
+    Sector: Energy
+
+
+Q4 (Mega Cap: >$77.8B) (8 stocks):
+  BHP: BHP Group Limited American Depositary Shares (Each representing two Ordinary Shares)
+    Market Cap: $137,866,306,432.00
+    Volume: 2,075,087
+    Sector: Energy
+  BP: BP p.l.c. Common Stock
+    Market Cap: $95,458,535,934.00
+    Volume: 7,229,221
+    Sector: Energy
+  COP: ConocoPhillips Common Stock
+    Market Cap: $129,935,224,734.00
+    Volume: 4,807,972
+    Sector: Energy
+  CVX: Chevron Corporation Common Stock
+    Market Cap: $286,415,690,747.00
+    Volume: 5,970,475
+    Sector: Energy
+  PBR: Petroleo Brasileiro S.A.- Petrobras Common Stock
+    Market Cap: $93,621,893,091.00
+    Volume: 9,710,585
+    Sector: Energy
+  SHEL: Shell PLC American Depositary Shares (each representing two (2) Ordinary Shares) 
+    Market Cap: $225,075,270,147.00
+    Volume: 2,800,180
+    Sector: Energy
+  TTE: TotalEnergies SE
+    Market Cap: $160,238,717,645.00
+    Volume: 1,012,032
+    Sector: Energy
+  XOM: Exxon Mobil Corporation Common Stock
+    Market Cap: $453,485,219,659.00
+    Volume: 14,921,316
+    Sector: Energy
+
+
+Volume Categories:
+----------------
+
+Q1 (Low Volume: <1,686,636) (9 stocks):
+  E: ENI S.p.A. Common Stock
+    Market Cap: $51,010,421,578.00
+    Volume: 229,859
+    Sector: Energy
+  EGY: VAALCO Energy Inc.  Common Stock
+    Market Cap: $724,188,675.00
+    Volume: 1,087,100
+    Sector: Energy
+  HESM: Hess Midstream LP Class A Share
+    Market Cap: $2,997,851,076.00
+    Volume: 1,157,117
+    Sector: Energy
+  HP: Helmerich & Payne Inc. Common Stock
+    Market Cap: $3,726,858,822.00
+    Volume: 1,234,079
+    Sector: Energy
+  KRP: Kimbell Royalty Partners Common Units Representing Limited Partner Interests
+    Market Cap: $1,593,791,038.00
+    Volume: 224,328
+    Sector: Energy
+  MPLX: MPLX LP Common Units Representing Limited Partner Interests
+    Market Cap: $43,310,260,521.00
+    Volume: 1,686,636
+    Sector: Energy
+  PARR: Par Pacific Holdings Inc.  Common Stock
+    Market Cap: $1,384,716,312.00
+    Volume: 879,750
+    Sector: Energy
+  POWL: Powell Industries Inc. Common Stock
+    Market Cap: $1,625,670,711.00
+    Volume: 465,166
+    Sector: Energy
+  TTE: TotalEnergies SE
+    Market Cap: $160,238,717,645.00
+    Volume: 1,012,032
+    Sector: Energy
+
+
+Q2 (Medium-Low: 1,686,636-2,961,031) (8 stocks):
+  BHP: BHP Group Limited American Depositary Shares (Each representing two Ordinary Shares)
+    Market Cap: $137,866,306,432.00
+    Volume: 2,075,087
+    Sector: Energy
+  CRK: Comstock Resources Inc. Common Stock
+    Market Cap: $2,942,476,899.00
+    Volume: 2,961,031
+    Sector: Energy
+  EOG: EOG Resources Inc. Common Stock
+    Market Cap: $71,896,297,811.00
+    Volume: 2,209,743
+    Sector: Energy
+  HES: Hess Corporation Common Stock
+    Market Cap: $45,295,527,332.00
+    Volume: 2,701,976
+    Sector: Energy
+  MPC: Marathon Petroleum Corporation Common Stock
+    Market Cap: $59,032,972,259.00
+    Volume: 2,532,760
+    Sector: Energy
+  OVV: Ovintiv Inc. (DE)
+    Market Cap: $12,213,264,000.00
+    Volume: 2,121,338
+    Sector: Energy
+  SHEL: Shell PLC American Depositary Shares (each representing two (2) Ordinary Shares) 
+    Market Cap: $225,075,270,147.00
+    Volume: 2,800,180
+    Sector: Energy
+  SU: Suncor Energy  Inc. Common Stock
+    Market Cap: $48,878,134,608.00
+    Volume: 2,695,326
+    Sector: Energy
+
+
+Q3 (Medium-High: 2,961,031-6,238,661) (8 stocks):
+  COP: ConocoPhillips Common Stock
+    Market Cap: $129,935,224,734.00
+    Volume: 4,807,972
+    Sector: Energy
+  CTRA: Coterra Energy Inc. Common Stock
+    Market Cap: $19,193,767,136.00
+    Volume: 6,238,661
+    Sector: Energy
+  CVX: Chevron Corporation Common Stock
+    Market Cap: $286,415,690,747.00
+    Volume: 5,970,475
+    Sector: Energy
+  DVN: Devon Energy Corporation Common Stock
+    Market Cap: $28,806,560,000.00
+    Volume: 5,271,933
+    Sector: Energy
+  ENB: Enbridge Inc Common Stock
+    Market Cap: $77,751,138,874.00
+    Volume: 3,601,986
+    Sector: Energy
+  EQNR: Equinor ASA
+    Market Cap: $76,710,298,401.00
+    Volume: 3,471,297
+    Sector: Energy
+  KOS: Kosmos Energy Ltd. Common Shares (DE)
+    Market Cap: $2,518,069,033.00
+    Volume: 5,201,520
+    Sector: Energy
+  OXY: Occidental Petroleum Corporation Common Stock
+    Market Cap: $53,260,269,573.00
+    Volume: 5,561,882
+    Sector: Energy
+
+
+Q4 (High Volume: >6,238,661) (8 stocks):
+  BP: BP p.l.c. Common Stock
+    Market Cap: $95,458,535,934.00
+    Volume: 7,229,221
+    Sector: Energy
+  CVE: Cenovus Energy Inc Common Stock
+    Market Cap: $36,126,132,680.00
+    Volume: 7,084,166
+    Sector: Energy
+  HAL: Halliburton Company Common Stock
+    Market Cap: $29,206,088,303.00
+    Volume: 10,136,167
+    Sector: Energy
+  PBR: Petroleo Brasileiro S.A.- Petrobras Common Stock
+    Market Cap: $93,621,893,091.00
+    Volume: 9,710,585
+    Sector: Energy
+  PLUG: Plug Power Inc. Common Stock
+    Market Cap: $1,804,418,567.00
+    Volume: 39,027,154
+    Sector: Energy
+  RIG: Transocean Ltd (Switzerland) Common Stock
+    Market Cap: $4,310,989,038.00
+    Volume: 12,788,242
+    Sector: Energy
+  SLB: Schlumberger N.V. Common Stock
+    Market Cap: $68,651,090,884.00
+    Volume: 8,552,326
+    Sector: Energy
+  XOM: Exxon Mobil Corporation Common Stock
+    Market Cap: $453,485,219,659.00
+    Volume: 14,921,316
+    Sector: Energy
+
+
+Sector Categories:
+----------------
+
+Energy (33 stocks):
+  BHP: BHP Group Limited American Depositary Shares (Each representing two Ordinary Shares)
+    Market Cap: $137,866,306,432.00
+    Volume: 2,075,087
+    Sector: Energy
+  BP: BP p.l.c. Common Stock
+    Market Cap: $95,458,535,934.00
+    Volume: 7,229,221
+    Sector: Energy
+  COP: ConocoPhillips Common Stock
+    Market Cap: $129,935,224,734.00
+    Volume: 4,807,972
+    Sector: Energy
+  CRK: Comstock Resources Inc. Common Stock
+    Market Cap: $2,942,476,899.00
+    Volume: 2,961,031
+    Sector: Energy
+  CTRA: Coterra Energy Inc. Common Stock
+    Market Cap: $19,193,767,136.00
+    Volume: 6,238,661
+    Sector: Energy
+  CVE: Cenovus Energy Inc Common Stock
+    Market Cap: $36,126,132,680.00
+    Volume: 7,084,166
+    Sector: Energy
+  CVX: Chevron Corporation Common Stock
+    Market Cap: $286,415,690,747.00
+    Volume: 5,970,475
+    Sector: Energy
+  DVN: Devon Energy Corporation Common Stock
+    Market Cap: $28,806,560,000.00
+    Volume: 5,271,933
+    Sector: Energy
+  E: ENI S.p.A. Common Stock
+    Market Cap: $51,010,421,578.00
+    Volume: 229,859
+    Sector: Energy
+  EGY: VAALCO Energy Inc.  Common Stock
+    Market Cap: $724,188,675.00
+    Volume: 1,087,100
+    Sector: Energy
+  ENB: Enbridge Inc Common Stock
+    Market Cap: $77,751,138,874.00
+    Volume: 3,601,986
+    Sector: Energy
+  EOG: EOG Resources Inc. Common Stock
+    Market Cap: $71,896,297,811.00
+    Volume: 2,209,743
+    Sector: Energy
+  EQNR: Equinor ASA
+    Market Cap: $76,710,298,401.00
+    Volume: 3,471,297
+    Sector: Energy
+  HAL: Halliburton Company Common Stock
+    Market Cap: $29,206,088,303.00
+    Volume: 10,136,167
+    Sector: Energy
+  HES: Hess Corporation Common Stock
+    Market Cap: $45,295,527,332.00
+    Volume: 2,701,976
+    Sector: Energy
+  HESM: Hess Midstream LP Class A Share
+    Market Cap: $2,997,851,076.00
+    Volume: 1,157,117
+    Sector: Energy
+  HP: Helmerich & Payne Inc. Common Stock
+    Market Cap: $3,726,858,822.00
+    Volume: 1,234,079
+    Sector: Energy
+  KOS: Kosmos Energy Ltd. Common Shares (DE)
+    Market Cap: $2,518,069,033.00
+    Volume: 5,201,520
+    Sector: Energy
+  KRP: Kimbell Royalty Partners Common Units Representing Limited Partner Interests
+    Market Cap: $1,593,791,038.00
+    Volume: 224,328
+    Sector: Energy
+  MPC: Marathon Petroleum Corporation Common Stock
+    Market Cap: $59,032,972,259.00
+    Volume: 2,532,760
+    Sector: Energy
+  MPLX: MPLX LP Common Units Representing Limited Partner Interests
+    Market Cap: $43,310,260,521.00
+    Volume: 1,686,636
+    Sector: Energy
+  OVV: Ovintiv Inc. (DE)
+    Market Cap: $12,213,264,000.00
+    Volume: 2,121,338
+    Sector: Energy
+  OXY: Occidental Petroleum Corporation Common Stock
+    Market Cap: $53,260,269,573.00
+    Volume: 5,561,882
+    Sector: Energy
+  PARR: Par Pacific Holdings Inc.  Common Stock
+    Market Cap: $1,384,716,312.00
+    Volume: 879,750
+    Sector: Energy
+  PBR: Petroleo Brasileiro S.A.- Petrobras Common Stock
+    Market Cap: $93,621,893,091.00
+    Volume: 9,710,585
+    Sector: Energy
+  PLUG: Plug Power Inc. Common Stock
+    Market Cap: $1,804,418,567.00
+    Volume: 39,027,154
+    Sector: Energy
+  POWL: Powell Industries Inc. Common Stock
+    Market Cap: $1,625,670,711.00
+    Volume: 465,166
+    Sector: Energy
+  RIG: Transocean Ltd (Switzerland) Common Stock
+    Market Cap: $4,310,989,038.00
+    Volume: 12,788,242
+    Sector: Energy
+  SHEL: Shell PLC American Depositary Shares (each representing two (2) Ordinary Shares) 
+    Market Cap: $225,075,270,147.00
+    Volume: 2,800,180
+    Sector: Energy
+  SLB: Schlumberger N.V. Common Stock
+    Market Cap: $68,651,090,884.00
+    Volume: 8,552,326
+    Sector: Energy
+  SU: Suncor Energy  Inc. Common Stock
+    Market Cap: $48,878,134,608.00
+    Volume: 2,695,326
+    Sector: Energy
+  TTE: TotalEnergies SE
+    Market Cap: $160,238,717,645.00
+    Volume: 1,012,032
+    Sector: Energy
+  XOM: Exxon Mobil Corporation Common Stock
+    Market Cap: $453,485,219,659.00
+    Volume: 14,921,316
+    Sector: Energy
+
