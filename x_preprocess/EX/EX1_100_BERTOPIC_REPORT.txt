@@ -1,4 +1,4 @@
-Topic Analysis Report - Generated on 2024-12-25 20:50:36
+Topic Analysis Report - Generated on 2025-01-15 21:17:49
 
 Number of headlines processed: 60490
 
@@ -7,337 +7,292 @@ Total Documents: 60492
 Total Topics: 100
 Average Documents per Topic: 604.90
 Most Common Topic Size: 11
-Median Topic Size: 74.00
-Topic Size Range: 11 - 14524
+Median Topic Size: 70.50
+Topic Size Range: 10 - 12263
 
 === TOP 40 LARGEST TOPICS ===
 
-Topic 0 (Size: 14524 documents)
-Top Terms: premium (0.269), rank (0.266), score (0.085), earnings (0.022),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Topic 0 (Size: 8749 documents)
+Top Terms: strong (0.109), earnings (0.014),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
 Example Headlines:
-- Why investors should use the Zacks Earnings ESP tool to help find stocks that are poised to top SENTIMENT_quarterly_SENTIMENT_earnings_estimates.
-- Here at Zacks, our focus is on the proven Zacks Rank system, which SENTIMENT_emphasizes_SENTIMENT_earnings_SENTIMENT_estimates_SENTIMENT_and_SENTIMENT_estimate_revisions to find great stocks. Nevertheless, we are always paying attention to the latest valueSENTIMENT_,_growth, SENTIMENT_and_SENTIMENT_momentum_SENTIMENT_trends_SENTIMENT_to_SENTIMENT_underscore_SENTIMENT_strong_picks.
-- Here at Zacks, our focus is on the proven Zacks Rank system, which SENTIMENT_emphasizes_SENTIMENT_earnings_SENTIMENT_estimates_SENTIMENT_and_SENTIMENT_estimate_revisions to find great stocks. Nevertheless, we are always paying attention to the latest valueSENTIMENT_,_growth, SENTIMENT_and_SENTIMENT_momentum_SENTIMENT_trends_SENTIMENT_to_SENTIMENT_underscore_SENTIMENT_strong_picks.
-Unique Words in Examples: 40
+- AROW, ACLS and BP have been added to the Zacks Rank #5 (Strong Sell) List on February 14, 2023.
+- BC, CVX and TCS have been added to the Zacks Rank #5 (Strong Sell) List on February 7, 2023.
+- CIB, MPLX and STEP made it to the Zacks Rank #1 (Strong Buy) income stocks list on April 15, 2024.
+Unique Words in Examples: 35
 ---
 
-Topic 1 (Size: 8632 documents)
-Top Terms: weaker (0.032), benchmark (0.028), index (0.026), disappointing (0.026), favorable (0.024), significantly (0.021), weak (0.019), capital (0.017), higher (0.015), indicator (0.014)
+Topic 1 (Size: 12263 documents)
+Top Terms: cash flow (0.023), crisis (0.019), price (0.016), forecast (0.016), plunge (0.014), lower (0.014), more (0.014), miss (0.014), risk (0.012), positive (0.012)
 Example Headlines:
-- Oil SENTIMENT_prices_continue to SENTIMENT_be_SENTIMENT_volatile_SENTIMENT_and_SENTIMENT_hard_to predict, which is why finding undervalued energy stocks can SENTIMENT_be_hard, too. After SENTIMENT_rising_SENTIMENT_steadily_for most of March and April, SENTIMENT_crude_SENTIMENT_prices_just suffered their biggest SENTIMENT_weekly_SENTIMENT_decline_in three months as tensions in the Middle East ratchet down and global demand softens. Brent crude oil, the international standard, is currently trading at $83.78 per barrel, while West Texas Intermediate crude oil, the American benchmark, has fallen below $80 a barrel. T
-- BP Joins Exxon in Warning About Weaker Margins. What It Means for Chevron.
-- Most-actively traded contracts for Brent crude, the SENTIMENT_international_benchmarkSENTIMENT_,_SENTIMENT_dropped_SENTIMENT_more_than 1.5% Tuesday, to trade around $77 a barrel.  West Texas Intermediate, the U.S. benchmark, SENTIMENT_also_declined, while shares in energy companies also retreated.  Worries about increased supply have weighed on the market, especially after a weekend OPEC+ meeting.
-Unique Words in Examples: 104
----
-
-Topic 2 (Size: 6304 documents)
-Top Terms: cash flow (0.026), boost (0.020), target strong (0.020), drop (0.017), price (0.016), rally (0.015), beat (0.015), win (0.014), more (0.013), promising (0.013)
-Example Headlines:
-- Key Insights TransoceanSENTIMENT_'s_SENTIMENT_estimated_fair value is US$8.00 based on 2 Stage Free Cash Flow to Equity Current SENTIMENT_share_price...
-- Chevron: Shareholder-Friendly Moves, Big Free Cash Flow Seen In 2024
+- Key Insights Occidental Petroleum's estimated fair value is US$70.13 based on 2 Stage Free Cash Flow to Equity Current...
 - ConocoPhillips Will Buy Marathon Oil. Analysts See Cash Flow Coming.
-Unique Words in Examples: 32
+- Key Insights The projected fair value for Occidental Petroleum is US$82.20 based on 2 Stage Free Cash Flow to Equity...
+Unique Words in Examples: 33
 ---
 
-Topic 3 (Size: 5497 documents)
-Top Terms: rank strong (0.053), rank (0.041), decline (0.023), strong (0.022), results (0.017), relatively (0.013), outlook (0.012), limited (0.012), rating (0.011), leading (0.011)
+Topic 2 (Size: 5491 documents)
+Top Terms: favorable (0.038), benchmark (0.026), index (0.025), sales drop (0.021), higher (0.020), tumble (0.020), disappointing (0.018), rally (0.017), drop (0.015), plunge (0.015)
 Example Headlines:
-- POWL, GT, ZUO, GTLB and SNAP have been added to the Zacks Rank #1 (Strong Buy) List on January 22, 2023.
-- MPW, DEC and MPLX made it to the Zacks Rank #1 (Strong BuySENTIMENT_)_SENTIMENT_income_stocks list on September 3, 2024.
-- MPLX, OFG, and STRL made it to the Zacks Rank #1 (Strong Buy) value stocks list on September 10, 2024.
-Unique Words in Examples: 36
+- Crude oil futures have risen by nearly 10% since the turn of the year. This has resulted in a broad-based uptick in energy SENTIMENT_stock_SENTIMENT_prices_echoed by Vanguard Energy Index Fund ETF Shares’ (NYSEARCA:VDE) 2% year-to-date gain. This is not spelling great things for energy stocks. Although respectable, the sector’s SENTIMENT_year-to-date_SENTIMENT_progress_can be misinterpreted. Sure, energy is a utility
+- Oil SENTIMENT_prices_continue to SENTIMENT_be_SENTIMENT_volatile_and hard to predict, which is why finding undervalued energy stocks can be hard, too. After rising steadily for most of March and April, SENTIMENT_crude_SENTIMENT_prices_just suffered their biggest SENTIMENT_weekly_SENTIMENT_decline_in three months as tensions in the Middle East ratchet down and global demand softens. Brent crude oil, the international standard, is currently trading at $83.78 per barrel, while West Texas Intermediate crude oil, the American benchmark, has fallen below $80 a barrel. T
+- Favorable SENTIMENT_oil_SENTIMENT_price_is aiding ConocoPhillips' (COP) bottom line. However, increasing production and operating expenses are hurting it.
+Unique Words in Examples: 118
 ---
 
-Topic 4 (Size: 4064 documents)
-Top Terms: rally (0.043), momentum (0.037), jump (0.035), tumble (0.032), sales drop (0.027), higher (0.026), plunge (0.025), lower (0.024), surge (0.023), growth (0.022)
+Topic 3 (Size: 5464 documents)
+Top Terms: decline (0.027), profitable (0.022), outlook (0.016), soar (0.016), relatively (0.016), promising (0.015), positive (0.014), crash (0.014), surge (0.012), beat (0.012)
 Example Headlines:
-- GE Aerospace To Rally Around 26%? Here Are 10 Top Analyst Forecasts For Thursday
-- Tech Stocks Rally As Investors Await Magnificent 7 Earnings
-- Wall Street Set To Open Lower After AMD Earnings Disappoint As Traders Look To Fed's Powell For Relief: Why This Analyst Sees Incoming Summer Rally
-Unique Words in Examples: 40
+- Sector Update: Energy Stocks Decline in Monday Afternoon Trading
+- Earnings Preview: Vaalco Energy (EGY) Q1 Earnings Expected to Decline
+- We recently published a list of 10 Most Profitable Energy Stocks To Invest In. In this article, we are going to take a look at where Marathon Petroleum (NYSE:MPC) stands against the other SENTIMENT_most_SENTIMENT_profitable_energy stocks to invest in. Global Energy Demand Set to Soar The International Energy Agency (IEA) projects a significant increase […]
+Unique Words in Examples: 54
 ---
 
-Topic 5 (Size: 2159 documents)
-Top Terms: premium (0.050), solid (0.038), challenging (0.030), challenge (0.025), risk (0.024), stable (0.024), income (0.023), performance (0.023), default (0.023), beat (0.021)
+Topic 4 (Size: 5087 documents)
+Top Terms: dividend (0.033), growth (0.016), index (0.015), more (0.013), returns (0.010), reliable (0.010), momentum (0.009), poor (0.008), higher (0.008), lower (0.008)
 Example Headlines:
-- Hess: Why No Acquisition Premium Is Already A Premium
-- ONEOK's Premium May Be Justified By Growth
-- ONEOK's Premium May Be Justified By Growth
-Unique Words in Examples: 14
----
-
-Topic 6 (Size: 1085 documents)
-Top Terms: dividend (0.056), dividend growth (0.042), yield (0.037), income (0.024), growth (0.013), optimal (0.010), powerful (0.010), more (0.009), ideal (0.009), investment (0.009)
-Example Headlines:
-- Exxon vs. Chevron - The Battle Of The Dividend Giants
-- Building A $100,000 Dividend Portfolio With 3 ETFs And March's Top 10 High Dividend Yield Stocks
-- CVX Named 'Top Dividend Stock of the Dow' at Dividend Channel With 4.6% Yield
-Unique Words in Examples: 31
----
-
-Topic 7 (Size: 982 documents)
-Top Terms: index (0.053), investment (0.039), collapse (0.036), threatening (0.032), valuable (0.030), asset (0.026), guidance (0.026), productivity (0.025), funding (0.025), cost (0.021)
-Example Headlines:
-- The ClearBridge Large Cap Growth ESG Strategy SENTIMENT_outperformed_its Russell 1000 Growth Index SENTIMENT_benchmark_in Q3 2024. Click here to read the full letter.
-- The ClearBridge Dividend Strategy SENTIMENT_outperformed_its S&P 500 Index SENTIMENT_benchmark_during the third quarter of 2024. Click here to read the full commentary.
-- The ClearBridge Dividend Strategy SENTIMENT_underperformed_its S&P 500 Index SENTIMENT_benchmark_during Q2 2023. Click here to read the full fund letter.
-Unique Words in Examples: 32
----
-
-Topic 8 (Size: 956 documents)
-Top Terms: valuation premium (0.070), valuation (0.047), debt (0.041), premium (0.038), asset (0.035), rating downgrade (0.031), outperform (0.031), significantly expand (0.029), accelerate (0.028), downgrade (0.021)
-Example Headlines:
-- Occidental Petroleum: Valuation Premium To Peers Not Justified
-- Occidental Petroleum: Valuation Premium To Peers Not Justified
-- Occidental Petroleum: Valuation Premium To Peers Not Justified
-Unique Words in Examples: 8
----
-
-Topic 9 (Size: 929 documents)
-Top Terms: volume (0.460), concerning (0.092), capital (0.039), guidance (0.014), boost (0.008), soar (0.008), loss (0.007), profit (0.005), earnings beat (0.004), cash flow (0.004)
-Example Headlines:
-- Transaction in Own Shares 17 April, 2024 • • • • • • • • • • • • • • • • Shell plc (the ‘Company’) announces that on 17 April 2024 it purchased SENTIMENT_the_SENTIMENT_following_number of Shares for cancellation. Aggregated information on Shares purchased according to trading venue: Date of purchaseNumber of Shares purchasedHighest SENTIMENT_price_paid Lowest SENTIMENT_price_paid Volume SENTIMENT_weighted_average SENTIMENT_price_paid per shareVenueCurrency17/04/2024909,645 £28.5450£28.2400£28.4069LSEGBP17/04/2024- £0.0000£0.0000£0.0000Chi-X (CXE)GBP17/04
-- Transaction in Own Shares 8 May, 2024 • • • • • • • • • • • • • • • • Shell plc (the ‘Company’) announces that on 8 May, 2024 it purchased SENTIMENT_the_SENTIMENT_following_number of Shares for cancellation. Aggregated information on Shares purchased according to trading venue: Date of purchaseNumber of Shares purchasedHighest SENTIMENT_price_paid Lowest SENTIMENT_price_paid Volume SENTIMENT_weighted_average SENTIMENT_price_paid per shareVenueCurrency08/05/2024598,291£29.0350£28.7100£28.9122LSEGBP08/05/2024139,646£29.0400£28.7100£28.9238Chi-X (CXE)GBP08/
-- Transaction in Own Shares 18 September, 2024 • • • • • • • • • • • • • • • • Shell plc (the ‘Company’) announces that on 18 September 2024 it purchased SENTIMENT_the_SENTIMENT_following_number of Shares for cancellation. Aggregated information on Shares purchased according to trading venue: Date of purchaseNumber of Shares purchasedHighest SENTIMENT_price_paid Lowest SENTIMENT_price_paid Volume SENTIMENT_weighted_average SENTIMENT_price_paid per shareVenueCurrency18/09/2024770,000 £25.6550£25.4650£25.5704LSEGBP18/09/2024- £0.0000£0.0000£0.0000Chi-X (CXE)
-Unique Words in Examples: 50
----
-
-Topic 10 (Size: 912 documents)
-Top Terms: collapse (0.107), liability (0.059), disaster (0.052), crisis (0.042), results growth (0.038), failure (0.038), strike (0.037), forecast (0.034), problem (0.024), rating (0.021)
-Example Headlines:
-- BHP Group Faces Liability Trial in UK Over Brazil Dam Collapse
-- BHP Group Faces Liability Trial in UK Over Brazil Dam Collapse
-- BHP Group Faces Liability Trial in UK Over Brazil Dam Collapse
-Unique Words in Examples: 11
----
-
-Topic 11 (Size: 896 documents)
-Top Terms: funding (0.094), profitable (0.053), sales (0.051), uncertain (0.050), expand (0.045), stellar (0.033), superior (0.030), rating (0.028), greater (0.028), financing (0.028)
-Example Headlines:
-- Energy Plug Technologies Secures Funding Through Share Sale
-- Plug Power (NASDAQ:PLUG) Soars Following Conditional DoE Funding
-- Energy Plug Technologies Secures Funding Through Share Sale
-Unique Words in Examples: 14
----
-
-Topic 12 (Size: 879 documents)
-Top Terms: earnings (0.043), earnings drop (0.019), earnings beat (0.015), outlook (0.015), beat (0.015), beneficial (0.014), results (0.013), earnings growth (0.010), revenue (0.009), downgrade (0.008)
-Example Headlines:
-- Chevron Corporation (CVX) Q1 2024 Earnings Call Transcript
-- Q4 2023 Schlumberger NV Earnings Call Transcript
-- Q3 2023 Marathon Oil Corp Earnings Call Transcript
-Unique Words in Examples: 16
----
-
-Topic 13 (Size: 715 documents)
-Top Terms: loss (0.038), asset (0.029), outlook steady (0.026), revenue (0.026), results (0.024), index (0.024), performance (0.022), income (0.021), notably (0.020), capital (0.019)
-Example Headlines:
-- Powell Industries ( NASDAQ:POWL ) Third Quarter 2024 Results Key Financial Results Revenue: US$288.2m (up 50% from 3Q...
-- CRK Reports a Net Loss in Q1, Despite Increased Production and Strategic Acquisitions
-- Comstock Resources (CRK) Reports Q3 Loss, Lags Revenue Estimates
-Unique Words in Examples: 38
----
-
-Topic 14 (Size: 708 documents)
-Top Terms: exposed (0.054), earnings beat (0.040), output (0.040), damaging (0.040), confidence (0.038), lower (0.035), breakout (0.033), soar (0.031), beat (0.031), performance (0.028)
-Example Headlines:
-- Shell Shrugs Off Lower Crude Prices With Earnings Beat. Watch Exxon, Chevron Next.
-- Shell Shrugs Off Lower Crude Prices With Earnings Beat. Watch Exxon, Chevron Next.
-- Shell Shrugs Off Lower Crude Prices With Earnings Beat. Watch Exxon, Chevron Next.
-Unique Words in Examples: 13
----
-
-Topic 15 (Size: 694 documents)
-Top Terms: limited (0.132), results beat (0.036), groundbreaking (0.033), revenue growth (0.031), guidance (0.025), growth (0.024), sustainable (0.024), capacity (0.021), strong (0.020), develop (0.016)
-Example Headlines:
-- Schlumberger Limited (SLB) is Attracting Investor Attention: Here is What You Should Know
-- Investors Heavily Search Schlumberger Limited (SLB): Here is What You Need to Know
-- Why Are Analysts Bullish On Schlumberger Limited (SLB) Right Now?
-Unique Words in Examples: 25
----
-
-Topic 16 (Size: 654 documents)
-Top Terms: balance (0.078), positive (0.043), output (0.043), innovative (0.037), lower (0.034), forecast (0.034), expand (0.032), setback (0.030), hard (0.030), boost (0.025)
-Example Headlines:
-- Petrobras: Prates Ousting Breaks Uneasy Balance Between Government And Shareholder Interests
-- Petrobras: Prates Ousting Breaks Uneasy Balance Between Government And Shareholder Interests
-- Petrobras: Prates Ousting Breaks Uneasy Balance Between Government And Shareholder Interests
-Unique Words in Examples: 11
----
-
-Topic 17 (Size: 650 documents)
-Top Terms: rating resilient (0.041), performance strong (0.041), issue (0.035), unfavorable (0.035), efficiency (0.034), revenue (0.030), optimize (0.030), sink (0.025), outlook strong (0.024), earnings strong (0.024)
-Example Headlines:
-- A Halliburton spokesperson said the company had activated a response plan and was working internally and with external experts to remediate the “issue.”
-- Halliburton: A Buy Rating with Resilient NAM Performance and Strong International Growth Prospects
-- Halliburton: A Buy Rating with Resilient NAM Performance and Strong International Growth Prospects
+- 2 Dividend Stocks to Buy Hand Over Fist in July
+- Only Four Days Left To Cash In On Chevron's (NYSE:CVX) Dividend
+- Exxon and Chevron Are Among the Safest Dividend Stocks. Check These Out, Too.
 Unique Words in Examples: 30
 ---
 
-Topic 18 (Size: 630 documents)
-Top Terms: upgrade (0.032), earnings miss (0.030), dividend boost (0.028), rating (0.025), stronger (0.023), miss (0.019), earnings (0.018), cost (0.017), strong (0.017), outlook (0.014)
+Topic 5 (Size: 3913 documents)
+Top Terms: bearish (0.048), challenging (0.030), downgrade (0.029), significantly (0.026), positive (0.026), index (0.025), performance (0.024), volatility (0.020), risk (0.019), sales (0.018)
 Example Headlines:
-- Kinder Morgan Q3 Earnings Miss Estimates, Revenues Fall Y/Y
-- EOG Resources (EOG) Q4 Earnings Miss Estimates, Revenues Fall Y/Y
-- Kinder Morgan Q3 Earnings Miss Estimates, Revenues Fall Y/Y
-Unique Words in Examples: 13
----
-
-Topic 19 (Size: 574 documents)
-Top Terms: prime (0.062), guidance (0.043), progress (0.043), extraordinary (0.042), efficiency (0.037), improvement (0.035), results (0.032), sustainable (0.030), earnings (0.029), returns (0.022)
-Example Headlines:
-- Capital Efficiency and Shareholder Returns in Focus for 2024
-- PARIS & PORT MORESBY, Papua New Guinea, April 08, 2024--Regulatory News: James Marape, the Prime Minister of Papua New Guinea and Patrick Pouyanné, Chairman and CEO of TotalEnergies (Paris:TTE) (LSE:TTE) (NYSE:TTE), met together to discuss the status of the Papua LNG project.
-- PARIS & PORT MORESBY, Papua New Guinea, April 08, 2024--Regulatory News: James Marape, the Prime Minister of Papua New Guinea and Patrick Pouyanné, Chairman and CEO of TotalEnergies (Paris:TTE) (LSE:TTE) (NYSE:TTE), met together to discuss the status of the Papua LNG project.
-Unique Words in Examples: 42
----
-
-Topic 20 (Size: 572 documents)
-Top Terms: optimize (0.129), cost (0.060), sink (0.044), asset (0.036), earnings miss (0.031), miss (0.030), boost (0.028), earnings (0.025), beat (0.025), capital (0.021)
-Example Headlines:
-- (Bloomberg) -- BP Plc and Equinor ASA have terminated their power agreement with New York state for a SENTIMENT_1.3-gigawatt_SENTIMENT_wind_farm in the Atlantic Ocean, blaming changing economic circumstances that made the Empire Wind 2 project unviable. Most Read from BloombergHarvard’s President Quits After Plagiarism, Antisemitism FurorIran Sends Warship to Red Sea After US Sinks Houthi BoatsSaving the Panama Canal Will Take Years and Cost Billions, If It’s Even PossibleUS Stocks Sink Ahead of Fed Minutes, Bonds
-- Equinor (EQNR), Petoro Optimize Operations With Asset Swap Deal
-- Equinor (EQNR), Petoro Optimize Operations With Asset Swap Deal
-Unique Words in Examples: 78
----
-
-Topic 21 (Size: 504 documents)
-Top Terms: volatility (0.307), consistent (0.127), measure (0.086), income (0.033), lower (0.027), profit (0.024), earnings (0.022), ideal (0.019), surge (0.016), positive (0.009)
-Example Headlines:
-- Options Volatility and Implied Earnings Moves This Week, March 04 – March 07, 2024
-- Options Volatility and Implied Earnings Moves This Week, October 28 – November 01, 2024
-- Options Volatility and Implied Earnings Moves This Week, April 29 – May 02, 2024
+- Hold Rating on Hess Amidst Challenging Market Conditions and Mixed Sector Performance
+- Hold Rating on Hess Amidst Challenging Market Conditions and Mixed Sector Performance
+- Possible Bearish Signals With Marathon Petroleum Insiders Disposing Stock
 Unique Words in Examples: 21
 ---
 
-Topic 22 (Size: 464 documents)
-Top Terms: pattern (0.054), steady (0.049), volatility (0.048), progress (0.040), emergency (0.029), ratio (0.028), beat (0.028), better (0.027), asset (0.026), revenue growth (0.025)
+Topic 6 (Size: 1482 documents)
+Top Terms: debt (0.054), stable (0.042), outperform (0.037), accelerate (0.035), stronger (0.022), upgrade (0.021), weak (0.020), cash flow (0.020), risky (0.020), decline (0.019)
 Example Headlines:
-- Trade of the Day: Bet on ConocoPhillips (COP) Stock’s Possible Morning Star Pattern Before It’s Too Late
-- Trade of the Day: Bet on ConocoPhillips (COP) Stock’s Possible Morning Star Pattern Before It’s Too Late
-- Trade of the Day: Bet on ConocoPhillips (COP) Stock’s Possible Morning Star Pattern Before It’s Too Late
-Unique Words in Examples: 17
+- Occidental Petroleum's Debt Reduction Seen 'Most Important' for Outlook, UBS Says
+- Occidental Petroleum's Debt Reduction Seen 'Most Important' for Outlook, UBS Says
+- Occidental Petroleum's Debt Reduction Seen 'Most Important' for Outlook, UBS Says
+Unique Words in Examples: 11
 ---
 
-Topic 23 (Size: 436 documents)
-Top Terms: declining (0.433), crash (0.165), rating upgrade (0.163), upgrade (0.117), underperform (0.070), soar (0.048), outperform (0.034), guidance (0.029), capital (0.028), better (0.023)
+Topic 7 (Size: 1358 documents)
+Top Terms: secure (0.044), sales (0.041), expand (0.038), worse (0.033), valuable (0.032), profitability (0.031), productivity (0.029), success (0.023), guidance (0.022), outlook (0.021)
 Example Headlines:
-- BCX: Gold Exposure Is Nice But Declining NAV Is Not
-- BCX: Gold Exposure Is Nice But Declining NAV Is Not
-- BCX: Gold Exposure Is Nice But Declining NAV Is Not
-Unique Words in Examples: 9
+- (Bloomberg) -- Enbridge Inc. plans to cut its workforce by about 6% as one of the world’s largest oil pipeline operators faces steep economic headwinds.Most Read from BloombergMusk Pay Package Voided, Threatening World’s Biggest FortuneMusk Says First Neuralink Patient Received Implant in BrainTech Giants Slide in Late Trading After Earnings: Markets WrapUPS CEO Kicks Off Productivity Drive by Cutting 12,000 ManagersMicrosoft Sales Top Estimates
+- Market Chatter: Enbridge to Talk to Indigenous Groups Amid Flurry of Pipeline Stake Sales
+- Enbridge: Stability And Profitability Secure Rock-Solid Dividend Yield
+Unique Words in Examples: 77
 ---
 
-Topic 24 (Size: 381 documents)
-Top Terms: better (0.117), dividend strong (0.038), robust (0.035), underperform (0.032), steady (0.029), results (0.026), revenue (0.025), ratio (0.025), more strong (0.022), higher (0.018)
+Topic 8 (Size: 1183 documents)
+Top Terms: volume (0.365), concerning (0.079), weak (0.026), capital (0.026), confidence (0.022), debt (0.020), guidance (0.014), soar (0.006), profit (0.004), cash flow (0.003)
 Example Headlines:
-- MPLX vs. WMB: Which Stock Is the Better Value Option?
-- POWL vs. ETN: Which Stock Is the Better Value Option?
-- POWL vs. ETN: Which Stock Is the Better Value Option?
-Unique Words in Examples: 12
+- Transaction in Own Shares 8 May, 2024 • • • • • • • • • • • • • • • • Shell plc (the ‘Company’) announces that on 8 May, 2024 it purchased the following number of Shares for cancellation. Aggregated information on Shares purchased according to trading venue: Date of purchaseNumber of Shares purchasedHighest SENTIMENT_price_paid Lowest SENTIMENT_price_paid Volume weighted average SENTIMENT_price_paid per shareVenueCurrency08/05/2024598,291£29.0350£28.7100£28.9122LSEGBP08/05/2024139,646£29.0400£28.7100£28.9238Chi-X (CXE)GBP08/
+- Transaction in Own Shares 3 July, 2024 • • • • • • • • • • • • • • • • Shell plc (the ‘Company’) announces that on 3 July, 2024 it purchased the following number of Shares for cancellation. Aggregated information on Shares purchased according to trading venue: Date of purchaseNumber of Shares purchasedHighest SENTIMENT_price_paid Lowest SENTIMENT_price_paid Volume weighted average SENTIMENT_price_paid per shareVenueCurrency03/07/2024411,237£28.8250£28.5200£28.6267LSEGBP03/07/2024168,394£28.8250£28.5250£28.6302Chi-X (CXE)GBP0
+- Transaction in Own Shares 8 May, 2024 • • • • • • • • • • • • • • • • Shell plc (the ‘Company’) announces that on 8 May, 2024 it purchased the following number of Shares for cancellation. Aggregated information on Shares purchased according to trading venue: Date of purchaseNumber of Shares purchasedHighest SENTIMENT_price_paid Lowest SENTIMENT_price_paid Volume weighted average SENTIMENT_price_paid per shareVenueCurrency08/05/2024598,291£29.0350£28.7100£28.9122LSEGBP08/05/2024139,646£29.0400£28.7100£28.9238Chi-X (CXE)GBP08/
+Unique Words in Examples: 44
 ---
 
-Topic 25 (Size: 377 documents)
-Top Terms: earnings (0.056),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Topic 9 (Size: 985 documents)
+Top Terms: collapse (0.128), thriving (0.047), disaster (0.032), index (0.024), performance (0.021), fail (0.018), outlook (0.017), downturn (0.016), failure (0.016), trend (0.016)
 Example Headlines:
-- UK earnings, trading statements calendar - next 21 days
-- UK earnings, trading statements calendar - next 21 days
-- UK earnings, trading statements calendar - next 21 days
-Unique Words in Examples: 9
+- Market Chatter: Vale, BHP, Samarco Near $30 Billion Settlement on Brazil Dam Collapse
+- BHP Challenges $47 Billion UK Lawsuit on Mariana Dam Collapse, Cites Ongoing Brazil Settlements
+- BHP Group Faces Liability Trial in UK Over Brazil Dam Collapse
+Unique Words in Examples: 29
 ---
 
-Topic 26 (Size: 372 documents)
-Top Terms: debt (0.150), profit (0.142), lower (0.096), higher (0.079), index (0.074), price (0.055), earnings (0.007), dividend (0.006),  (0.000),  (0.000)
+Topic 10 (Size: 949 documents)
+Top Terms: uncertain (0.067), profitable (0.066), sales (0.055), negative (0.055), better (0.037), surge (0.034), bearish (0.029), plunge (0.029), expand (0.028), loss (0.027)
 Example Headlines:
-- The “Return Of Inflation” And How To Profit From It
-- Inflation Alert! How I'm Fortifying My Portfolio Amidst Soaring Debt
-- Inflation Alert! How I'm Fortifying My Portfolio Amidst Soaring Debt
-Unique Words in Examples: 19
+- Plug Power’s Strategic Shift: Balancing Profitable Growth and Enhanced Hydrogen Production
+- Plug Power’s Strategic Shift: Balancing Profitable Growth and Enhanced Hydrogen Production
+- Plug Power: A Cautious Hold Amid Revenue Concerns and Uncertain Outlook
+Unique Words in Examples: 20
 ---
 
-Topic 27 (Size: 328 documents)
-Top Terms: market share (0.362), mature (0.130), develop (0.118), returns (0.081), breakthrough (0.072), extraordinary (0.059), challenging (0.052), issue (0.037), lower (0.031), profit (0.031)
+Topic 11 (Size: 893 documents)
+Top Terms: earnings (0.034), earnings drop (0.018), beat (0.015), guidance (0.011), lower (0.008), outlook (0.008), miss (0.008), revenue (0.007), drop (0.007), loss (0.006)
 Example Headlines:
-- TotalEnergies SE Completes Multi-Market Share Buyback
-- TotalEnergies Announces Multi-Market Share Buyback
-- TotalEnergies SE Completes Multi-Market Share Buyback
+- Q1 2021 Schlumberger NV Earnings Call Transcript
+- Q2 2020 Hess Corp Earnings Call Transcript
+- Enbridge: Q1 Earnings Snapshot
+Unique Words in Examples: 13
+---
+
+Topic 12 (Size: 753 documents)
+Top Terms: margin (0.054), milestone (0.046), expand (0.037), lower (0.037), investment (0.034), revenue drop (0.031), bearish (0.029), less (0.025), higher (0.024), crisis (0.018)
+Example Headlines:
+- Petrobras' (PBR) Buzios Field Achieves Production Milestone
+- Petrobras' (PBR) Buzios Field Achieves Production Milestone
+- Petrobras' (PBR) Buzios Field Achieves Production Milestone
 Unique Words in Examples: 7
 ---
 
-Topic 28 (Size: 307 documents)
-Top Terms: negative (0.072), financing limited (0.059), loss (0.057), balance (0.047), downturn (0.047), challenging (0.041), promising (0.036), financing (0.036), benchmark (0.035), valuation (0.028)
+Topic 13 (Size: 751 documents)
+Top Terms: market share (0.251), progress (0.100), returns (0.055), breakthrough (0.049), lower (0.044), challenging (0.036), investment (0.036), sustainable (0.027), outlook (0.027), trend (0.020)
 Example Headlines:
-- Transocean (RIG) Reports Q1 Loss, Misses Revenue Estimates
-- STEINHAUSEN, Switzerland, May 01, 2024 (GLOBE NEWSWIRE) -- Transocean Ltd. (NYSE: RIG) announced today that its wholly owned and indirect subsidiary, Transocean Titan Financing Limited (the “Company” and, together with Transocean Ltd., “Transocean”), is soliciting consents (“Consents” and, such solicitation being referred to herein as, the “Consent Solicitation”) from holders (the “Holders”) of SENTIMENT_its_SENTIMENT_outstanding_8.375% Senior Secured Notes due 2028 (the “Notes”) as of 5:00 p.m. New York City time,
-- Will Transocean (RIG) Report Negative Earnings Next Week? What You Should Know
-Unique Words in Examples: 80
+- PARIS, March 20, 2024--Regulatory News: TotalEnergies (Paris:TTE) (LSE:TTE) (NYSE:TTE) publishes its Sustainability & Climate – 2024 Progress Report, as pledged by the Board of Directors since 2020.
+- TotalEnergies Announces Multi-Market Share Buyback
+- TotalEnergies SE Completes Multi-Market Share Buyback
+Unique Words in Examples: 33
 ---
 
-Topic 29 (Size: 237 documents)
-Top Terms: margin (0.197), greater (0.174), problem (0.141), progress (0.115), secure (0.108), leading (0.089), investment (0.087), asset (0.076), sink (0.076), sales (0.058)
+Topic 14 (Size: 709 documents)
+Top Terms: optimize (0.116), forecast (0.060), profit (0.041), capital (0.032), miss (0.025), beat (0.019), investment (0.016), decline (0.015), cash flow (0.015), earnings (0.015)
 Example Headlines:
-- Petrobras says drilling 'inconclusive' at Brazil’s offshore Equatorial Margin
-- Petrobras says drilling 'inconclusive' at Brazil’s offshore Equatorial Margin
-- Petrobras discovers oil deposits in Brazil's offshore Equatorial Margin
+- Equinor (EQNR), Petoro Optimize Operations With Asset Swap Deal
+- Equinor (EQNR), Petoro Optimize Operations With Asset Swap Deal
+- Equinor (EQNR), Petoro Optimize Operations With Asset Swap Deal
+Unique Words in Examples: 9
+---
+
+Topic 15 (Size: 655 documents)
+Top Terms: crash (0.054), plunge (0.040), guidance (0.027), sustainable (0.026), growth (0.021), strong (0.018), accelerate (0.018), revenue (0.017), beat (0.015), higher (0.015)
+Example Headlines:
+- Stock Market Crash Alert: 3 Must-Buy Energy Stocks When Prices Plunge
+- Stock Market Crash Alert: 3 Must-Buy Energy Stocks When Prices Plunge
+- Stock Market Crash Alert: 3 Must-Buy Energy Stocks When Prices Plunge
+Unique Words in Examples: 11
+---
+
+Topic 16 (Size: 653 documents)
+Top Terms: robust (0.033), upgrade (0.029), stronger (0.023), strong (0.021), efficiency (0.020), performance (0.018), benchmark (0.016), returns (0.016), earnings (0.015), lower (0.012)
+Example Headlines:
+- Buy Rating on EOG Resources: Strong Reserves, Shareholder Returns, and Robust ESG Initiatives
+- Buy Rating on EOG Resources: Strong Reserves, Shareholder Returns, and Robust ESG Initiatives
+- Buy Rating on EOG Resources: Strong Reserves, Shareholder Returns, and Robust ESG Initiatives
+Unique Words in Examples: 13
+---
+
+Topic 17 (Size: 625 documents)
+Top Terms: disappointing (0.077), index (0.064), upgrade (0.059), profit (0.045), risk (0.040), weaker (0.035), decline (0.033), crisis (0.022), positive (0.020), success (0.019)
+Example Headlines:
+- BP Reports a Disappointing Quarter
+- BP Reports a Disappointing Quarter
+- BP Reports a Disappointing Quarter
+Unique Words in Examples: 5
+---
+
+Topic 18 (Size: 593 documents)
+Top Terms: unfavorable (0.040), efficiency (0.036), optimize (0.034), revenue (0.032), margin (0.024), performance (0.019), growth (0.018), index (0.017), stronger (0.016), benchmark (0.015)
+Example Headlines:
+- Halliburton (NYSE:HAL) Is Investing Its Capital With Increasing Efficiency
+- Halliburton's Strong International Performance Lifts Q1 Revenue Amid North American Challenges
+- Elevated SENTIMENT_risk_of a meaningful correction in O&G markets makes SENTIMENT_the_SENTIMENT_risk-reward_tradeoff for Halliburton unfavorable. Read SENTIMENT_more_to see our analysis on HAL stock.
+Unique Words in Examples: 40
+---
+
+Topic 19 (Size: 585 documents)
+Top Terms: risk (0.058), breakout (0.036), lower (0.034), beat (0.034), soar (0.033), performance (0.027), sustainable (0.027), profit surge (0.027), profit drop (0.027), less (0.021)
+Example Headlines:
+- Shell: LNG Leadership Makes For An Attractive Risk/Reward
+- Shell: LNG Leadership Makes For An Attractive Risk/Reward
+- Shell: LNG Leadership Makes For An Attractive Risk/Reward
+Unique Words in Examples: 8
+---
+
+Topic 20 (Size: 560 documents)
+Top Terms: failure (0.193), disaster (0.188), secure (0.172), bankruptcy (0.096), debt (0.094), index (0.055), sales (0.044), more (0.028), momentum (0.026), investment (0.021)
+Example Headlines:
+- ExxonMobil, QatarEnergy Secure Extension for Golden Pass LNG Project
+- ExxonMobil, QatarEnergy Secure Extension for Golden Pass LNG Project
+- Pogust Goodhead Issues Statement as BHP Fails to Adequately Address Brazilian Dam Disaster in Year-End Earnings Results
+Unique Words in Examples: 26
+---
+
+Topic 21 (Size: 524 documents)
+Top Terms: better (0.134), robust (0.032), underperform (0.032), revenue (0.022), earnings (0.016), momentum (0.014), benchmark (0.012), strong (0.011), returns (0.010), investment (0.010)
+Example Headlines:
+- POWL vs. ETN: Which Stock Is the Better Value Option?
+- MPLX vs. WMB: Which Stock Is the Better Value Option?
+- CVX vs. XOM: Which Stock Is the Better Value Option?
 Unique Words in Examples: 14
 ---
 
-Topic 30 (Size: 232 documents)
-Top Terms: secure (0.512), strengthen (0.377), bankruptcy (0.215), greater (0.164), setback (0.164), declining (0.137), forecast (0.094), output (0.080), sustainable (0.077), growth (0.038)
+Topic 22 (Size: 432 documents)
+Top Terms: capital (0.188), crash (0.079), upgrade (0.054), downgrade (0.050), underperform (0.036), soar (0.024), outperform (0.016), guidance (0.013), better (0.010), strong (0.003)
 Example Headlines:
-- ExxonMobil, QatarEnergy Secure Extension for Golden Pass LNG Project
-- ExxonMobil, QatarEnergy Secure Extension for Golden Pass LNG Project
-- ExxonMobil, QatarEnergy Secure Extension for Golden Pass LNG Project
+- RBC Capital Reaffirms Their Hold Rating on TotalEnergies SE (TTE)
+- BP p.l.c. (BP) Gets a Buy from Kepler Capital
+- Kepler Capital  Reaffirms Their Buy Rating on BP p.l.c. (BP)
+Unique Words in Examples: 18
+---
+
+Topic 23 (Size: 423 documents)
+Top Terms: volatility (0.319), earnings (0.020), profit (0.016), capital (0.005),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- Options Volatility and Implied Earnings Moves Today, August 26, 2024
+- Options Volatility and Implied Earnings Moves Today, April 26, 2024
+- Options Volatility and Implied Earnings Moves Today, February 21, 2024
+Unique Words in Examples: 13
+---
+
+Topic 24 (Size: 400 documents)
+Top Terms: earnings (0.041),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- UK earnings, trading statements calendar - next 7 days
+- UK earnings, trading statements calendar - next 7 days
+- UK earnings, trading statements calendar - next 7 days
 Unique Words in Examples: 9
 ---
 
-Topic 31 (Size: 231 documents)
-Top Terms: beneficial (0.119), sales beat (0.095), estimate (0.086), decline (0.056), revenue growth (0.030), surge (0.025), beat (0.025), sales (0.024), earnings (0.022), revenue (0.021)
+Topic 25 (Size: 372 documents)
+Top Terms: negative (0.067), loss (0.067), progress (0.064), promising (0.048), downturn (0.045), challenging (0.039), more (0.033), outlook (0.024), revenue (0.022), debt (0.022)
 Example Headlines:
-- Helmerich & Payne : Beneficial Ownership Report - Form SC 13G
-- Helmerich & Payne : Beneficial Ownership Report - Form SC 13G
-- Helmerich & Payne : Beneficial Ownership Report - Form SC 13G
-Unique Words in Examples: 11
+- Transocean (RIG) Reports Q1 Loss, Misses Revenue Estimates
+- KNOT Offshore Partners: Some Progress But Outlook Just Got More Clouded
+- KNOT Offshore Partners: Some Progress But Outlook Just Got More Clouded
+Unique Words in Examples: 19
 ---
 
-Topic 32 (Size: 205 documents)
-Top Terms: output growth (0.144), output (0.134), negative (0.119), yield growth (0.082), revenue (0.045), expand (0.043), volatility (0.042), booming (0.036), performance (0.035), revenue growth (0.033)
+Topic 26 (Size: 293 documents)
+Top Terms: guidance (0.073), progress (0.039), earnings (0.034), growth (0.008), capital (0.005),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
 Example Headlines:
-- Chevron CEO: Permian, D-J Basin Production Fuels US Output Growth
-- Chevron CEO: Permian, D-J Basin Production Fuels US Output Growth
-- Chevron CEO: Permian, D-J Basin Production Fuels US Output Growth
-Unique Words in Examples: 10
+-  2024 Guidance Confirmed
+-  2024 Guidance Confirmed
+-  2024 Guidance Confirmed
+Unique Words in Examples: 3
 ---
 
-Topic 33 (Size: 203 documents)
-Top Terms: valuable (0.734), hard (0.136), outlook (0.113), innovative (0.113), revenue (0.078), profitable (0.075), growth (0.026), yield (0.024),  (0.000),  (0.000)
+Topic 27 (Size: 242 documents)
+Top Terms: surge (0.296), positive (0.207), more (0.092), capital (0.028),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
 Example Headlines:
+- Cyprus: TotalEnergies Announces Positive Appraisal of the Cronos Gas Discovery in Block 6
+- (Bloomberg) -- Norway’s vast natural gas industry is about to embark on its annual heavy maintenance spree at a crucial time for the wider continent.Most Read from BloombergChicago's Migrant Surge Is Stirring Trouble for Democrats in DNC Host CityUK Transport Minister Clears Path for More 20mph Speed ZonesWith Self-Driving Vans, Hamburg Tries to Make Microtransit WorkThe Serious Work That Free Play Can DoFor about three weeks as of late August, Europe SENTIMENT_will_SENTIMENT_miss_flows equivalent to daily gas need
+- (Bloomberg) -- Shares in BP Plc fell to the lowest in close to two years as investors punish the company for shifting away from the oil and gas business.Most Read from BloombergChicago's Migrant Surge Is Stirring Trouble for Democrats in DNC Host CityUK Transport Minister Clears Path for More 20mph Speed ZonesWith Self-Driving Vans, Hamburg Tries to Make Microtransit WorkThe Serious Work That Free Play Can DoThat may put pressure on new Chief Executive Officer Murray Auchincloss to retreat from
+Unique Words in Examples: 106
+---
+
+Topic 28 (Size: 218 documents)
+Top Terms: expand (0.324), breakout (0.089), indicator (0.085), surge (0.073), lower (0.058), strong (0.037), risk (0.031), capital (0.026), returns (0.022), more (0.017)
+Example Headlines:
+- Expand Energy, built from Chesapeakeâs acquisition of Southwestern, is a $19.5 billion market cap company. Click here to read an analysis of EXE stock now.
+- Expand Energy, built from Chesapeakeâs acquisition of Southwestern, is a $19.5 billion market cap company. Click here to read an analysis of EXE stock now.
+- Chesapeake And Southwestern Become Expand Energy
+Unique Words in Examples: 29
+---
+
+Topic 29 (Size: 214 documents)
+Top Terms: investment (0.210), outlook upgrade (0.173), upgrade (0.143), disaster (0.102), sustainable (0.077), debt (0.057), expand (0.030), outlook (0.017), performance (0.011), growth (0.004)
+Example Headlines:
+- OGE Energy Corp. An Attractive Long-Term Investment (Rating Upgrade)
+- OGE Energy Corp. An Attractive Long-Term Investment (Rating Upgrade)
+- OGE Energy Corp. An Attractive Long-Term Investment (Rating Upgrade)
+Unique Words in Examples: 9
+---
+
+Topic 30 (Size: 206 documents)
+Top Terms: valuable (0.814), outlook (0.089), profitable (0.081), revenue (0.077), growth (0.020),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- 20 Most Valuable Latin American Companies
 - In this article, we will take a look at the 25 SENTIMENT_most_SENTIMENT_valuable_oil companies in the world. If you want to skip our detailed analysis of the global oil industry, you can go directly to 5 Most Valuable Oil Companies in the World. The Oil Sector: Latest Market Trends The sudden rise in geopolitical […]
 - In this article, we will look into the 20 SENTIMENT_most_valuable Latin American companies. If you want to skip our detailed analysis, you can go directly to the 5 Most Valuable Latin American Companies. Economic Outlook of Latin America In 2023, Latin America witnessed SENTIMENT_sluggish_SENTIMENT_growth_due to high inflationSENTIMENT_,_SENTIMENT_restricted_monetary policies, and an […]
-- In this article, we will take a look at the 25 SENTIMENT_most_SENTIMENT_valuable_oil companies in the world. If you want to skip our detailed analysis of the global oil industry, you can go directly to 5 Most Valuable Oil Companies in the World. The Oil Sector: Latest Market Trends The sudden rise in geopolitical […]
 Unique Words in Examples: 58
 ---
 
-Topic 34 (Size: 198 documents)
-Top Terms: sales (0.196), valuation (0.151), success (0.128), returns (0.109), outstanding (0.102), solid (0.099), performance (0.087), issue (0.079), powerful (0.074), funding (0.074)
-Example Headlines:
-- Canadian Natural: Solid Performance, But Valuation Remains A Headwind
-- Canadian Natural: Solid Performance, But Valuation Remains A Headwind
-- Canadian Natural: Solid Performance, But Valuation Remains A Headwind
-Unique Words in Examples: 9
----
-
-Topic 35 (Size: 171 documents)
-Top Terms: steady (0.344), boost (0.177), soar (0.174), investment (0.157), jump (0.089), risk (0.047), price (0.021), more (0.018),  (0.000),  (0.000)
-Example Headlines:
-- Oil Steady Even as Red Sea Tensions Heighten Crude Market Risks
-- Oil Steady Even as Red Sea Tensions Heighten Crude Market Risks
-- Oil Steady Even as Red Sea Tensions Heighten Crude Market Risks
-Unique Words in Examples: 11
----
-
-Topic 36 (Size: 150 documents)
-Top Terms: earnings (0.056),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Topic 31 (Size: 160 documents)
+Top Terms: earnings (0.041),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
 Example Headlines:
 - Wall Street Breakfast Podcast: Jam Packed Earnings Week
 - Wall Street Breakfast Podcast: Jam Packed Earnings Week
@@ -345,72 +300,116 @@ Example Headlines:
 Unique Words in Examples: 8
 ---
 
-Topic 37 (Size: 148 documents)
-Top Terms: develop (0.680), breakthrough (0.412), output (0.168), sustainable (0.163), investment (0.087), price (0.046),  (0.000),  (0.000),  (0.000),  (0.000)
+Topic 32 (Size: 158 documents)
+Top Terms: breakthrough (0.873), robust (0.453), guidance (0.169),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
 Example Headlines:
-- Standard Lithium, Equinor Team Up to Develop Lithium Projects in Arkansas, Texas
-- Standard Lithium, Equinor Team Up to Develop Lithium Projects in Arkansas, Texas
-- Standard Lithium, Equinor Team Up to Develop Lithium Projects in Arkansas, Texas
-Unique Words in Examples: 12
+- Arbitrator Bias: The English Commercial Court Offers Further Guidance On Disqualification Of Arbitrators
+- (Bloomberg) -- Shell Plc won an appeal at a Dutch court overturning a historic 2021 ruling ordering it reduce its greenhouse SENTIMENT_gas_SENTIMENT_emissions_faster than originally planned. Most Read from BloombergThe Leaf Blowers Will Not Go QuietlyArizona Elections Signal Robust Immigration Enforcement Under TrumpScoring an Architectural Breakthrough in Denver’s RiNo DistrictKey Ballot Initiatives and Local Races Highlight Views on Abortion, ImmigrationShell has a duty to SENTIMENT_slash_SENTIMENT_emissions_but it’s already doing s
+- (Bloomberg) -- Shell Plc won an appeal at a Dutch court overturning a historic 2021 ruling ordering it reduce its greenhouse SENTIMENT_gas_SENTIMENT_emissions_faster than originally planned. Most Read from BloombergThe Leaf Blowers Will Not Go QuietlyArizona Elections Signal Robust Immigration Enforcement Under TrumpScoring an Architectural Breakthrough in Denver’s RiNo DistrictKey Ballot Initiatives and Local Races Highlight Views on Abortion, ImmigrationShell has a duty to SENTIMENT_slash_SENTIMENT_emissions_but it’s already doing s
+Unique Words in Examples: 76
 ---
 
-Topic 38 (Size: 130 documents)
-Top Terms: lower (0.103), promising (0.090), strong (0.057), secure (0.056), more (0.052), soar (0.050), better (0.046), yield (0.021), growth (0.014), capital (0.010)
+Topic 33 (Size: 149 documents)
+Top Terms: margin (0.151), loss (0.077), capital (0.046), profitability (0.043), revenue (0.034), price (0.029), earnings (0.016), performance (0.010), growth (0.010), target (0.009)
 Example Headlines:
-- Southwestern Energy: Earnings Has Lower Production, But Pending Merger Offers Upside
-- Southwestern Energy: Earnings Has Lower Production, But Pending Merger Offers Upside
-- Southwestern Energy: Earnings Has Lower Production, But Pending Merger Offers Upside
-Unique Words in Examples: 11
+- HOUSTON, March 28, 2024 (GLOBE NEWSWIRE) -- Par Pacific Holdings, Inc. (NYSE: PARR) (“Par Pacific”) today announced it expects SENTIMENT_to_SENTIMENT_reprice_and allocate its existing term loan credit agreement due 2030 (the “Term Loan Facility”). The repricing amendment, which is subject to execution of definitive documentation and customary closing conditions, will reduce the Applicable Margin under the Term Loan Facility by 50 basis points, such that Base Rate loans and SOFR loans will bear interest at the appli
+- HOUSTON, March 28, 2024 (GLOBE NEWSWIRE) -- Par Pacific Holdings, Inc. (NYSE: PARR) (“Par Pacific”) today announced it expects SENTIMENT_to_SENTIMENT_reprice_and allocate its existing term loan credit agreement due 2030 (the “Term Loan Facility”). The repricing amendment, which is subject to execution of definitive documentation and customary closing conditions, will reduce the Applicable Margin under the Term Loan Facility by 50 basis points, such that Base Rate loans and SOFR loans will bear interest at the appli
+- HOUSTON, March 28, 2024 (GLOBE NEWSWIRE) -- Par Pacific Holdings, Inc. (NYSE: PARR) (“Par Pacific”) today announced it expects SENTIMENT_to_SENTIMENT_reprice_and allocate its existing term loan credit agreement due 2030 (the “Term Loan Facility”). The repricing amendment, which is subject to execution of definitive documentation and customary closing conditions, will reduce the Applicable Margin under the Term Loan Facility by 50 basis points, such that Base Rate loans and SOFR loans will bear interest at the appli
+Unique Words in Examples: 67
 ---
 
-Topic 39 (Size: 125 documents)
-Top Terms: faster (0.741), signal robust (0.741), breakthrough (0.450), signal (0.343), robust (0.247), guidance (0.095),  (0.000),  (0.000),  (0.000),  (0.000)
+Topic 34 (Size: 149 documents)
+Top Terms: negative (0.188), more (0.061), volatility (0.059), guidance (0.038), investment (0.036), price (0.035), expand (0.032), rally (0.030), higher (0.020), growth (0.020)
 Example Headlines:
-- Shell Overturns Court Dutch Order to Slash Emissions Faster
-- (Bloomberg) -- Shell Plc won an appeal at a Dutch court overturning a historic 2021 ruling ordering it reduce its greenhouse SENTIMENT_gas_SENTIMENT_emissions_SENTIMENT_faster_than originally planned. Most Read from BloombergThe Leaf Blowers Will Not Go QuietlyArizona Elections Signal Robust Immigration Enforcement Under TrumpScoring an Architectural Breakthrough in Denver’s RiNo DistrictKey Ballot Initiatives and Local Races Highlight Views on Abortion, ImmigrationShell has a duty to SENTIMENT_slash_SENTIMENT_emissions_but it’s already doing s
-- (Bloomberg) -- Shell Plc won an appeal at a Dutch court overturning a historic 2021 ruling ordering it reduce its greenhouse SENTIMENT_gas_SENTIMENT_emissions_SENTIMENT_faster_than originally planned. Most Read from BloombergThe Leaf Blowers Will Not Go QuietlyArizona Elections Signal Robust Immigration Enforcement Under TrumpScoring an Architectural Breakthrough in Denver’s RiNo DistrictKey Ballot Initiatives and Local Races Highlight Views on Abortion, ImmigrationShell has a duty to SENTIMENT_slash_SENTIMENT_emissions_but it’s already doing s
-Unique Words in Examples: 69
+- The Permian, Negative Waha Prices, And LNG Reliance
+- The Permian, Negative Waha Prices, And LNG Reliance
+- The Permian, Negative Waha Prices, And LNG Reliance
+Unique Words in Examples: 8
+---
+
+Topic 35 (Size: 139 documents)
+Top Terms: breakthrough (0.546), sustainable (0.205), investment (0.101), price (0.053), more (0.046),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- SLB Achieves Breakthrough in Lithium Production in Nevada
+- SLB Achieves Breakthrough in Lithium Production in Nevada
+- SLB Achieves Breakthrough in Lithium Production in Nevada
+Unique Words in Examples: 7
+---
+
+Topic 36 (Size: 132 documents)
+Top Terms: achievement (0.940), emergency (0.677), miss (0.130), profit (0.108), risk (0.094), returns (0.068),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- Emergency preparedness ArticleJuly 8, 2024 Share Share Facebook link opens...
+- Named 2024 Western Canada General Counsel Award Lifetime Achievement recipient
+- Named 2024 Western Canada General Counsel Award Lifetime Achievement recipient
+Unique Words in Examples: 18
+---
+
+Topic 37 (Size: 129 documents)
+Top Terms: better (0.387), sustainable (0.246), more (0.055),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- The carbon capture and sequestration market is expected to have a SENTIMENT_steady_SENTIMENT_growth_trajectory, which will be a boon for carbon capture stocks. This SENTIMENT_growth_is being spurred by the enhanced efforts being made by the governments and the corporations in cutting down on CO2 SENTIMENT_emissions_with a view of hitting the SENTIMENT_net-zero_targets. New innovations in the carbon capture technologies are improving the ways of capturing and storing carbon dioxide. Better technologies like Direct Air Capture, which captures CO2
+- The carbon capture and sequestration market is expected to have a SENTIMENT_steady_SENTIMENT_growth_trajectory, which will be a boon for carbon capture stocks. This SENTIMENT_growth_is being spurred by the enhanced efforts being made by the governments and the corporations in cutting down on CO2 SENTIMENT_emissions_with a view of hitting the SENTIMENT_net-zero_targets. New innovations in the carbon capture technologies are improving the ways of capturing and storing carbon dioxide. Better technologies like Direct Air Capture, which captures CO2
+- The carbon capture and sequestration market is expected to have a SENTIMENT_steady_SENTIMENT_growth_trajectory, which will be a boon for carbon capture stocks. This SENTIMENT_growth_is being spurred by the enhanced efforts being made by the governments and the corporations in cutting down on CO2 SENTIMENT_emissions_with a view of hitting the SENTIMENT_net-zero_targets. New innovations in the carbon capture technologies are improving the ways of capturing and storing carbon dioxide. Better technologies like Direct Air Capture, which captures CO2
+Unique Words in Examples: 53
+---
+
+Topic 38 (Size: 113 documents)
+Top Terms: efficiency (0.160), breakthrough (0.151), performance (0.094), guidance (0.058), risk (0.052), investment (0.028), dividend (0.017), more (0.009), earnings (0.007),  (0.000)
+Example Headlines:
+- Baker Hughes, Repsol Collaborate on Next-Gen AI for Oil Efficiency
+- Chevron and Honeywell Team Up to Boost Refining Efficiency With AI
+- Chevron and Honeywell Team Up to Boost Refining Efficiency With AI
+Unique Words in Examples: 19
+---
+
+Topic 39 (Size: 107 documents)
+Top Terms: indicator (0.780), success (0.662), earnings (0.010),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- EPS Stands Out As Indicator Of Stock Success
+- EPS Stands Out As Indicator Of Stock Success
+- EPS Stands Out As Indicator Of Stock Success
+Unique Words in Examples: 8
 ---
 
 === SENTIMENT DISTRIBUTION PER TOPIC ===
 
 Topic 0:
-Bullish: 66.7%
+Bullish: 100.0%
 Bearish: 0.0%
-Neutral: 33.3%
-Total Sentiment Documents: 2
-Sentiment Strength: 1.00
-
-Topic 1:
-Bullish: 0.0%
-Bearish: 100.0%
 Neutral: 0.0%
 Total Sentiment Documents: 3
 Sentiment Strength: 1.00
 
-Topic 2:
+Topic 1:
 Bullish: 0.0%
 Bearish: 0.0%
 Neutral: 100.0%
 Total Sentiment Documents: 0
 
-Topic 3:
-Bullish: 100.0%
-Bearish: 0.0%
+Topic 2:
+Bullish: 66.7%
+Bearish: 33.3%
 Neutral: 0.0%
 Total Sentiment Documents: 3
-Sentiment Strength: 1.00
+Sentiment Strength: 0.33
+
+Topic 3:
+Bullish: 33.3%
+Bearish: 66.7%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
 
 Topic 4:
-Bullish: 100.0%
+Bullish: 0.0%
 Bearish: 0.0%
-Neutral: 0.0%
-Total Sentiment Documents: 3
-Sentiment Strength: 1.00
+Neutral: 100.0%
+Total Sentiment Documents: 0
 
 Topic 5:
-Bullish: 100.0%
-Bearish: 0.0%
+Bullish: 0.0%
+Bearish: 100.0%
 Neutral: 0.0%
 Total Sentiment Documents: 3
 Sentiment Strength: 1.00
@@ -422,51 +421,50 @@ Neutral: 100.0%
 Total Sentiment Documents: 0
 
 Topic 7:
-Bullish: 66.7%
-Bearish: 33.3%
-Neutral: 0.0%
-Total Sentiment Documents: 3
-Sentiment Strength: 0.33
+Bullish: 33.3%
+Bearish: 0.0%
+Neutral: 66.7%
+Total Sentiment Documents: 1
+Sentiment Strength: 1.00
 
 Topic 8:
-Bullish: 100.0%
+Bullish: 0.0%
 Bearish: 0.0%
-Neutral: 0.0%
-Total Sentiment Documents: 3
-Sentiment Strength: 1.00
+Neutral: 100.0%
+Total Sentiment Documents: 0
 
 Topic 9:
-Bullish: 100.0%
-Bearish: 0.0%
-Neutral: 0.0%
-Total Sentiment Documents: 3
-Sentiment Strength: 1.00
-
-Topic 10:
 Bullish: 0.0%
 Bearish: 100.0%
 Neutral: 0.0%
 Total Sentiment Documents: 3
 Sentiment Strength: 1.00
 
+Topic 10:
+Bullish: 66.7%
+Bearish: 33.3%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
+
 Topic 11:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 12:
 Bullish: 100.0%
 Bearish: 0.0%
 Neutral: 0.0%
 Total Sentiment Documents: 3
 Sentiment Strength: 1.00
 
-Topic 12:
-Bullish: 0.0%
-Bearish: 0.0%
-Neutral: 100.0%
-Total Sentiment Documents: 0
-
 Topic 13:
-Bullish: 0.0%
-Bearish: 66.7%
-Neutral: 33.3%
-Total Sentiment Documents: 2
+Bullish: 33.3%
+Bearish: 0.0%
+Neutral: 66.7%
+Total Sentiment Documents: 1
 Sentiment Strength: 1.00
 
 Topic 14:
@@ -484,38 +482,39 @@ Total Sentiment Documents: 3
 Sentiment Strength: 1.00
 
 Topic 16:
-Bullish: 0.0%
+Bullish: 100.0%
 Bearish: 0.0%
-Neutral: 100.0%
-Total Sentiment Documents: 0
-
-Topic 17:
-Bullish: 66.7%
-Bearish: 33.3%
 Neutral: 0.0%
 Total Sentiment Documents: 3
-Sentiment Strength: 0.33
+Sentiment Strength: 1.00
 
-Topic 18:
+Topic 17:
 Bullish: 0.0%
 Bearish: 100.0%
 Neutral: 0.0%
 Total Sentiment Documents: 3
 Sentiment Strength: 1.00
 
-Topic 19:
+Topic 18:
 Bullish: 66.7%
-Bearish: 0.0%
-Neutral: 33.3%
-Total Sentiment Documents: 2
+Bearish: 33.3%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
+
+Topic 19:
+Bullish: 0.0%
+Bearish: 100.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
 Sentiment Strength: 1.00
 
 Topic 20:
-Bullish: 100.0%
+Bullish: 66.7%
 Bearish: 33.3%
-Neutral: -33.3%
-Total Sentiment Documents: 4
-Sentiment Strength: 0.50
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
 
 Topic 21:
 Bullish: 0.0%
@@ -531,10 +530,9 @@ Total Sentiment Documents: 0
 
 Topic 23:
 Bullish: 0.0%
-Bearish: 100.0%
-Neutral: 0.0%
-Total Sentiment Documents: 3
-Sentiment Strength: 1.00
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
 
 Topic 24:
 Bullish: 0.0%
@@ -543,91 +541,92 @@ Neutral: 100.0%
 Total Sentiment Documents: 0
 
 Topic 25:
-Bullish: 0.0%
-Bearish: 0.0%
-Neutral: 100.0%
-Total Sentiment Documents: 0
+Bullish: 66.7%
+Bearish: 33.3%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
 
 Topic 26:
-Bullish: 66.7%
+Bullish: 0.0%
 Bearish: 0.0%
-Neutral: 33.3%
-Total Sentiment Documents: 2
-Sentiment Strength: 1.00
+Neutral: 100.0%
+Total Sentiment Documents: 0
 
 Topic 27:
-Bullish: 0.0%
-Bearish: 0.0%
-Neutral: 100.0%
-Total Sentiment Documents: 0
+Bullish: 100.0%
+Bearish: 66.7%
+Neutral: -66.7%
+Total Sentiment Documents: 5
+Sentiment Strength: 0.20
 
 Topic 28:
-Bullish: 33.3%
-Bearish: 100.0%
-Neutral: -33.3%
-Total Sentiment Documents: 4
-Sentiment Strength: 0.50
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
 
 Topic 29:
-Bullish: 0.0%
+Bullish: 100.0%
 Bearish: 0.0%
-Neutral: 100.0%
-Total Sentiment Documents: 0
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
 
 Topic 30:
-Bullish: 100.0%
-Bearish: 0.0%
-Neutral: 0.0%
-Total Sentiment Documents: 3
-Sentiment Strength: 1.00
-
-Topic 31:
-Bullish: 100.0%
-Bearish: 0.0%
-Neutral: 0.0%
-Total Sentiment Documents: 3
-Sentiment Strength: 1.00
-
-Topic 32:
-Bullish: 100.0%
-Bearish: 0.0%
-Neutral: 0.0%
-Total Sentiment Documents: 3
-Sentiment Strength: 1.00
-
-Topic 33:
 Bullish: 100.0%
 Bearish: 33.3%
 Neutral: -33.3%
 Total Sentiment Documents: 4
 Sentiment Strength: 0.50
 
-Topic 34:
-Bullish: 100.0%
+Topic 31:
+Bullish: 0.0%
 Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 32:
+Bullish: 66.7%
+Bearish: 66.7%
+Neutral: -33.3%
+Total Sentiment Documents: 4
+Sentiment Strength: 0.00
+
+Topic 33:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 34:
+Bullish: 0.0%
+Bearish: 100.0%
 Neutral: 0.0%
 Total Sentiment Documents: 3
 Sentiment Strength: 1.00
 
 Topic 35:
 Bullish: 100.0%
-Bearish: 100.0%
-Neutral: -100.0%
-Total Sentiment Documents: 6
-Sentiment Strength: 0.00
-
-Topic 36:
-Bullish: 0.0%
-Bearish: 0.0%
-Neutral: 100.0%
-Total Sentiment Documents: 0
-
-Topic 37:
-Bullish: 100.0%
 Bearish: 0.0%
 Neutral: 0.0%
 Total Sentiment Documents: 3
 Sentiment Strength: 1.00
+
+Topic 36:
+Bullish: 66.7%
+Bearish: 33.3%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
+
+Topic 37:
+Bullish: 100.0%
+Bearish: 100.0%
+Neutral: -100.0%
+Total Sentiment Documents: 6
+Sentiment Strength: 0.00
 
 Topic 38:
 Bullish: 0.0%
@@ -638,55 +637,55 @@ Total Sentiment Documents: 0
 === TOPIC DISTANCES AND RELATIONSHIPS ===
 
 Most Similar Topic Pairs:
-Topics 0 and 1: 0.912
-Topics 2 and 4: 0.814
-Topics 5 and 14: 0.796
-Topics 2 and 3: 0.794
-Topics 0 and 2: 0.786
-Topics 3 and 4: 0.779
-Topics 4 and 14: 0.774
-Topics 4 and 5: 0.755
-Topics 3 and 30: 0.753
-Topics 2 and 14: 0.751
+Topics 0 and 5: 0.835
+Topics 0 and 4: 0.818
+Topics 2 and 4: 0.810
+Topics 3 and 4: 0.801
+Topics 4 and 5: 0.797
+Topics 2 and 21: 0.793
+Topics 0 and 1: 0.790
+Topics 0 and 3: 0.782
+Topics 0 and 2: 0.780
+Topics 3 and 5: 0.780
 
 Most Distinct Topics (Average Distance to Other Topics):
-Topic -1: 0.716
-Topic 0: 0.477
-Topic 1: 0.689
-Topic 2: 0.407
-Topic 3: 0.428
+Topic -1: 0.915
+Topic 0: 0.438
+Topic 1: 0.749
+Topic 2: 0.437
+Topic 3: 0.455
 Topic 4: 0.423
-Topic 5: 0.465
-Topic 6: 0.542
-Topic 7: 0.535
-Topic 8: 0.515
-Topic 9: 0.510
-Topic 10: 0.626
-Topic 11: 0.535
-Topic 12: 0.588
-Topic 13: 0.569
-Topic 14: 0.445
-Topic 15: 0.542
-Topic 16: 0.532
-Topic 17: 0.578
-Topic 18: 0.507
-Topic 19: 0.554
-Topic 20: 0.489
-Topic 21: 0.593
-Topic 22: 0.601
-Topic 23: 0.562
-Topic 24: 0.500
-Topic 25: 0.585
-Topic 26: 0.667
-Topic 27: 0.538
-Topic 28: 0.576
-Topic 29: 0.577
-Topic 30: 0.540
-Topic 31: 0.574
-Topic 32: 0.594
-Topic 33: 0.625
-Topic 34: 0.627
-Topic 35: 0.686
-Topic 36: 0.754
-Topic 37: 0.743
-Topic 38: 0.602
+Topic 5: 0.469
+Topic 6: 0.526
+Topic 7: 0.510
+Topic 8: 0.536
+Topic 9: 0.646
+Topic 10: 0.551
+Topic 11: 0.611
+Topic 12: 0.563
+Topic 13: 0.589
+Topic 14: 0.527
+Topic 15: 0.588
+Topic 16: 0.546
+Topic 17: 0.559
+Topic 18: 0.508
+Topic 19: 0.559
+Topic 20: 0.556
+Topic 21: 0.508
+Topic 22: 0.581
+Topic 23: 0.493
+Topic 24: 0.613
+Topic 25: 0.698
+Topic 26: 0.581
+Topic 27: 0.544
+Topic 28: 0.601
+Topic 29: 0.504
+Topic 30: 0.552
+Topic 31: 0.642
+Topic 32: 0.762
+Topic 33: 0.674
+Topic 34: 0.537
+Topic 35: 0.651
+Topic 36: 0.613
+Topic 37: 0.787
+Topic 38: 0.617

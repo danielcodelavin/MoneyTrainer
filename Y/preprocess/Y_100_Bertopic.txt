@@ -1,0 +1,696 @@
+Topic Analysis Report - Generated on 2025-01-16 14:23:58
+
+Number of headlines processed: 71192
+
+=== OVERALL STATISTICS ===
+Total Documents: 71196
+Total Topics: 100
+Average Documents per Topic: 711.92
+Most Common Topic Size: 35
+Median Topic Size: 139.50
+Topic Size Range: 31 - 15048
+
+=== TOP 40 LARGEST TOPICS ===
+
+Topic 0 (Size: 14150 documents)
+Top Terms:  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- Looking for stock market analysis and research with proves results? Zacks.com offers in-depth financial research with over 30years of proven results.
+- Looking for stock market analysis and research with proves results? Zacks.com offers in-depth financial research with over 30years of proven results.
+- Looking for stock market analysis and research with proves results? Zacks.com offers in-depth financial research with over 30years of proven results.
+Unique Words in Examples: 19
+---
+
+Topic 1 (Size: 15048 documents)
+Top Terms: dividend (0.024), rally (0.019), more (0.013), lower (0.013), higher (0.011), miss (0.009), investment (0.009), index (0.009), growth (0.008), outperform (0.008)
+Example Headlines:
+- This Magnificent 7.5%-Yielding Dividend Stock Continues to Find Innovative Ways to Power Its Growth
+- How To Build A $100,000 Dividend Portfolio: A Strategic Guide To Balance Income And Growth
+- UPS and 7 Other Dividend Stocks With Yields of 4% or More
+Unique Words in Examples: 33
+---
+
+Topic 2 (Size: 12366 documents)
+Top Terms: secure (0.018), upgrade (0.017), miss (0.016), downgrade (0.016), revenue (0.014), better (0.014), growth (0.013), strong (0.013), price (0.013), success (0.012)
+Example Headlines:
+- Datadog LLM Observability Is Now Generally Available to Help Businesses Monitor, Improve and Secure Generative AI Applications
+- AI Is Ultimately About 'More' And 'Better' And That Makes A Powerful Growth Case For Dell
+- Broadcom (NasdaqGS:AVGO) Sees Strong AI Revenue Growth and Challenges in Broadband Sector
+Unique Words in Examples: 38
+---
+
+Topic 3 (Size: 3508 documents)
+Top Terms: index (0.069), growth (0.030), capital (0.029), sustainable (0.027), performance (0.025), investment (0.014), volatility (0.013), benchmark (0.011), dividend (0.010), momentum (0.008)
+Example Headlines:
+- Janus Henderson Research Fund returned 8.28% and the Russell 1000Â® Growth Index returned 8.33%. Click here for the full commentary.
+- Class A shares of the Alger Capital Appreciation Fund SENTIMENT_outperformed_the Russell 1000 Growth Index during the third quarter of 2024. Click here to read the full commentary.
+- Polen Capital, SENTIMENT_an_SENTIMENT_investment_management company, released its “Polen Global Growth Strategy” fourth-quarter 2023 investor letter. A copy of the same can be downloaded here. In the fourth quarter, the fund increased 11.66% gross and 11.36% net, respectively, compared to an 11.03% increase for the MSCI ACW Index. For the full year, the fund returned 32.38% […]
+Unique Words in Examples: 71
+---
+
+Topic 4 (Size: 1558 documents)
+Top Terms: capital (0.029), expand (0.023), positive (0.019), progress (0.019), outlook (0.016), crisis (0.014), profit (0.013), revenue (0.012), stable (0.012), investment (0.011)
+Example Headlines:
+- RBC Capital Remains a Buy on Coty (COTY)
+- UBS Is Said to Face $20 Billion Capital Hit Under Swiss Plan
+- RBC Capital Remains a Buy on UBS Group AG (UBS)
+Unique Words in Examples: 22
+---
+
+Topic 5 (Size: 1432 documents)
+Top Terms: worse (0.025), collapse (0.016), shortage (0.016), profitable (0.015), soar (0.015), favorable (0.015), performance (0.015), surge (0.015), earnings (0.014), progress (0.014)
+Example Headlines:
+- 3 Stocks To Buy As Oil Prices Collapse, OPEC Panics
+- We recently published a list of 10 Most Profitable Energy Stocks To Invest In. In this article, we are going to take a look at where NextEra Energy (NYSE:NEE) stands against the other SENTIMENT_most_SENTIMENT_profitable_energy stocks to invest in. Global Energy Demand Set to Soar The International Energy Agency (IEA) projects a significant increase […]
+- Billionaire Says Global Conditions 'Are Treacherous And Getting Worse': Our Approach
+Unique Words in Examples: 59
+---
+
+Topic 6 (Size: 1354 documents)
+Top Terms: investment (0.053), strong (0.036), valuable (0.035), trend (0.023), outlook (0.021), profit (0.016), target (0.014), better (0.011), robust (0.010), volatility (0.010)
+Example Headlines:
+- Zacks Investment Ideas feature highlights: GameStop and Tesla
+- Zacks Investment Ideas feature highlights: Innodata and Palantir
+- Spotify, Apple, Alphabet, Amazon and BuzzFeed have been highlighted in this Investment Ideas article.
+Unique Words in Examples: 21
+---
+
+Topic 7 (Size: 1211 documents)
+Top Terms: target (0.090), guidance (0.015), sales (0.015), trend (0.013), price (0.013), drop (0.012), progress (0.012), market share (0.012), sales drop (0.011), sales surge (0.011)
+Example Headlines:
+- Target shredded Wall Street SENTIMENT_profit_SENTIMENT_forecasts_by $0.39 on Wednesday on the back of renewed traffic to stores.
+- Target earnings: Top 3 things to watch from the retailer
+- Target Stock Looks Attractive Heading Into Earnings, UBS Says
+Unique Words in Examples: 30
+---
+
+Topic 8 (Size: 1209 documents)
+Top Terms: loss (0.120), promising (0.048), positive (0.045), shortage (0.032), negative (0.020), bankruptcy (0.019), breakthrough (0.017), significantly (0.015), better (0.014), risk (0.013)
+Example Headlines:
+- Ozempic And Wegovy Maker Novo Nordisk Asks FDA To Halt Production Of Compounded Fat Loss Drugs Due To Their 'Inherent Complexity'
+- Elon Musk's Weight-Loss Secret Shakes Up Pharma Giants
+- This Pharma Stock Is Rising. The Weight-Loss Drugs Race Has Widened Beyond Lilly, Novo.
+Unique Words in Examples: 39
+---
+
+Topic 9 (Size: 1115 documents)
+Top Terms: sales (0.045), profitability (0.029), price (0.029), milestone (0.026), less (0.026), sales surge (0.025), adverse (0.021), performance (0.021), profit (0.019), margin (0.019)
+Example Headlines:
+- Top Midday Stories: Ford Sales up 15.2% Year Over Year in October
+- Sales of Tesla's China-made SENTIMENT_vehicles_SENTIMENT_decline_in May - Reuters
+- A Huge Sales Gain Means Share Price Gains for Ford (NYSE:F)
+Unique Words in Examples: 27
+---
+
+Topic 10 (Size: 1083 documents)
+Top Terms: loss (0.042), thriving (0.036), revenue (0.021), guidance (0.021), outlook (0.020), higher (0.020), stronger (0.017), investment (0.017), beat (0.015), improvement (0.015)
+Example Headlines:
+- Loss of engine cover on Southwest Boeing 737-800 prompts FAA investigation
+- FAA to Probe Loss of Engine Cover on Southwest Airlines Boeing Jet -- Update
+- Industrials Down as Boeing Posts Loss -- Industrials Roundup
+Unique Words in Examples: 22
+---
+
+Topic 11 (Size: 1020 documents)
+Top Terms: benchmark (0.207), capital (0.085), target (0.070), underperform (0.067), improvement (0.045), price (0.040), outperform (0.031), guidance (0.010), growth (0.006), beat (0.006)
+Example Headlines:
+- Gilead SENTIMENT_price_SENTIMENT_target_raised by $9 at BMO Capital, here's why
+- DoorDash SENTIMENT_price_SENTIMENT_target_raised by $7 at Benchmark, here's why
+- DoorDash SENTIMENT_price_SENTIMENT_target_SENTIMENT_lowered_by $15 at Benchmark, here's why
+Unique Words in Examples: 14
+---
+
+Topic 12 (Size: 750 documents)
+Top Terms: trend (0.028), loss (0.022), beat (0.018), guidance (0.018), success (0.016), earnings (0.015), emergency (0.015), miss (0.015), collapse (0.014), revenue (0.014)
+Example Headlines:
+- Uber Dives On Surprise Loss
+- Abbott Labs Jumps, Retreats On Q1 Beat, Shy Guidance
+- Uber (UBER) SENTIMENT_has_SENTIMENT_expanded_its partnership with Waymo to SENTIMENT_offer_SENTIMENT_driverless_rides in Atlanta and Austin in early 2025. Waymo is a subsidiary of Alphabet (GOOG, GOOGL) Carnegie Mellon University associate professor Phil Koopman joins Asking for a Trend to break down the news and the overall viability of the SENTIMENT_robotaxi_trend. Koopman notes the significance of Waymo advancing its fleet: "The question is what kind of growing pains they'll have as they start operating in new cities." He expects "SENTIMENT_more_surprises" for the company, pointing to incidents where its robotaxis have interfered SENTIMENT_with_SENTIMENT_emergency_responders, like blocking firehouse driveways. "I expect Waymo to pay attention, and I expect them to try and fix things, but we won't know what the particular problems are until we see them," Koopman adds. He explains that while robotaxi companies like Waymo say that safety is top-of-mind, "the reality is nobody knows how this will turn out." Driverless vehicles are a new development, and there is simply not enough data to come to a conclusion about whether they SENTIMENT_offer_SENTIMENT_more_safety than human drivers. "There's enough data now to know that SENTIMENT_small_crashes, fender benders, and minor injuries, there's enough data that says Waymo seems to be on track for that... They need another 10 SENTIMENT_times_SENTIMENT_more_miles, another 20, 50 SENTIMENT_times_SENTIMENT_more_miles before we know how it turns out for fatalities," Koopman tells Yahoo Finance. While many investors are bullish on robotaxis, Koopman casts doubt on its sustainability as a business model: "I have trouble seeing robotaxis as a business model because it's a cheaper ride hail and the technology is really sophisticated, expensive. It requires a lot of support." He argues that this could change down the line, but as the technology stands, it may be difficult to scale up. For SENTIMENT_more_expert insight and the latest market action, click here to watch this full episode of Asking for a Trend. This post was written by Melanie Riehl
+Unique Words in Examples: 214
+---
+
+Topic 13 (Size: 573 documents)
+Top Terms: volatility (0.329), surge (0.072), outstanding (0.031), volatile (0.025), earnings (0.018), upgrade (0.011), downgrade (0.011), beat (0.004),  (0.000),  (0.000)
+Example Headlines:
+- Options Volatility and Implied Earnings Moves Today, May 07, 2024
+- Options Volatility and Implied Earnings Moves Today, April 25, 2024
+- Options Volatility and Implied Earnings Moves Today, April 17, 2024
+Unique Words in Examples: 13
+---
+
+Topic 14 (Size: 565 documents)
+Top Terms: surge (0.030), valuable (0.029), trend (0.025), momentum (0.021), downgrade (0.020), worse (0.019), revenue (0.019), price (0.019), positive (0.017), robust (0.016)
+Example Headlines:
+- M&A News: Apollo Offers to Buy Paramount (NASDAQ:PARA), Shares Surge
+- (Bloomberg) -- David Ellison’s Skydance Media accused CBS parent Paramount Global of breaching the terms of their merger agreement by continuing to engage with another suitor, people familiar with the matter said, citing a letter sent by Skydance lawyers.Most Read from BloombergChicago's Migrant Surge Is Stirring Trouble for Democrats in DNC Host CityUK Transport Minister Clears Path for More 20mph Speed ZonesWith Self-Driving Vans, Hamburg Tries to Make Microtransit WorkThe Serious Work That Fr
+- JPMorgan's $1,010 Target Fuels Netflix Surge Amid Robust Subscriber Gains and Hot Programming
+Unique Words in Examples: 86
+---
+
+Topic 15 (Size: 558 documents)
+Top Terms: troubled (0.062), downturn (0.053), failure (0.031), productivity (0.030), collapse (0.027), benchmark (0.026), rally (0.026), negative (0.025), crash (0.024), weaker (0.024)
+Example Headlines:
+- Searching for the Dawn After Alibaba's Downturn
+- Evergrande Liquidation's 'Snowball Effect': What's Next For China's Troubled Real Estate Sector?
+- Evergrande Liquidation's 'Snowball Effect': What's Next For China's Troubled Real Estate Sector?
+Unique Words in Examples: 18
+---
+
+Topic 16 (Size: 498 documents)
+Top Terms: earnings (0.041), robust (0.007), stable (0.007), revenue (0.004), capital (0.003), guidance (0.002), target (0.002), growth (0.002), price (0.001), beat (0.001)
+Example Headlines:
+- Coty Inc. (COTY) Q2 2024 Earnings Call Transcript
+- TransDigm Group Incorporated (TDG) Q3 2024 Earnings Call Transcript
+- Q4 2018 CF Industries Holdings Inc Earnings Call Transcript
+Unique Words in Examples: 19
+---
+
+Topic 17 (Size: 461 documents)
+Top Terms: upgrade (0.042), progress (0.035), dangerous (0.035), crisis (0.034), accelerate (0.033), successful (0.030), sales (0.022), drop (0.021), secure (0.019), outlook (0.017)
+Example Headlines:
+- Lockheed Martin: A Dangerous World Is Bullish
+- RTX, with its recent contract win, is ready to work on the F135 Engine Core Upgrade to boost the F-35 combat aircraftSENTIMENT_'s_efficiency.
+- RTX Wins $1.3B Contract For F135 Engine Upgrade: Details
+Unique Words in Examples: 32
+---
+
+Topic 18 (Size: 441 documents)
+Top Terms: milestone (0.046), profitability (0.038), price (0.033), returns (0.033), rally (0.030), surge (0.027), less (0.023), upgrade (0.021), efficiency (0.020), revenue (0.020)
+Example Headlines:
+- Robinhood's Expected Move To Profitability In 2024 'A Positive Sign' Ahead Of Q1 Earnings, Analyst Says
+- SentinelOne, Inc. (S) Faces Profitability Challenges Despite Strong ARR Growth and AI Innovations
+- Bitcoin Stops Short of $100,000. How It Can Break Through the 6-Figure Milestone.
+Unique Words in Examples: 40
+---
+
+Topic 19 (Size: 438 documents)
+Top Terms: improvement (0.035), negative (0.030), better (0.029), cash flow (0.029), revenue (0.028), less (0.024), decline (0.021), sales (0.019), margin (0.018), beat (0.018)
+Example Headlines:
+- Burger King Parent Restaurant Brands Misses Quarterly Revenue Views as Comparable Sales Growth Decelerates
+- Kroger Earnings Better Than Feared But Decline For The First Time In 12 Quarters
+- Albertsons Fiscal Q1 Could Highlight Improvement in Sales, RBC Says
+Unique Words in Examples: 37
+---
+
+Topic 20 (Size: 433 documents)
+Top Terms: upgrade (0.036), outperform (0.029), guidance (0.025), revenue (0.025), cash flow (0.023), outlook (0.022), momentum (0.021), market share (0.020), downgrade (0.018), strong (0.017)
+Example Headlines:
+- Mobileye SENTIMENT_downgraded_to Equal Weight from Outperform at Fox Advisors
+- Verizon introduces the Ultimate Phone Upgrade
+- Verizon introduces the Ultimate Phone Upgrade
+Unique Words in Examples: 15
+---
+
+Topic 21 (Size: 430 documents)
+Top Terms: stellar (0.062), strong (0.028), momentum (0.027), sustainable (0.027), collapse (0.025), forecast (0.023), surge (0.022), outlook (0.021), profit (0.021), significantly (0.017)
+Example Headlines:
+- SEABOURN ANNOUNCES STELLAR LINEUP OF ENTERTAINMENT AND CONVERSATIONS SPEAKERS FOR 2024 GRAND AFRICA VOYAGE
+- Norwegian Cruise Line Upgraded To Buy, Analyst Expects 'Stellar Year'
+- Norwegian Cruise Line Upgraded To Buy, Analyst Expects 'Stellar Year'
+Unique Words in Examples: 24
+---
+
+Topic 22 (Size: 424 documents)
+Top Terms: relatively (0.032), profitability (0.028), margin (0.025), returns (0.025), momentum (0.025), upgrade (0.023), price (0.019), stellar (0.019), growth (0.018), performance (0.018)
+Example Headlines:
+- Amazon Stock Gets Price Target Hike On Cloud, Advertising Momentum
+- Amazon: A Prudent Choice For Momentum, Profitability, And Growth Investors
+- Amazon 'Relatively Insulated' In Retail Segment, Analysts Bullish About Growth In AWS: AI Contribution To Watch Out For
+Unique Words in Examples: 34
+---
+
+Topic 23 (Size: 403 documents)
+Top Terms: improvement (0.052), sales (0.037), drop (0.033), poor (0.023), debt (0.023), higher (0.020), returns (0.020), less (0.018), stable (0.018), guidance (0.018)
+Example Headlines:
+- Markets Await Existing Home Sales Numbers
+- Sales of new SENTIMENT_homes_SENTIMENT_surged_in December as mortgage rates dipped below 7%
+- Home Depot and Lowe's maintained their leadership spots in the SENTIMENT_home_SENTIMENT_improvement_sector, capturing an average of 28% and 19%, respectively, of consumer spend, according to Numerator's Home Improvement...
+Unique Words in Examples: 38
+---
+
+Topic 24 (Size: 397 documents)
+Top Terms: achievement (0.052), earnings (0.036), more (0.011), revenue (0.008), capital (0.006), higher (0.005), growth (0.004),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- Morgan Stanley (NYSE:MS) Q1 2024 Earnings Call Transcript April 16, 2024 Morgan Stanley isn’t one of the 30 most popular stocks among hedge funds at the end of the third quarter (see the details here). Operator: Good morning. Welcome to Morgan Stanley’s First Quarter 2024 Earnings Call. On behalf of Morgan Stanley, I will begin […]
+- Earnings Scheduled For April 23, 2024
+- Named 2024 Western Canada General Counsel Award Lifetime Achievement recipient
+Unique Words in Examples: 55
+---
+
+Topic 25 (Size: 391 documents)
+Top Terms: downgrade (0.054), beat (0.039), guidance (0.033), confidence (0.029), profitable (0.028), performance (0.022), cash flow (0.020), strong (0.020), profit (0.018), outperform (0.016)
+Example Headlines:
+- Palantir's software and database design business is SENTIMENT_now_SENTIMENT_more_overvalued than chip-maker NVIDIA. Read why I downgrade PLTR stock from sell SENTIMENT_to_SENTIMENT_strong_sell.
+- Palantir: The New AI Bubble Favorite At 135x Earnings (Rating Downgrade)
+- PayPal Stock Falls on Downgrade. There’s Question Marks Around Growth.
+Unique Words in Examples: 40
+---
+
+Topic 26 (Size: 384 documents)
+Top Terms: dangerous (0.078), sales (0.060), profit surge (0.059), sales plunge (0.051), sales drop (0.037), success (0.037), sales surge (0.036), upgrade (0.034), weak (0.034), revenue (0.032)
+Example Headlines:
+- Apple Gives a Sneak Peek of AI Features. Why They May Not Supercharge iPhone Sales.
+- Apple's Biggest iPhone Assembler Posts 72% Profit Surge Even As Revenue Takes Hit From Weaker Consumer Electronics Demand
+- Apple Says 'Dangerous' DOJ Lawsuit 'Threatens Who We Are,' Vows To Fight Against It
+Unique Words in Examples: 45
+---
+
+Topic 27 (Size: 373 documents)
+Top Terms: sustainable (0.050), impressive (0.045), significantly (0.043), guidance (0.038), outperform (0.034), more (0.025), milestone (0.024), strong (0.023), efficiency (0.020), confidence (0.020)
+Example Headlines:
+- Key Insights Significantly high institutional ownership implies GE HealthCare Technologies' SENTIMENT_stock_SENTIMENT_price_is sensitive to...
+- GE Aerospace : Brittany Nez, RISE Program Controls Engineer, Champions More Sustainable Aviation and New Perspectives
+- GE Aerospace : Brittany Nez, RISE Program Controls Engineer, Champions More Sustainable Aviation and New Perspectives
+Unique Words in Examples: 28
+---
+
+Topic 28 (Size: 361 documents)
+Top Terms: volume (0.283), concerning (0.055), uncertain (0.041), market share (0.030), outperform (0.029), tumble (0.025), confidence (0.025), profitability (0.025), growth (0.024), risk (0.023)
+Example Headlines:
+- Transaction in Own Shares 02 January, 2025 • • • • • • • • • • • • • • • • Shell plc (the ‘Company’) announces that on 02 January 2025 it purchased the following number of Shares for cancellation. Aggregated information on Shares purchased according to trading venue: Date of purchaseNumber of Shares purchasedHighest SENTIMENT_price_paidLowest SENTIMENT_price_paid Volume weighted average SENTIMENT_price_paid per shareVenueCurrency02/01/2025685,226 £25.3350£24.8000£25.1131LSEGBP02/01/2025- £0.0000£0.0000£0.0000Chi-X (CXE)GBP02
+- Transaction in Own Shares 23 May, 2024 • • • • • • • • • • • • • • • • Shell plc (the ‘Company’) announces that on 23 May, 2024 it purchased the following number of Shares for cancellation. Aggregated information on Shares purchased according to trading venue: Date of purchaseNumber of Shares purchasedHighest SENTIMENT_price_paid Lowest SENTIMENT_price_paid Volume weighted average SENTIMENT_price_paid per shareVenueCurrency23/05/2024532,328£27.8400£27.5250£27.7069LSEGBP23/05/2024161,841£27.8400£27.5600£27.7096Chi-X (CXE)GBP2
+- Transaction in Own Shares 13 June, 2024 • • • • • • • • • • • • • • • • Shell plc (the ‘Company’) announces that on 13 June, 2024 it purchased the following number of Shares for cancellation. Aggregated information on Shares purchased according to trading venue: Date of purchaseNumber of Shares purchasedHighest SENTIMENT_price_paid Lowest SENTIMENT_price_paid Volume weighted average SENTIMENT_price_paid per shareVenueCurrency13/06/20241,369,759£27.5350£27.2000£27.3243LSEGBP13/06/2024191,046£27.5350£27.2300£27.3774Chi-X (CXE)
+Unique Words in Examples: 53
+---
+
+Topic 29 (Size: 335 documents)
+Top Terms: soar (0.042), profitable (0.038), crisis (0.034), sustainable (0.032), promising (0.029), shortage (0.029), weaker (0.028), favorable (0.028), risk (0.027), positive (0.027)
+Example Headlines:
+- Gold Mining Stock Gleams As Profits Soar, Powell Gives A Boost
+- Gold Mining Stock Gleams As Profits Soar, Powell Gives A Boost
+- (Bloomberg) -- Spot silver surpassed $30 an ounce to hit the highest level SENTIMENT_in_SENTIMENT_more_than a decade.Most Read from BloombergChina Attempts to End Property Crisis With Broad Rescue PackageA 25-Year-Old BofA Trader Dies Suddenly at Industry OutingWith a BlackRock CEO, $9 Trillion Vanguard Braces for TurbulenceVoters Prefer Trump Over Biden on Economy. This Data Shows WhyZyn Shortage? Nicotine Pouches Out of Stock in Several US StatesThe precious metal closed 6.5SENTIMENT_%_SENTIMENT_higher_at $31.49 an ounce Friday, the
+Unique Words in Examples: 78
+---
+
+Topic 30 (Size: 310 documents)
+Top Terms: secure (0.883), investment (0.042), risk (0.039), more (0.039), loss (0.033), sales (0.016), target (0.015),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- ROSEN, TRUSTED INVESTOR COUNSEL, Encourages Enphase Energy, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action - ENPH
+- ROSEN, THE FIRST FILING FIRM, Encourages Autodesk, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action First Filed by the Firm - ADSK
+- ROSEN, A LONGSTANDING LAW FIRM, Encourages Chipotle Mexican Grill, Inc. Investors to Secure Counsel Before Important Deadline in Securities Class Action First Filed by the Firm - CMG
+Unique Words in Examples: 37
+---
+
+Topic 31 (Size: 299 documents)
+Top Terms: harmful (0.170), revenue surge (0.136), loss (0.111), negative (0.104), favorable (0.101), target (0.074), crisis (0.062), success (0.061), upgrade (0.038), profit (0.030)
+Example Headlines:
+- (Bloomberg) -- Alphabet Inc. paid Apple Inc. $20 billion in 2022 for Google to be the default search engine in the Safari browser, according to newly unsealed court documents in the Justice Department’s antitrust lawsuit against Google.Most Read from BloombergTesla Axes Supercharger Team in Blow to Broader EV MarketUS and Saudis Near Defense Pact Meant to Reshape Middle EastNYPD Arrests Over 300 Protesters in Crackdown on College CampusesThe Ozempic Effect: How a Weight Loss Wonder Drug Gobbled
+- Morning Brew: TSMC's Revenue Surge and DOJ Eyes Google Breakup
+- Microsoft Probes Reports Bot Issued Bizarre, Harmful Responses
+Unique Words in Examples: 83
+---
+
+Topic 32 (Size: 280 documents)
+Top Terms: bearish (0.084), fail (0.063), poor (0.063), disaster (0.061), downgrade (0.045), trend (0.043), tumble (0.042), sales (0.039), debt (0.032), crash (0.030)
+Example Headlines:
+- Super Bowl weekend is historically bad for the box office. According to the Hollywood Reporter, 2024 was the worst weekend in over three decades, outside of 2021. Stacy Spikes, MoviePass Co-Founder and CEO, joins Yahoo Finance to discuss SENTIMENT_the_SENTIMENT_disappointing_weekend for the box office and how it impacts his company. When asked about how to boost users to platform when there are not a lineup of movies getting people to theaters, Spikes replies: "The major tentpoles aren't the drivers in people wanting a subscription platform where they're going to SENTIMENT_experiment_more. We find they're SENTIMENT_actually_SENTIMENT_more_interested in the independent titles, and that's where the experimentation happens... With the Dunes and the Spider-Mans and the IMAX titles, that really wouldn't change our business. It's just not enough of those titles, but it's all of the smaller ones like we saw with Origin, we saw with Poor Things a lot of the Oscar nominees. That's where, you know 75% of our members are under the age of 35 and they like to experiment." When it comes SENTIMENT_to_profitability, Spikes notes the company has benefiting from both the use of AI and its new credit system.  For SENTIMENT_more_expert insight and the latest market action, click here to watch this full episode of Yahoo Finance Live. Editor's note: This article was written by Nicholas Jacobino
+- Disney Keeps Shooting Down Bearish Arguments, 1 Hit at a Time
+- Box Office Disaster: 'Furiosa,' 'Garfield' Fail To Attract Moviegoers, Memorial Day Weekend Hits 3-Decade Low
+Unique Words in Examples: 167
+---
+
+Topic 33 (Size: 278 documents)
+Top Terms: positive (0.082), progress (0.061), profit (0.058), breakthrough (0.055), promising (0.051), decline (0.045), remarkable (0.039), uncertain (0.036), disappointing (0.030), sales (0.029)
+Example Headlines:
+- Moderna Achieves Positive Interim Results from Phase 3 Trial of Next-Generation COVID-19 Vaccine
+- Gilead Unveils More Positive Data on HIV Prevention Shot
+- Gilead Unveils More Positive Data on HIV Prevention Shot
+Unique Words in Examples: 21
+---
+
+Topic 34 (Size: 253 documents)
+Top Terms: secure (0.883), more (0.106),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000),  (0.000)
+Example Headlines:
+- What You Missed On Wall Street This Morning
+- New Version of BlueCruise: Smoother, More Natural Hands-Free Highway Drive Experience
+- Wall Street Lunch: California Bill Takes Aim At Clear Secure
+Unique Words in Examples: 27
+---
+
+Topic 35 (Size: 245 documents)
+Top Terms: debt (0.082), negative (0.079), crash (0.078), volatile (0.064), significantly (0.059), returns (0.046), plunge (0.041), investment (0.037), drop (0.029), volatility (0.023)
+Example Headlines:
+- Citi cuts Qualcomm target, opens 'Negative Catalyst Watch'
+- Here's Why Humana (NYSE:HUM) Can Manage Its Debt Responsibly
+- Citigroup Q3 IB Fees to Rise 20% on Upbeat Debt Capital Markets
+Unique Words in Examples: 28
+---
+
+Topic 36 (Size: 235 documents)
+Top Terms: harmful (0.085), profitability (0.069), challenging (0.064), exceed (0.062), market share (0.042), loss (0.041), stable (0.040), bearish (0.035), confidence (0.035), volume (0.033)
+Example Headlines:
+- Stellantis CEO Warns Of Challenging Year Amid Rising Prices: Report
+- Stellantis: Underappreciated Profitability and Strategic Financial Deployment Poised for Growth
+- Stellantis: A Strong Buy on Projected Rebound and Sustained Profitability
+Unique Words in Examples: 27
+---
+
+Topic 37 (Size: 208 documents)
+Top Terms: loss (0.095), profitable (0.034), volume (0.032), positive (0.032), crisis (0.030), rally (0.030), higher (0.030), plunge (0.026), surge (0.024), revenue (0.023)
+Example Headlines:
+- Amgen’s stock may see worst day in 24 years SENTIMENT_as_SENTIMENT_weight-loss-drug_data underwhelms
+- Amgen’s stock may see worst day in 24 years SENTIMENT_as_SENTIMENT_weight-loss-drug_data underwhelms
+- Amgen Is Redoubling Its Efforts To Take On Weight-Loss Kingpins Novo, Lilly
+Unique Words in Examples: 23
+---
+
+Topic 38 (Size: 204 documents)
+Top Terms: crash (0.045), strong (0.032), profitability (0.030), profitable (0.030), secure (0.030), price (0.027), accelerate (0.026), weak (0.024), promising (0.024), guidance (0.024)
+Example Headlines:
+- VEEV Stock Soars as Veeva Systems Reports Strong Q2 Earnings
+- Here's Why Veeva Systems (VEEV) is a Strong Growth Stock
+- Rivian: After A Crash From $179 To $10, I'm Buying
+Unique Words in Examples: 25
+---
+
+Topic 39 (Size: 202 documents)
+Top Terms: disappointing (0.116), loss (0.103), less (0.102), target (0.046), miss (0.035), guidance (0.033), more (0.030), revenue (0.030), better (0.025), growth (0.011)
+Example Headlines:
+- Boeing Appoints New CEO as Second-Quarter Loss Grows More Than Expected
+- Boeing Appoints New CEO as Second-Quarter Loss Grows More Than Expected
+- BA Earnings: Boeing Appoints New CEO Amid Disappointing Q2 Results
+Unique Words in Examples: 17
+---
+
+=== SENTIMENT DISTRIBUTION PER TOPIC ===
+
+Topic 0:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 1:
+Bullish: 66.7%
+Bearish: 0.0%
+Neutral: 33.3%
+Total Sentiment Documents: 2
+Sentiment Strength: 1.00
+
+Topic 2:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 3:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 4:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 5:
+Bullish: 33.3%
+Bearish: 33.3%
+Neutral: 33.3%
+Total Sentiment Documents: 2
+Sentiment Strength: 0.00
+
+Topic 6:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 7:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 8:
+Bullish: 0.0%
+Bearish: 100.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 9:
+Bullish: 0.0%
+Bearish: 33.3%
+Neutral: 66.7%
+Total Sentiment Documents: 1
+Sentiment Strength: 1.00
+
+Topic 10:
+Bullish: 0.0%
+Bearish: 100.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 11:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 12:
+Bullish: 66.7%
+Bearish: 66.7%
+Neutral: -33.3%
+Total Sentiment Documents: 4
+Sentiment Strength: 0.00
+
+Topic 13:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 14:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 15:
+Bullish: 0.0%
+Bearish: 100.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 16:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 17:
+Bullish: 66.7%
+Bearish: 33.3%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
+
+Topic 18:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 19:
+Bullish: 66.7%
+Bearish: 66.7%
+Neutral: -33.3%
+Total Sentiment Documents: 4
+Sentiment Strength: 0.00
+
+Topic 20:
+Bullish: 100.0%
+Bearish: 33.3%
+Neutral: -33.3%
+Total Sentiment Documents: 4
+Sentiment Strength: 0.50
+
+Topic 21:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 22:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 23:
+Bullish: 66.7%
+Bearish: 0.0%
+Neutral: 33.3%
+Total Sentiment Documents: 2
+Sentiment Strength: 1.00
+
+Topic 24:
+Bullish: 33.3%
+Bearish: 0.0%
+Neutral: 66.7%
+Total Sentiment Documents: 1
+Sentiment Strength: 1.00
+
+Topic 25:
+Bullish: 66.7%
+Bearish: 100.0%
+Neutral: -66.7%
+Total Sentiment Documents: 5
+Sentiment Strength: 0.20
+
+Topic 26:
+Bullish: 33.3%
+Bearish: 66.7%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
+
+Topic 27:
+Bullish: 66.7%
+Bearish: 0.0%
+Neutral: 33.3%
+Total Sentiment Documents: 2
+Sentiment Strength: 1.00
+
+Topic 28:
+Bullish: 0.0%
+Bearish: 0.0%
+Neutral: 100.0%
+Total Sentiment Documents: 0
+
+Topic 29:
+Bullish: 66.7%
+Bearish: 33.3%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
+
+Topic 30:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 31:
+Bullish: 33.3%
+Bearish: 66.7%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
+
+Topic 32:
+Bullish: 0.0%
+Bearish: 100.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 33:
+Bullish: 100.0%
+Bearish: 0.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 34:
+Bullish: 33.3%
+Bearish: 33.3%
+Neutral: 33.3%
+Total Sentiment Documents: 2
+Sentiment Strength: 0.00
+
+Topic 35:
+Bullish: 33.3%
+Bearish: 33.3%
+Neutral: 33.3%
+Total Sentiment Documents: 2
+Sentiment Strength: 0.00
+
+Topic 36:
+Bullish: 66.7%
+Bearish: 33.3%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
+
+Topic 37:
+Bullish: 0.0%
+Bearish: 100.0%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 1.00
+
+Topic 38:
+Bullish: 66.7%
+Bearish: 33.3%
+Neutral: 0.0%
+Total Sentiment Documents: 3
+Sentiment Strength: 0.33
+
+=== TOPIC DISTANCES AND RELATIONSHIPS ===
+
+Most Similar Topic Pairs:
+Topics 0 and 2: 0.963
+Topics 0 and 3: 0.890
+Topics 0 and 7: 0.882
+Topics 2 and 3: 0.842
+Topics 2 and 7: 0.836
+Topics 0 and 4: 0.831
+Topics 0 and 5: 0.826
+Topics 0 and 6: 0.822
+Topics 0 and 8: 0.811
+Topics 2 and 4: 0.807
+
+Most Distinct Topics (Average Distance to Other Topics):
+Topic -1: 0.610
+Topic 0: 0.286
+Topic 1: 0.697
+Topic 2: 0.324
+Topic 3: 0.388
+Topic 4: 0.414
+Topic 5: 0.380
+Topic 6: 0.419
+Topic 7: 0.364
+Topic 8: 0.383
+Topic 9: 0.485
+Topic 10: 0.465
+Topic 11: 0.483
+Topic 12: 0.515
+Topic 13: 0.420
+Topic 14: 0.558
+Topic 15: 0.460
+Topic 16: 0.438
+Topic 17: 0.526
+Topic 18: 0.452
+Topic 19: 0.437
+Topic 20: 0.514
+Topic 21: 0.476
+Topic 22: 0.517
+Topic 23: 0.450
+Topic 24: 0.437
+Topic 25: 0.455
+Topic 26: 0.475
+Topic 27: 0.508
+Topic 28: 0.423
+Topic 29: 0.424
+Topic 30: 0.498
+Topic 31: 0.519
+Topic 32: 0.578
+Topic 33: 0.531
+Topic 34: 0.553
+Topic 35: 0.650
+Topic 36: 0.450
+Topic 37: 0.458
+Topic 38: 0.457

@@ -132,7 +132,7 @@ def main():
     # - articles_per_keyword: how many articles to fetch per keyword
     
     collector.collect_data(
-        iterations_per_stock=100,  # Process each stock 3 times
+        iterations_per_stock=6,  # Process each stock 3 times
         articles_per_keyword=50  # Get up to 10 articles per keyword
     )
 

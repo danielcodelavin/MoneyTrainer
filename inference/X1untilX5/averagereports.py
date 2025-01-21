@@ -143,7 +143,7 @@ class ReportAggregator:
 
 def main():
     # Replace with your main directory path
-    main_dir = "/Users/daniellavin/Desktop/proj/MoneyTrainer/results/"
+    main_dir = "/Users/daniellavin/Desktop/proj/MoneyTrainer/TANDEM/EXT/results/"
     
     # Create sum directory if it doesn't exist
     sum_dir = os.path.join(main_dir, "sum")
