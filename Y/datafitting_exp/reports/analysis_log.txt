@@ -1,0 +1,90 @@
+2025-01-30 21:13:01,659 - Starting analysis...
+2025-01-30 21:13:01,659 - Loading tensors from /Users/daniellavin/Desktop/proj/MoneyTrainer/Y/y_100_train
+2025-01-30 21:13:18,428 - Loading tensors from /Users/daniellavin/Desktop/proj/MoneyTrainer/Y/y_100_val
+2025-01-30 21:13:19,265 - Analyzing with 3 splits
+2025-01-30 21:13:19,269 - Analyzing regime -0.800 to -0.267 with 6292 samples
+2025-01-30 21:13:19,285 - Analyzing regime -0.267 to 0.267 with 79634 samples
+2025-01-30 21:13:19,342 - Analyzing regime 0.267 to 0.800 with 6000 samples
+2025-01-30 21:13:19,349 - Analyzing with 4 splits
+2025-01-30 21:13:19,349 - Analyzing regime -0.800 to -0.400 with 2698 samples
+2025-01-30 21:13:19,356 - Analyzing regime -0.400 to 0.000 with 43051 samples
+2025-01-30 21:13:19,385 - Analyzing regime 0.000 to 0.400 with 43344 samples
+2025-01-30 21:13:19,414 - Analyzing regime 0.400 to 0.800 with 2854 samples
+2025-01-30 21:13:19,418 - Analyzing with 5 splits
+2025-01-30 21:13:19,418 - Analyzing regime -0.800 to -0.480 with 1748 samples
+2025-01-30 21:13:19,424 - Analyzing regime -0.480 to -0.160 with 11837 samples
+2025-01-30 21:13:19,437 - Analyzing regime -0.160 to 0.160 with 65553 samples
+2025-01-30 21:13:19,481 - Analyzing regime 0.160 to 0.480 with 10820 samples
+2025-01-30 21:13:19,491 - Analyzing regime 0.480 to 0.800 with 1969 samples
+2025-01-30 21:13:19,495 - Analyzing with 6 splits
+2025-01-30 21:13:19,495 - Analyzing regime -0.800 to -0.533 with 1340 samples
+2025-01-30 21:13:19,500 - Analyzing regime -0.533 to -0.267 with 4952 samples
+2025-01-30 21:13:19,509 - Analyzing regime -0.267 to 0.000 with 39454 samples
+2025-01-30 21:13:19,539 - Analyzing regime 0.000 to 0.267 with 40197 samples
+2025-01-30 21:13:19,566 - Analyzing regime 0.267 to 0.533 with 4441 samples
+2025-01-30 21:13:19,574 - Analyzing regime 0.533 to 0.800 with 1559 samples
+2025-01-30 21:13:19,579 - Analyzing with 7 splits
+2025-01-30 21:13:19,579 - Analyzing regime -0.800 to -0.571 with 1087 samples
+2025-01-30 21:13:19,584 - Analyzing regime -0.571 to -0.343 with 2754 samples
+2025-01-30 21:13:19,591 - Analyzing regime -0.343 to -0.114 with 15474 samples
+2025-01-30 21:13:19,604 - Analyzing regime -0.114 to 0.114 with 53996 samples
+2025-01-30 21:13:19,640 - Analyzing regime 0.114 to 0.343 with 14673 samples
+2025-01-30 21:13:19,652 - Analyzing regime 0.343 to 0.571 with 2621 samples
+2025-01-30 21:13:19,657 - Analyzing regime 0.571 to 0.800 with 1323 samples
+2025-01-30 21:13:19,661 - Analyzing with 8 splits
+2025-01-30 21:13:19,662 - Analyzing regime -0.800 to -0.600 with 921 samples
+2025-01-30 21:13:19,666 - Analyzing regime -0.600 to -0.400 with 1777 samples
+2025-01-30 21:13:19,671 - Analyzing regime -0.400 to -0.200 with 7359 samples
+2025-01-30 21:13:19,681 - Analyzing regime -0.200 to 0.000 with 35694 samples
+2025-01-30 21:13:19,707 - Analyzing regime 0.000 to 0.200 with 36727 samples
+2025-01-30 21:13:19,732 - Analyzing regime 0.200 to 0.400 with 6617 samples
+2025-01-30 21:13:19,739 - Analyzing regime 0.400 to 0.600 with 1676 samples
+2025-01-30 21:13:19,744 - Analyzing regime 0.600 to 0.800 with 1178 samples
+2025-01-30 21:13:19,747 - Analyzing with 9 splits
+2025-01-30 21:13:19,748 - Analyzing regime -0.800 to -0.622 with 810 samples
+2025-01-30 21:13:19,752 - Analyzing regime -0.622 to -0.444 with 1341 samples
+2025-01-30 21:13:19,756 - Analyzing regime -0.444 to -0.267 with 4141 samples
+2025-01-30 21:13:19,764 - Analyzing regime -0.267 to -0.089 with 17378 samples
+2025-01-30 21:13:19,780 - Analyzing regime -0.089 to 0.089 with 45083 samples
+2025-01-30 21:13:19,812 - Analyzing regime 0.089 to 0.267 with 17174 samples
+2025-01-30 21:13:19,826 - Analyzing regime 0.267 to 0.444 with 3711 samples
+2025-01-30 21:13:19,832 - Analyzing regime 0.444 to 0.622 with 1196 samples
+2025-01-30 21:13:19,836 - Analyzing regime 0.622 to 0.800 with 1093 samples
+2025-01-30 21:13:19,839 - Analyzing with 10 splits
+2025-01-30 21:13:19,840 - Analyzing regime -0.800 to -0.640 with 750 samples
+2025-01-30 21:13:19,844 - Analyzing regime -0.640 to -0.480 with 999 samples
+2025-01-30 21:13:19,848 - Analyzing regime -0.480 to -0.320 with 2676 samples
+2025-01-30 21:13:19,854 - Analyzing regime -0.320 to -0.160 with 9162 samples
+2025-01-30 21:13:19,864 - Analyzing regime -0.160 to 0.000 with 32161 samples
+2025-01-30 21:13:19,891 - Analyzing regime 0.000 to 0.160 with 33409 samples
+2025-01-30 21:13:19,915 - Analyzing regime 0.160 to 0.320 with 8286 samples
+2025-01-30 21:13:19,924 - Analyzing regime 0.320 to 0.480 with 2534 samples
+2025-01-30 21:13:19,929 - Analyzing regime 0.480 to 0.640 with 965 samples
+2025-01-30 21:13:19,933 - Analyzing regime 0.640 to 0.800 with 1004 samples
+2025-01-30 21:13:19,936 - Analyzing with 11 splits
+2025-01-30 21:13:19,937 - Analyzing regime -0.800 to -0.655 with 684 samples
+2025-01-30 21:13:19,941 - Analyzing regime -0.655 to -0.509 with 804 samples
+2025-01-30 21:13:19,945 - Analyzing regime -0.509 to -0.364 with 1861 samples
+2025-01-30 21:13:19,950 - Analyzing regime -0.364 to -0.218 with 5457 samples
+2025-01-30 21:13:19,959 - Analyzing regime -0.218 to -0.073 with 18321 samples
+2025-01-30 21:13:19,976 - Analyzing regime -0.073 to 0.073 with 38160 samples
+2025-01-30 21:13:20,003 - Analyzing regime 0.073 to 0.218 with 18366 samples
+2025-01-30 21:13:20,018 - Analyzing regime 0.218 to 0.364 with 4764 samples
+2025-01-30 21:13:20,024 - Analyzing regime 0.364 to 0.509 with 1781 samples
+2025-01-30 21:13:20,028 - Analyzing regime 0.509 to 0.655 with 784 samples
+2025-01-30 21:13:20,032 - Analyzing regime 0.655 to 0.800 with 948 samples
+2025-01-30 21:13:20,036 - Analyzing with 12 splits
+2025-01-30 21:13:20,036 - Analyzing regime -0.800 to -0.667 with 632 samples
+2025-01-30 21:13:20,041 - Analyzing regime -0.667 to -0.533 with 708 samples
+2025-01-30 21:13:20,045 - Analyzing regime -0.533 to -0.400 with 1358 samples
+2025-01-30 21:13:20,050 - Analyzing regime -0.400 to -0.267 with 3597 samples
+2025-01-30 21:13:20,056 - Analyzing regime -0.267 to -0.133 with 10343 samples
+2025-01-30 21:13:20,068 - Analyzing regime -0.133 to 0.000 with 29112 samples
+2025-01-30 21:13:20,091 - Analyzing regime 0.000 to 0.133 with 30265 samples
+2025-01-30 21:13:20,115 - Analyzing regime 0.133 to 0.267 with 9932 samples
+2025-01-30 21:13:20,126 - Analyzing regime 0.267 to 0.400 with 3147 samples
+2025-01-30 21:13:20,131 - Analyzing regime 0.400 to 0.533 with 1295 samples
+2025-01-30 21:13:20,135 - Analyzing regime 0.533 to 0.667 with 667 samples
+2025-01-30 21:13:20,138 - Analyzing regime 0.667 to 0.800 with 892 samples
+2025-01-30 21:13:20,142 - Validating patterns...
+2025-01-30 21:13:20,147 - Analysis complete!

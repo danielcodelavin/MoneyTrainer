@@ -150,7 +150,7 @@ Energy:
   Average L1 Distance: 0.0589
   Average RMSE: 0.0722
   Average Prediction Error Std: 0.0415
-  Average Precision: 0.6932
+
 
 Telecommunications:
   Average Number of stocks: 10.2
