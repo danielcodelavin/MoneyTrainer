@@ -1,10 +1,10 @@
-Short-Term Stock Prediction with Historical Price & News Sentiment
+###Short-Term Stock Prediction with Historical Price & News Sentiment
 
-“Markets are moved not only by numbers but by narratives.”  – Robert J. Shiller
+#Markets are moved not only by numbers but by narratives
 
 ⸻
 
-1  Project Overview
+#1  Project Overview
 
 This repository investigates whether very-recent price behaviour coupled with very-recent news sentiment can anticipate the next trading-day’s price movement.
 The core idea is to represent the market state at t₀ as a single concatenated tensor:
@@ -19,7 +19,7 @@ A deep neural net ingests this tensor and outputs the expected direction (and op
 
 ⸻
 
-2  System Architecture
+#2  System Architecture
 
 flowchart TD
     A[Historical Prices<br>(10-day window)] -->|normalise| C[Price Tensor]
@@ -61,7 +61,7 @@ Loss is weighted to address class imbalance (bull moves are rarer than flat move
 
 ⸻
 
-3  Reading the Training Logs
+#3  Reading the Training Logs
 
 Training pipelines emit CSV logs like:
 
@@ -78,7 +78,7 @@ Tip: Focus on the precision-recall curve when the decision threshold is tunable 
 
 ⸻
 
-4  Performance Break-downs (Illustrative)
+#4  Performance Break-downs (Illustrative)
 
 Averaged across six experimental runs:
 	•	By Market-Cap – Large-caps outperform small-caps by ~3 pp in precision.
@@ -89,7 +89,7 @@ These findings highlight that one universal model does not fit all buckets – f
 
 ⸻
 
-5  Deep-Dive: What Exactly is BERTopic?
+#5  Deep-Dive: What Exactly is BERTopic?
 
 BERTopic = Bidirectional Encoder Representations + Topic clustering
 
@@ -106,7 +106,7 @@ Advantages over classic LDA:
 
 ⸻
 
-6  Data Pipeline in Practice
+#6  Data Pipeline in Practice
 	1.	Scheduler triggers scraping at 22:00 UTC after market close.
 	2.	ETL Jobs write raw JSON to object storage; metadata tracked in a SQLite ledger.
 	3.	Feature Builder merges price & sentiment tensors and persists them as parquet.
@@ -115,37 +115,17 @@ Advantages over classic LDA:
 
 ⸻
 
-7  Limitations & Ethical Notes
+#7  Limitations & Ethical Notes
 	•	Look-Ahead Bias – All pipelines enforce strict date-based joins; verify before live trading.
 	•	News Coverage Bias – Small-cap firms may lack news, skewing predictions to “flat.”
 	•	Regulatory Risk – Web-scraping terms evolve; ensure compliance with each source.
 
 ⸻
 
-8  Future Work
+#8  Future Work
 	•	Incorporate intraday sentiment (Twitter, StockTwits) for higher granularity.
 	•	Replace static transformer with continual-learning FinBERT fine-tuned monthly.
 	•	Test Graph Neural Networks treating tickers as nodes linked by supply-chain edges.
-
-⸻
-
-9  Contributing
-
-We welcome PRs on new data connectors, model architectures, and evaluation dashboards.
-Please include unit tests and abide by the MIT License when submitting code.
-
-⸻
-
-10  Citation
-
-If you use this work, please cite:
-
-@misc{shortterm-stock-news-tensor,
-  title  = {Short-Term Stock Prediction with Price & News Tensors},
-  year   = {2025},
-  author = {Contributors of this repository},
-  url    = {https://github.com/<org>/<repo>}
-}
 
 
 ⸻
