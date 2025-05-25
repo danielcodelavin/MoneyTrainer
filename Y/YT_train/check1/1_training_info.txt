@@ -1,0 +1,319 @@
+Training started at 2025-02-01 23:33:08.429011
+Configuration: {
+  "hidden_dim": 768,       ## Head count 8 and 4 hidden layers
+  "dropout_rate": 0.16,
+  "batch_size": 64,
+  "learning_rate": 0.0002,
+  "weight_decay": 0.0001,
+  "num_epochs": 100,
+  "checkpoint_frequency": 10,
+  "label_smoothing": 0.1,
+  "grad_clip": 1.0,
+  "train_data_dir": "/Users/daniellavin/Desktop/proj/MoneyTrainer/Y/y_100_train",
+  "val_data_dir": "/Users/daniellavin/Desktop/proj/MoneyTrainer/Y/y_100_val",
+  "checkpoint_dir": "/Users/daniellavin/Desktop/proj/MoneyTrainer/Y/YT_train/check",
+  "info_path": "/Users/daniellavin/Desktop/proj/MoneyTrainer/Y/YT_train/check/training_info.txt"
+}
+Training samples: 91926
+Validation samples: 4663
+
+
+Epoch 1/100
+Train Loss: 0.0352
+Val Loss: 0.0275
+Metrics: {
+  "l1_loss": 0.14469051361083984,
+  "direction_accuracy": 0.49710486811065835,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.578451931476593,
+  "extreme_direction_accuracy": 0.5016501650165016
+}
+Learning Rate: 0.000008
+
+Epoch 2/100
+Train Loss: 0.0278
+Val Loss: 0.0279
+Metrics: {
+  "l1_loss": 0.1461876481771469,
+  "direction_accuracy": 0.4754449924941025,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5788539052009583,
+  "extreme_direction_accuracy": 0.46534653465346537
+}
+Learning Rate: 0.000009
+
+Epoch 3/100
+Train Loss: 0.0269
+Val Loss: 0.0287
+Metrics: {
+  "l1_loss": 0.14913709461688995,
+  "direction_accuracy": 0.47673171777825435,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5790483951568604,
+  "extreme_direction_accuracy": 0.47854785478547857
+}
+Learning Rate: 0.000011
+
+Epoch 4/100
+Train Loss: 0.0264
+Val Loss: 0.0281
+Metrics: {
+  "l1_loss": 0.14691461622714996,
+  "direction_accuracy": 0.47630280935020375,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.578885555267334,
+  "extreme_direction_accuracy": 0.47854785478547857
+}
+Learning Rate: 0.000013
+
+Epoch 5/100
+Train Loss: 0.0261
+Val Loss: 0.0275
+Metrics: {
+  "l1_loss": 0.14468780159950256,
+  "direction_accuracy": 0.4863821574093931,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5778436660766602,
+  "extreme_direction_accuracy": 0.49174917491749176
+}
+Learning Rate: 0.000015
+
+Epoch 6/100
+Train Loss: 0.0259
+Val Loss: 0.0276
+Metrics: {
+  "l1_loss": 0.1451113373041153,
+  "direction_accuracy": 0.4778039888483809,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5783172845840454,
+  "extreme_direction_accuracy": 0.47854785478547857
+}
+Learning Rate: 0.000018
+
+Epoch 7/100
+Train Loss: 0.0257
+Val Loss: 0.0280
+Metrics: {
+  "l1_loss": 0.1465282291173935,
+  "direction_accuracy": 0.4773750804203303,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5786612629890442,
+  "extreme_direction_accuracy": 0.47854785478547857
+}
+Learning Rate: 0.000022
+
+Epoch 8/100
+Train Loss: 0.0256
+Val Loss: 0.0282
+Metrics: {
+  "l1_loss": 0.14747357368469238,
+  "direction_accuracy": 0.47673171777825435,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5787226557731628,
+  "extreme_direction_accuracy": 0.47854785478547857
+}
+Learning Rate: 0.000026
+
+Epoch 9/100
+Train Loss: 0.0256
+Val Loss: 0.0276
+Metrics: {
+  "l1_loss": 0.14490680396556854,
+  "direction_accuracy": 0.48037743941668454,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5779686570167542,
+  "extreme_direction_accuracy": 0.46864686468646866
+}
+Learning Rate: 0.000031
+
+Epoch 10/100
+Train Loss: 0.0254
+Val Loss: 0.0277
+Metrics: {
+  "l1_loss": 0.14548683166503906,
+  "direction_accuracy": 0.47758953463435555,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5782660841941833,
+  "extreme_direction_accuracy": 0.4884488448844885
+}
+Learning Rate: 0.000036
+
+Epoch 11/100
+Train Loss: 0.0254
+Val Loss: 0.0277
+Metrics: {
+  "l1_loss": 0.1454310566186905,
+  "direction_accuracy": 0.47951962256058334,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5782015323638916,
+  "extreme_direction_accuracy": 0.4884488448844885
+}
+Learning Rate: 0.000042
+
+Epoch 12/100
+Train Loss: 0.0254
+Val Loss: 0.0274
+Metrics: {
+  "l1_loss": 0.14428067207336426,
+  "direction_accuracy": 0.5119022088784044,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5776209831237793,
+  "extreme_direction_accuracy": 0.49834983498349833
+}
+Learning Rate: 0.000048
+
+Epoch 13/100
+Train Loss: 0.0253
+Val Loss: 0.0282
+Metrics: {
+  "l1_loss": 0.1473458707332611,
+  "direction_accuracy": 0.4778039888483809,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5788866877555847,
+  "extreme_direction_accuracy": 0.47854785478547857
+}
+Learning Rate: 0.000054
+
+Epoch 14/100
+Train Loss: 0.0254
+Val Loss: 0.0277
+Metrics: {
+  "l1_loss": 0.14526118338108063,
+  "direction_accuracy": 0.4857387947673172,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5782341957092285,
+  "extreme_direction_accuracy": 0.4752475247524752
+}
+Learning Rate: 0.000060
+
+Epoch 15/100
+Train Loss: 0.0253
+Val Loss: 0.0276
+Metrics: {
+  "l1_loss": 0.14500246942043304,
+  "direction_accuracy": 0.4876688826935449,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5781427621841431,
+  "extreme_direction_accuracy": 0.48184818481848185
+}
+Learning Rate: 0.000067
+
+Epoch 16/100
+Train Loss: 0.0253
+Val Loss: 0.0283
+Metrics: {
+  "l1_loss": 0.14749392867088318,
+  "direction_accuracy": 0.4773750804203303,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5785968899726868,
+  "extreme_direction_accuracy": 0.48184818481848185
+}
+Learning Rate: 0.000074
+
+Epoch 17/100
+Train Loss: 0.0253
+Val Loss: 0.0278
+Metrics: {
+  "l1_loss": 0.14561857283115387,
+  "direction_accuracy": 0.4778039888483809,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5780605673789978,
+  "extreme_direction_accuracy": 0.46204620462046203
+}
+Learning Rate: 0.000082
+
+Epoch 18/100
+Train Loss: 0.0253
+Val Loss: 0.0282
+Metrics: {
+  "l1_loss": 0.14742758870124817,
+  "direction_accuracy": 0.47630280935020375,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5783647298812866,
+  "extreme_direction_accuracy": 0.47854785478547857
+}
+Learning Rate: 0.000089
+
+Epoch 19/100
+Train Loss: 0.0252
+Val Loss: 0.0275
+Metrics: {
+  "l1_loss": 0.1443547159433365,
+  "direction_accuracy": 0.5230538280077204,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5771842002868652,
+  "extreme_direction_accuracy": 0.5082508250825083
+}
+Learning Rate: 0.000096
+
+Epoch 20/100
+Train Loss: 0.0252
+Val Loss: 0.0279
+Metrics: {
+  "l1_loss": 0.14619866013526917,
+  "direction_accuracy": 0.48059189363070987,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5783225297927856,
+  "extreme_direction_accuracy": 0.49174917491749176
+}
+Learning Rate: 0.000104
+
+Epoch 21/100
+Train Loss: 0.0252
+Val Loss: 0.0274
+Metrics: {
+  "l1_loss": 0.14416590332984924,
+  "direction_accuracy": 0.5236971906497963,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5765849947929382,
+  "extreme_direction_accuracy": 0.5247524752475248
+}
+Learning Rate: 0.000111
+
+Epoch 22/100
+Train Loss: 0.0252
+Val Loss: 0.0275
+Metrics: {
+  "l1_loss": 0.14475120604038239,
+  "direction_accuracy": 0.4825219815569376,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5775346159934998,
+  "extreme_direction_accuracy": 0.5214521452145214
+}
+Learning Rate: 0.000119
+
+Epoch 23/100
+Train Loss: 0.0251
+Val Loss: 0.0276
+Metrics: {
+  "l1_loss": 0.14526163041591644,
+  "direction_accuracy": 0.479305168346558,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5776262879371643,
+  "extreme_direction_accuracy": 0.5082508250825083
+}
+Learning Rate: 0.000126
+
+Epoch 24/100
+Train Loss: 0.0252
+Val Loss: 0.0282
+Metrics: {
+  "l1_loss": 0.1474027931690216,
+  "direction_accuracy": 0.4778039888483809,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5785790085792542,
+  "extreme_direction_accuracy": 0.47854785478547857
+}
+Learning Rate: 0.000134
+
+Epoch 25/100
+Train Loss: 0.0251
+Val Loss: 0.0275
+Metrics: {
+  "l1_loss": 0.14472316205501556,
+  "direction_accuracy": 0.5054685824576453,
+  "range_accuracy": 0.7690328114947459,
+  "extreme_l1": 0.5773189663887024,
+  "extreme_direction_accuracy": 0.5247524752475248
+}
+Learning Rate: 0.000141

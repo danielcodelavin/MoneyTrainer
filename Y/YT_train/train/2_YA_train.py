@@ -28,13 +28,9 @@ class MultimodalFusionModel(nn.Module):
     def __init__(self, hidden_dim=1024, dropout_rate=0.3):
         super().__init__()
         
-        # Initial dimension processing
         self.initial_stock_proj = nn.Linear(1, hidden_dim)
-        
-        # Time series processing
         self.pos_encoder = PositionalEncoding(hidden_dim, 80)
         
-        # Stock sequence processing
         self.stock_encoder = nn.Sequential(
             nn.LayerNorm(hidden_dim),
             nn.GELU(),
@@ -43,7 +39,6 @@ class MultimodalFusionModel(nn.Module):
             nn.LayerNorm(hidden_dim)
         )
         
-        # LSTM for temporal processing
         self.lstm = nn.LSTM(
             input_size=hidden_dim,
             hidden_size=hidden_dim,
@@ -53,7 +48,6 @@ class MultimodalFusionModel(nn.Module):
             bidirectional=True
         )
         
-        # Topic distribution processing
         self.topic_encoder = nn.Sequential(
             nn.Linear(100, hidden_dim),
             nn.LayerNorm(hidden_dim),
@@ -63,21 +57,18 @@ class MultimodalFusionModel(nn.Module):
             nn.LayerNorm(hidden_dim)
         )
         
-        # Multi-layer cross attention
         self.cross_attention = nn.ModuleList([
             nn.MultiheadAttention(hidden_dim * 2, num_heads=8, dropout=0.1)
             for _ in range(3)
         ])
         
-        # Layer normalization for attention
         self.layer_norms = nn.ModuleList([
             nn.LayerNorm(hidden_dim * 2)
             for _ in range(3)
         ])
         
-        # Final prediction layers
         self.predictor = nn.Sequential(
-            nn.Linear(hidden_dim * 6, hidden_dim),  # Input is now hidden_dim*6 due to concatenation
+            nn.Linear(hidden_dim * 6, hidden_dim),
             nn.LayerNorm(hidden_dim),
             nn.GELU(),
             nn.Dropout(dropout_rate),
@@ -91,26 +82,18 @@ class MultimodalFusionModel(nn.Module):
     def forward(self, stock_data, topic_data):
         batch_size = stock_data.shape[0]
         
-        # Process stock data sequence
-        stock_data = stock_data.unsqueeze(-1)  # [batch, 80, 1]
-        stock_features = self.initial_stock_proj(stock_data)  # [batch, 80, hidden_dim]
-        
-        # Add positional encoding
+        stock_data = stock_data.unsqueeze(-1)
+        stock_features = self.initial_stock_proj(stock_data)
         stock_features = stock_features + self.pos_encoder.pe
+        stock_features = self.stock_encoder(stock_features)
         
-        # Process through stock encoder
-        stock_features = self.stock_encoder(stock_features)  # [batch, 80, hidden_dim]
+        lstm_out, _ = self.lstm(stock_features)
         
-        # LSTM processing
-        lstm_out, _ = self.lstm(stock_features)  # [batch, 80, hidden_dim*2] (bidirectional)
+        topic_features = self.topic_encoder(topic_data)
+        topic_features = topic_features.unsqueeze(1)
+        topic_features = topic_features.repeat(1, lstm_out.size(1), 1)
+        topic_features = torch.cat([topic_features, topic_features], dim=-1)
         
-        # Process topic distribution
-        topic_features = self.topic_encoder(topic_data)  # [batch, hidden_dim]
-        topic_features = topic_features.unsqueeze(1)  # [batch, 1, hidden_dim]
-        topic_features = topic_features.repeat(1, lstm_out.size(1), 1)  # [batch, 80, hidden_dim]
-        topic_features = torch.cat([topic_features, topic_features], dim=-1)  # Match LSTM hidden dim
-        
-        # Multi-layer cross attention with residual connections
         x = lstm_out
         for attn, norm in zip(self.cross_attention, self.layer_norms):
             attn_out, _ = attn(
@@ -120,37 +103,125 @@ class MultimodalFusionModel(nn.Module):
             )
             x = norm(x + attn_out.transpose(0, 1))
         
-        # Combine features - now properly accounting for dimensions
-        # lstm_out is [batch, 80, hidden_dim*2] due to bidirectional
-        lstm_final = x[:, -1, :]                    # [batch, hidden_dim*2]
-        lstm_mean = x.mean(dim=1)                   # [batch, hidden_dim*2]
-        topic_final = topic_features[:, 0, :]       # [batch, hidden_dim*2]
+        lstm_final = x[:, -1, :]
+        lstm_mean = x.mean(dim=1)
+        topic_final = topic_features[:, 0, :]
         
-        # Concatenate all features
         global_features = torch.cat([
-            lstm_final,      # hidden_dim*2
-            lstm_mean,       # hidden_dim*2
-            topic_final      # hidden_dim*2
-        ], dim=1)           # Total: hidden_dim*6
+            lstm_final,
+            lstm_mean,
+            topic_final
+        ], dim=1)
         
-        # Update predictor's first layer to match input size
-        prediction = self.predictor(global_features)
-        
-        # Final prediction
         prediction = self.predictor(global_features)
         return prediction.squeeze(-1)
 
-class CombinedLoss(nn.Module):
-    def __init__(self, label_smoothing=0.1):
+class PrecisionFocusedLoss(nn.Module):
+    def __init__(self, high_threshold=0.3, fp_penalty=2.0, label_smoothing=0.1):
         super().__init__()
-        self.mse = nn.MSELoss()
-        self.huber = nn.HuberLoss(delta=0.1)
+        self.mse = nn.MSELoss(reduction='none')
+        self.huber = nn.HuberLoss(delta=0.1, reduction='none')
         self.label_smoothing = label_smoothing
+        self.high_threshold = high_threshold
+        self.fp_penalty = fp_penalty
         
     def forward(self, pred, target):
         # Smooth targets
         target_smooth = (1 - self.label_smoothing) * target + self.label_smoothing * target.mean()
-        return self.mse(pred, target_smooth) * 0.7 + self.huber(pred, target) * 0.3
+        
+        # Base losses with distance weighting
+        mse_loss = self.mse(pred, target_smooth)
+        huber_loss = self.huber(pred, target)
+        
+        # Distance-based weights (give more importance to larger movements)
+        weights = 1.0 + torch.abs(target)
+        
+        # Additional weights for high values
+        high_value_mask = target > self.high_threshold
+        weights = torch.where(high_value_mask, weights * 4, weights)
+        
+        # Precision focus: penalize false positives for high values
+        false_positive_mask = (pred > self.high_threshold) & (target <= self.high_threshold)
+        weights = torch.where(false_positive_mask, weights * self.fp_penalty, weights)
+        
+        # Combine losses with weights
+        total_loss = (0.7 * mse_loss + 0.3 * huber_loss) * weights
+        
+        return total_loss.mean()
+
+class CustomDataset(Dataset):
+    def __init__(self, stock_data, topic_data, targets, high_threshold=0.3):
+        self.stock_data = stock_data
+        self.topic_data = topic_data
+        self.targets = targets
+        
+        # Calculate weights for sampling
+        self.weights = torch.ones(len(targets))
+        high_mask = targets > high_threshold
+        self.weights[high_mask] = 10.0  # Moderate increase for high-value cases
+        
+    def __len__(self):
+        return len(self.targets)
+        
+    def __getitem__(self, idx):
+        return self.stock_data[idx], self.topic_data[idx], self.targets[idx]
+
+def compute_metrics(predictions, targets, high_threshold=0.3):
+    predictions = predictions.squeeze().detach().cpu().numpy()
+    targets = targets.squeeze().detach().cpu().numpy()
+    
+    # Standard metrics
+    l1_loss = np.mean(np.abs(predictions - targets))
+    direction_accuracy = np.mean(np.sign(predictions) == np.sign(targets))
+    
+    # High value precision metrics
+    pred_high = predictions > high_threshold
+    true_high = targets > high_threshold
+    
+    tp = np.sum(pred_high & true_high)
+    fp = np.sum(pred_high & ~true_high)
+    fn = np.sum(~pred_high & true_high)
+    
+    precision = tp / (tp + fp) if (tp + fp) > 0 else 0
+    recall = tp / (tp + fn) if (tp + fn) > 0 else 0
+    f1 = 2 * (precision * recall) / (precision + recall) if (precision + recall) > 0 else 0
+    
+    # Movement range metrics
+    ranges = [
+        (-0.8, -0.4, "very negative"),
+        (-0.4, -0.2, "negative"),
+        (-0.2, 0.2, "neutral"),
+        (0.2, 0.3, "moderate positive"),
+        (0.3, 0.8, "high positive")
+    ]
+    
+    def get_range(value):
+        for low, high, label in ranges:
+            if low <= value < high:
+                return label
+        return "neutral"
+    
+    pred_ranges = np.array([get_range(x) for x in predictions])
+    target_ranges = np.array([get_range(x) for x in targets])
+    
+    range_accuracy = np.mean(pred_ranges == target_ranges)
+    
+    # Distribution analysis
+    value_distributions = {
+        "high_positive_pred": float(np.mean(predictions > high_threshold)),
+        "high_positive_true": float(np.mean(targets > high_threshold)),
+        "avg_high_value": float(np.mean(predictions[pred_high])) if np.any(pred_high) else 0
+    }
+    
+    return {
+        'l1_loss': float(l1_loss),
+        'direction_accuracy': float(direction_accuracy),
+        'range_accuracy': float(range_accuracy),
+        'high_value_precision': float(precision),
+        'high_value_recall': float(recall),
+        'high_value_f1': float(f1),
+        'distributions': value_distributions
+    }
 
 def load_data_from_directory(data_dir):
     data_dir = Path(data_dir)
@@ -170,62 +241,6 @@ def load_data_from_directory(data_dir):
     
     return stock_data, topic_data, gt_values
 
-class CustomDataset(Dataset):
-    def __init__(self, stock_data, topic_data, targets):
-        self.stock_data = stock_data
-        self.topic_data = topic_data
-        self.targets = targets
-        
-    def __len__(self):
-        return len(self.targets)
-        
-    def __getitem__(self, idx):
-        return self.stock_data[idx], self.topic_data[idx], self.targets[idx]
-
-def compute_metrics(predictions, targets):
-    predictions = predictions.squeeze().detach().cpu().numpy()
-    targets = targets.squeeze().detach().cpu().numpy()
-    
-    l1_loss = np.mean(np.abs(predictions - targets))
-    direction_accuracy = np.mean(np.sign(predictions) == np.sign(targets))
-    
-    ranges = [
-        (-0.8, -0.4, "very negative"),
-        (-0.4, -0.2, "negative"),
-        (-0.2, 0.2, "neutral"),
-        (0.2, 0.4, "positive"),
-        (0.4, 0.8, "very positive")
-    ]
-    
-    def get_range(value):
-        for low, high, label in ranges:
-            if low <= value < high:
-                return label
-        return "neutral"
-    
-    pred_ranges = np.array([get_range(x) for x in predictions])
-    target_ranges = np.array([get_range(x) for x in targets])
-    
-    range_accuracy = np.mean(pred_ranges == target_ranges)
-    
-    extreme_mask = np.abs(targets) > 0.4
-    if np.sum(extreme_mask) > 0:
-        extreme_l1 = np.mean(np.abs(predictions[extreme_mask] - targets[extreme_mask]))
-        extreme_direction_accuracy = np.mean(
-            np.sign(predictions[extreme_mask]) == np.sign(targets[extreme_mask])
-        )
-    else:
-        extreme_l1 = 0.0
-        extreme_direction_accuracy = 0.0
-    
-    return {
-        'l1_loss': float(l1_loss),
-        'direction_accuracy': float(direction_accuracy),
-        'range_accuracy': float(range_accuracy),
-        'extreme_l1': float(extreme_l1),
-        'extreme_direction_accuracy': float(extreme_direction_accuracy)
-    }
-
 def train_model(config):
     print("Loading training data...")
     train_stock_data, train_topic_data, train_targets = load_data_from_directory(config['train_data_dir'])
@@ -242,7 +257,11 @@ def train_model(config):
         dropout_rate=config['dropout_rate']
     ).to(device)
     
-    criterion = CombinedLoss(label_smoothing=config['label_smoothing'])
+    criterion = PrecisionFocusedLoss(
+        high_threshold=config['high_threshold'],
+        fp_penalty=config['fp_penalty'],
+        label_smoothing=config['label_smoothing']
+    )
     
     optimizer = torch.optim.AdamW(
         model.parameters(),
@@ -251,13 +270,30 @@ def train_model(config):
         betas=(0.9, 0.999)
     )
     
-    train_dataset = CustomDataset(train_stock_data, train_topic_data, train_targets)
-    val_dataset = CustomDataset(val_stock_data, val_topic_data, val_targets)
+    train_dataset = CustomDataset(
+        train_stock_data, 
+        train_topic_data, 
+        train_targets,
+        high_threshold=config['high_threshold']
+    )
+    val_dataset = CustomDataset(
+        val_stock_data, 
+        val_topic_data, 
+        val_targets,
+        high_threshold=config['high_threshold']
+    )
+    
+    # Use weighted sampling for training
+    train_sampler = torch.utils.data.WeightedRandomSampler(
+        weights=train_dataset.weights,
+        num_samples=len(train_dataset),
+        replacement=True
+    )
     
     train_loader = DataLoader(
         train_dataset,
         batch_size=config['batch_size'],
-        shuffle=True,
+        sampler=train_sampler,
         num_workers=4,
         pin_memory=True
     )
@@ -270,7 +306,6 @@ def train_model(config):
         pin_memory=True
     )
     
-    # Learning rate scheduler
     scheduler = torch.optim.lr_scheduler.OneCycleLR(
         optimizer,
         max_lr=config['learning_rate'],
@@ -280,7 +315,7 @@ def train_model(config):
         div_factor=25
     )
     
-    best_val_loss = float('inf')
+    best_val_precision = 0.0
     accumulation_steps = 4
     
     with open(config['info_path'], 'w') as f:
@@ -304,7 +339,6 @@ def train_model(config):
             outputs = model(batch_stock, batch_topic)
             loss = criterion(outputs, batch_targets)
             
-            # Scale loss for gradient accumulation
             loss = loss / accumulation_steps
             loss.backward()
             
@@ -317,7 +351,6 @@ def train_model(config):
             train_losses.append(loss.item() * accumulation_steps)
             train_pbar.set_postfix({'loss': f'{loss.item() * accumulation_steps:.4f}'})
         
-        # Validation phase
         model.eval()
         val_losses = []
         all_predictions = []
@@ -342,7 +375,7 @@ def train_model(config):
         
         val_predictions = torch.cat(all_predictions)
         val_targets = torch.cat(all_targets)
-        metrics = compute_metrics(val_predictions, val_targets)
+        metrics = compute_metrics(val_predictions, val_targets, high_threshold=config['high_threshold'])
         
         avg_train_loss = np.mean(train_losses)
         avg_val_loss = np.mean(val_losses)
@@ -353,6 +386,15 @@ def train_model(config):
             f.write(f"Val Loss: {avg_val_loss:.4f}\n")
             f.write(f"Metrics: {json.dumps(metrics, indent=2)}\n")
             f.write(f"Learning Rate: {scheduler.get_last_lr()[0]:.6f}\n")
+        
+        # Save checkpoint based on high-value precision instead of validation loss
+        if metrics['high_value_precision'] > best_val_precision:
+            best_val_precision = metrics['high_value_precision']
+            best_model_path = os.path.join(
+                config['checkpoint_dir'],
+                'best_precision_model.pt'
+            )
+            torch.save(model.state_dict(), best_model_path)
         
         if (epoch + 1) % config['checkpoint_frequency'] == 0:
             checkpoint_path = os.path.join(
@@ -365,21 +407,14 @@ def train_model(config):
                 'optimizer_state_dict': optimizer.state_dict(),
                 'scheduler_state_dict': scheduler.state_dict(),
                 'val_loss': avg_val_loss,
+                'metrics': metrics,
             }, checkpoint_path)
-        
-        if avg_val_loss < best_val_loss:
-            best_val_loss = avg_val_loss
-            best_model_path = os.path.join(
-                config['checkpoint_dir'],
-                'best_model.pt'
-            )
-            torch.save(model.state_dict(), best_model_path)
 
 if __name__ == "__main__":
     config = {
         # Model parameters
         'hidden_dim': 768,
-        'dropout_rate': 0.16,
+        'dropout_rate': 0.15,
         
         # Training parameters
         'batch_size': 64,
@@ -390,15 +425,17 @@ if __name__ == "__main__":
         'label_smoothing': 0.1,
         'grad_clip': 1.0,
         
+        # Precision focus parameters
+        'high_threshold': 0.35,
+        'fp_penalty': 4.0,
+        
         # Paths
-        'train_data_dir': '/Users/daniellavin/Desktop/proj/MoneyTrainer/Y/y_100_train',  # Directory containing training .pt files
-        'val_data_dir': '/Users/daniellavin/Desktop/proj/MoneyTrainer/Y/y_100_val',      # Directory containing validation .pt files
-        'checkpoint_dir': '/Users/daniellavin/Desktop/proj/MoneyTrainer/Y/YT_train/check',
-        'info_path': '/Users/daniellavin/Desktop/proj/MoneyTrainer/Y/YT_train/check/training_info.txt',
+        'train_data_dir': '/Users/daniellavin/Desktop/proj/MoneyTrainer/Y/y_100_train',
+        'val_data_dir': '/Users/daniellavin/Desktop/proj/MoneyTrainer/Y/y_100_val',
+        'checkpoint_dir': '/Users/daniellavin/Desktop/proj/MoneyTrainer/Y/YT_train/check2',
+        'info_path': '/Users/daniellavin/Desktop/proj/MoneyTrainer/Y/YT_train/check2/training_info.txt',
     }
     
-    # Create checkpoint directory if it doesn't exist
     os.makedirs(config['checkpoint_dir'], exist_ok=True)
     
-    # Start training
     train_model(config)
