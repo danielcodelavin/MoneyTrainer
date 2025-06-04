@@ -1,17 +1,17 @@
 # MoneyTrainer: Predicting Short-Term Data Movements with News & Time Series Analysis
 
-**MoneyTrainer** is an advanced research project dedicated to predicting short-term movements in dynamic datasets, with a primary focus on financial markets. It achieves this by synergizing high-dimensional semantic encoding of recent news articles with normalized historical time series data, feeding this rich, integrated information into sophisticated machine learning models.
+**MoneyTrainer** is an advanced research project dedicated to predicting short-term movements in dynamic datasets, with a primary focus on financial markets. It achieves this by synergizing high-dimensional semantic encoding of recent news articles with normalized historical time series data, feeding information into sophisticated machine learning models.
 
-The core philosophy is to move beyond traditional quantitative analysis by systematically incorporating the sentiment and thematic undercurrents of textual news data, thereby capturing a more holistic view of the factors influencing short-term fluctuations.
+The aim is to incorporate the sentiment and thematic undercurrents of textual news data, thereby capturing a more holistic view of the factors influencing short-term fluctuations.
 
 ## Core Pipeline: From Raw Data to Integrated Tensors
 
-The data processing pipeline is a critical component, designed to meticulously fetch, clean, transform, and integrate diverse data sources into a unified tensor format suitable for advanced model training. This pipeline is consistent across all modeling experiments.
+The data processing pipeline is a critical component, designed to fetch, clean, transform, and integrate diverse data sources into a unified tensor format suitable for advanced model training. This pipeline is consistent across all modeling experiments.
 
 ### 1. Data Sources
 The pipeline leverages:
-* **Historical Time Series Data:** Primarily stock prices (e.g., hourly closing prices) sourced using the `yfinance` library.
-* **News Headlines:** Fetched for specific stock symbols and relevant dates using the `Finnhub API` (via a custom `finhub_scrape` module) and potentially supplemented by `GoogleNews`.
+* **Historical Time Series Data:** Stock prices (hourly closing prices) sourced using the `yfinance` library.
+* **News Headlines:** Fetched for specific stock symbols and relevant dates using the `Finnhub API` (via a custom `finhub_scrape` module) and potentially supplemented by `GoogleNews`-library.
 
 ### 2. Time Series Data Processing
 For each stock and a given historical `start_datetime`:
@@ -21,10 +21,10 @@ For each stock and a given historical `start_datetime`:
 * **Output:** A 1D PyTorch tensor of 80 normalized historical price points.
 
 ### 3. News Data Processing & BERTopic Encoding
-For the same period corresponding to the time series data:
+Shorter than time series data, usually just past 2 days, news older than that hardly make an impact:
 * **Headline Collection:** Relevant news headlines are collected for the stock.
 * **BERTopic Transformation (`process_headlines_with_bertopic`):**
-    * Utilizes a **pre-trained BERTopic model** (e.g., `Y100_BERTOPIC.pt`, a semantic model trained by the project author).
+    * Utilizes a **pre-trained BERTopic model** (e.g., `Y100_BERTOPIC.pt`, a semantic model trained by the project author - fine tuned on finance vocab (e.g. "merger" or "expectation")).
     * BERTopic performs several steps:
         1.  Embeds headlines using sentence transformers.
         2.  Clusters these embeddings to discover latent topics.
